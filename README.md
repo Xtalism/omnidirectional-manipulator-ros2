@@ -9,7 +9,7 @@ To setup the project:
     cd ros2_ws
     source install/setup.bash
 
-In order to run the project:
+To run the project:
 
     ros2 run dm {program}
     ros2 launch dm {launchfile}
