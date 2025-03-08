@@ -5,9 +5,11 @@ LiDAR sensor and an Intel Realsense D415. I studied the system making use of con
 inverse kinematics, MATLAB, Gazebo and Rviz.
 
 To setup the project:
+
     cd ros2_ws
     source install/setup.bash
 
 In order to run the project:
+
     ros2 run dm {program}
     ros2 launch dm {launchfile}
