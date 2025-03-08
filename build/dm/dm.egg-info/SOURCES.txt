@@ -1,0 +1,16 @@
+package.xml
+setup.cfg
+setup.py
+dm/__init__.py
+dm/my_publisher.py
+dm/my_second_publisher.py
+dm/my_subscriber.py
+dm.egg-info/PKG-INFO
+dm.egg-info/SOURCES.txt
+dm.egg-info/dependency_links.txt
+dm.egg-info/entry_points.txt
+dm.egg-info/requires.txt
+dm.egg-info/top_level.txt
+dm.egg-info/zip-safe
+launch/publishers.launch.py
+resource/dm

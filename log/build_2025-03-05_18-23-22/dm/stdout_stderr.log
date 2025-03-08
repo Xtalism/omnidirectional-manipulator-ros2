@@ -1,0 +1,16 @@
+running develop
+running egg_info
+writing dm.egg-info/PKG-INFO
+writing dependency_links to dm.egg-info/dependency_links.txt
+writing entry points to dm.egg-info/entry_points.txt
+writing requirements to dm.egg-info/requires.txt
+writing top-level names to dm.egg-info/top_level.txt
+reading manifest file 'dm.egg-info/SOURCES.txt'
+writing manifest file 'dm.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/xtal/ros2_ws/install/dm/lib/python3.12/site-packages/dm.egg-link (link to .)
+Installing my_publisher script to /home/xtal/ros2_ws/install/dm/lib/dm
+Installing my_second_publisher script to /home/xtal/ros2_ws/install/dm/lib/dm
+
+Installed /home/xtal/ros2_ws/build/dm
+running symlink_data
