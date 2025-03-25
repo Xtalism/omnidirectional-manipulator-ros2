@@ -1,0 +1,68 @@
+[0.008s] Invoking command in '/home/xtal/ros2_ws/build/ldlidar_node': AMENT_PREFIX_PATH=/home/xtal/ros2_ws/install/ldlidar_component:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/xtal/ros2_ws/install/ldlidar_component:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/xtal/ros2_ws/install/ldlidar_component/lib:${LD_LIBRARY_PATH} /usr/bin/cmake /home/xtal/ros2_ws/src/ldrobot-lidar-ros2/ldlidar_node -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/xtal/ros2_ws/install/ldlidar_node
+[0.056s] -- The C compiler identification is GNU 13.3.0
+[0.102s] -- The CXX compiler identification is GNU 13.3.0
+[0.116s] -- Detecting C compiler ABI info
+[0.196s] -- Detecting C compiler ABI info - done
+[0.202s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.203s] -- Detecting C compile features
+[0.203s] -- Detecting C compile features - done
+[0.211s] -- Detecting CXX compiler ABI info
+[0.300s] -- Detecting CXX compiler ABI info - done
+[0.307s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.307s] -- Detecting CXX compile features
+[0.307s] -- Detecting CXX compile features - done
+[0.308s] -- * Found ROS2 jazzy
+[0.308s] -- * ROS2 jazzy is officially supported by this package.
+[0.312s] -- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.434s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.489s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.538s] -- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[0.682s] -- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)
+[0.788s] -- Found PythonExtra: /usr/bin/python3  
+[0.797s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.800s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.800s] -- Configured 'flake8' exclude dirs and/or files: 
+[0.801s] -- Added test 'lint_cmake' to check CMake code style
+[0.802s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.804s] -- Added test 'xmllint' to check XML markup files
+[0.806s] -- Configuring done (0.8s)
+[0.809s] -- Generating done (0.0s)
+[0.810s] -- Build files have been written to: /home/xtal/ros2_ws/build/ldlidar_node
+[0.814s] Invoked command in '/home/xtal/ros2_ws/build/ldlidar_node' returned '0': AMENT_PREFIX_PATH=/home/xtal/ros2_ws/install/ldlidar_component:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/xtal/ros2_ws/install/ldlidar_component:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/xtal/ros2_ws/install/ldlidar_component/lib:${LD_LIBRARY_PATH} /usr/bin/cmake /home/xtal/ros2_ws/src/ldrobot-lidar-ros2/ldlidar_node -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/xtal/ros2_ws/install/ldlidar_node
+[0.815s] Invoking command in '/home/xtal/ros2_ws/build/ldlidar_node': AMENT_PREFIX_PATH=/home/xtal/ros2_ws/install/ldlidar_component:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/xtal/ros2_ws/install/ldlidar_component:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/xtal/ros2_ws/install/ldlidar_component/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/xtal/ros2_ws/build/ldlidar_node -- -j16 -l16
+[0.854s] Invoked command in '/home/xtal/ros2_ws/build/ldlidar_node' returned '0': AMENT_PREFIX_PATH=/home/xtal/ros2_ws/install/ldlidar_component:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/xtal/ros2_ws/install/ldlidar_component:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/xtal/ros2_ws/install/ldlidar_component/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/xtal/ros2_ws/build/ldlidar_node -- -j16 -l16
+[0.855s] Invoking command in '/home/xtal/ros2_ws/build/ldlidar_node': AMENT_PREFIX_PATH=/home/xtal/ros2_ws/install/ldlidar_component:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/xtal/ros2_ws/install/ldlidar_component:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/xtal/ros2_ws/install/ldlidar_component/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/xtal/ros2_ws/build/ldlidar_node
+[0.863s] -- Install configuration: ""
+[0.864s] -- Execute custom install script
+[0.864s] -- Symlinking: /home/xtal/ros2_ws/install/ldlidar_node/share/ldlidar_node/params/ldlidar.yaml
+[0.873s] -- Symlinking: /home/xtal/ros2_ws/install/ldlidar_node/share/ldlidar_node/params/lifecycle_mgr.yaml
+[0.882s] -- Symlinking: /home/xtal/ros2_ws/install/ldlidar_node/share/ldlidar_node/params/lifecycle_mgr_slam.yaml
+[0.890s] -- Symlinking: /home/xtal/ros2_ws/install/ldlidar_node/share/ldlidar_node/params/slam_toolbox.yaml
+[0.899s] -- Symlinking: /home/xtal/ros2_ws/install/ldlidar_node/share/ldlidar_node/config/ldlidar.rviz
+[0.907s] -- Symlinking: /home/xtal/ros2_ws/install/ldlidar_node/share/ldlidar_node/config/ldlidar_slam.rviz
+[0.916s] -- Symlinking: /home/xtal/ros2_ws/install/ldlidar_node/share/ldlidar_node/urdf/ldlidar_descr.urdf.xml
+[0.925s] -- Symlinking: /home/xtal/ros2_ws/install/ldlidar_node/share/ldlidar_node/urdf/model/LD19.stl
+[0.934s] -- Symlinking: /home/xtal/ros2_ws/install/ldlidar_node/share/ldlidar_node/launch/.data
+[0.942s] -- Symlinking: /home/xtal/ros2_ws/install/ldlidar_node/share/ldlidar_node/launch/.posegraph
+[0.950s] -- Symlinking: /home/xtal/ros2_ws/install/ldlidar_node/share/ldlidar_node/launch/__pycache__/ldlidar_slam.launch.cpython-312.pyc
+[0.959s] -- Symlinking: /home/xtal/ros2_ws/install/ldlidar_node/share/ldlidar_node/launch/__pycache__/ldlidar_with_mgr.launch.cpython-312.pyc
+[0.967s] -- Symlinking: /home/xtal/ros2_ws/install/ldlidar_node/share/ldlidar_node/launch/ldlidar_bringup.launch.py
+[0.975s] -- Symlinking: /home/xtal/ros2_ws/install/ldlidar_node/share/ldlidar_node/launch/ldlidar_rviz2.launch.py
+[0.983s] -- Symlinking: /home/xtal/ros2_ws/install/ldlidar_node/share/ldlidar_node/launch/ldlidar_slam.launch.py
+[0.991s] -- Symlinking: /home/xtal/ros2_ws/install/ldlidar_node/share/ldlidar_node/launch/ldlidar_with_mgr.launch.py
+[0.999s] -- Symlinking: /home/xtal/ros2_ws/install/ldlidar_node/share/ament_index/resource_index/package_run_dependencies/ldlidar_node
+[1.008s] -- Symlinking: /home/xtal/ros2_ws/install/ldlidar_node/share/ament_index/resource_index/parent_prefix_path/ldlidar_node
+[1.016s] -- Symlinking: /home/xtal/ros2_ws/install/ldlidar_node/share/ldlidar_node/environment/ament_prefix_path.sh
+[1.024s] -- Symlinking: /home/xtal/ros2_ws/install/ldlidar_node/share/ldlidar_node/environment/ament_prefix_path.dsv
+[1.032s] -- Symlinking: /home/xtal/ros2_ws/install/ldlidar_node/share/ldlidar_node/environment/path.sh
+[1.040s] -- Symlinking: /home/xtal/ros2_ws/install/ldlidar_node/share/ldlidar_node/environment/path.dsv
+[1.048s] -- Symlinking: /home/xtal/ros2_ws/install/ldlidar_node/share/ldlidar_node/local_setup.bash
+[1.057s] -- Symlinking: /home/xtal/ros2_ws/install/ldlidar_node/share/ldlidar_node/local_setup.sh
+[1.067s] -- Symlinking: /home/xtal/ros2_ws/install/ldlidar_node/share/ldlidar_node/local_setup.zsh
+[1.075s] -- Symlinking: /home/xtal/ros2_ws/install/ldlidar_node/share/ldlidar_node/local_setup.dsv
+[1.084s] -- Symlinking: /home/xtal/ros2_ws/install/ldlidar_node/share/ldlidar_node/package.dsv
+[1.092s] -- Symlinking: /home/xtal/ros2_ws/install/ldlidar_node/share/ament_index/resource_index/packages/ldlidar_node
+[1.101s] -- Symlinking: /home/xtal/ros2_ws/install/ldlidar_node/share/ldlidar_node/cmake/ldlidar_nodeConfig.cmake
+[1.109s] -- Symlinking: /home/xtal/ros2_ws/install/ldlidar_node/share/ldlidar_node/cmake/ldlidar_nodeConfig-version.cmake
+[1.117s] -- Symlinking: /home/xtal/ros2_ws/install/ldlidar_node/share/ldlidar_node/package.xml
+[1.128s] Invoked command in '/home/xtal/ros2_ws/build/ldlidar_node' returned '0': AMENT_PREFIX_PATH=/home/xtal/ros2_ws/install/ldlidar_component:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/xtal/ros2_ws/install/ldlidar_component:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/xtal/ros2_ws/install/ldlidar_component/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/xtal/ros2_ws/build/ldlidar_node

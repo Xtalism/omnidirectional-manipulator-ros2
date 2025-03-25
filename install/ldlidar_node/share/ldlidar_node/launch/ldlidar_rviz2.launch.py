@@ -1,0 +1,1 @@
+/home/xtal/ros2_ws/src/ldrobot-lidar-ros2/ldlidar_node/launch/ldlidar_rviz2.launch.py

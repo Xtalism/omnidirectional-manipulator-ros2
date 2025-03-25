@@ -1,0 +1,49 @@
+[0.180s] Invoking command in '/home/xtal/ros2_ws/build/ldlidar_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/xtal/ros2_ws/build/ldlidar_ros2 -- -j16 -l16
+[0.231s] [ 15%] [32mBuilding CXX object sdk/CMakeFiles/ldlidar_driver.dir/src/serial_interface_linux.cpp.o[0m
+[0.232s] [ 15%] [32mBuilding CXX object sdk/CMakeFiles/ldlidar_driver.dir/src/ldlidar_protocol.cpp.o[0m
+[0.232s] [ 30%] [32mBuilding CXX object sdk/CMakeFiles/ldlidar_driver.dir/src/ldlidar_driver_linux.cpp.o[0m
+[0.232s] [ 30%] [32mBuilding CXX object sdk/CMakeFiles/ldlidar_driver.dir/src/ldlidar_driver.cpp.o[0m
+[0.232s] [ 38%] [32mBuilding CXX object sdk/CMakeFiles/ldlidar_driver.dir/src/log_module.cpp.o[0m
+[0.233s] [ 53%] [32mBuilding CXX object sdk/CMakeFiles/ldlidar_driver.dir/src/network_socket_interface_linux.cpp.o[0m
+[0.233s] [ 53%] [32mBuilding CXX object sdk/CMakeFiles/ldlidar_driver.dir/src/slbf.cpp.o[0m
+[0.233s] [ 61%] [32mBuilding CXX object sdk/CMakeFiles/ldlidar_driver.dir/src/ldlidar_dataprocess.cpp.o[0m
+[0.233s] [ 69%] [32mBuilding CXX object sdk/CMakeFiles/ldlidar_driver.dir/src/sl_transform.cpp.o[0m
+[0.234s] [ 76%] [32mBuilding CXX object sdk/CMakeFiles/ldlidar_driver.dir/src/tofbf.cpp.o[0m
+[0.820s] [ 84%] [32m[1mLinking CXX static library libldlidar_driver.a[0m
+[0.899s] [ 84%] Built target ldlidar_driver
+[0.921s] [ 92%] [32mBuilding CXX object CMakeFiles/ldlidar_ros2_node.dir/src/demo.cpp.o[0m
+[5.332s] [100%] [32m[1mLinking CXX executable ldlidar_ros2_node[0m
+[5.511s] [100%] Built target ldlidar_ros2_node
+[5.523s] Invoked command in '/home/xtal/ros2_ws/build/ldlidar_ros2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/xtal/ros2_ws/build/ldlidar_ros2 -- -j16 -l16
+[5.532s] Invoking command in '/home/xtal/ros2_ws/build/ldlidar_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/xtal/ros2_ws/build/ldlidar_ros2
+[5.539s] -- Install configuration: ""
+[5.540s] -- Execute custom install script
+[5.540s] -- Symlinking: /home/xtal/ros2_ws/install/ldlidar_ros2/lib/ldlidar_ros2/ldlidar_ros2_node
+[5.549s] -- Symlinking: /home/xtal/ros2_ws/install/ldlidar_ros2/share/ldlidar_ros2//launch/ld06.launch.py
+[5.557s] -- Symlinking: /home/xtal/ros2_ws/install/ldlidar_ros2/share/ldlidar_ros2//launch/ld14.launch.py
+[5.566s] -- Symlinking: /home/xtal/ros2_ws/install/ldlidar_ros2/share/ldlidar_ros2//launch/ld14p.launch.py
+[5.575s] -- Symlinking: /home/xtal/ros2_ws/install/ldlidar_ros2/share/ldlidar_ros2//launch/ld19.launch.py
+[5.584s] -- Symlinking: /home/xtal/ros2_ws/install/ldlidar_ros2/share/ldlidar_ros2//launch/viewer_ld06.launch.py
+[5.592s] -- Symlinking: /home/xtal/ros2_ws/install/ldlidar_ros2/share/ldlidar_ros2//launch/viewer_ld14.launch.py
+[5.601s] -- Symlinking: /home/xtal/ros2_ws/install/ldlidar_ros2/share/ldlidar_ros2//launch/viewer_ld14p.launch.py
+[5.611s] -- Symlinking: /home/xtal/ros2_ws/install/ldlidar_ros2/share/ldlidar_ros2//launch/viewer_ld19.launch.py
+[5.620s] -- Symlinking: /home/xtal/ros2_ws/install/ldlidar_ros2/share/ldlidar_ros2//rviz2/ldlidar.rviz
+[5.629s] -- Symlinking: /home/xtal/ros2_ws/install/ldlidar_ros2/share/ldlidar_ros2//scripts/create_udev_rules.sh
+[5.637s] -- Symlinking: /home/xtal/ros2_ws/install/ldlidar_ros2/share/ldlidar_ros2//scripts/delete_udev_rules.sh
+[5.646s] -- Symlinking: /home/xtal/ros2_ws/install/ldlidar_ros2/share/ldlidar_ros2//scripts/ldlidar.rules
+[5.655s] -- Symlinking: /home/xtal/ros2_ws/install/ldlidar_ros2/share/ament_index/resource_index/package_run_dependencies/ldlidar_ros2
+[5.664s] -- Symlinking: /home/xtal/ros2_ws/install/ldlidar_ros2/share/ament_index/resource_index/parent_prefix_path/ldlidar_ros2
+[5.673s] -- Symlinking: /home/xtal/ros2_ws/install/ldlidar_ros2/share/ldlidar_ros2/environment/ament_prefix_path.sh
+[5.682s] -- Symlinking: /home/xtal/ros2_ws/install/ldlidar_ros2/share/ldlidar_ros2/environment/ament_prefix_path.dsv
+[5.690s] -- Symlinking: /home/xtal/ros2_ws/install/ldlidar_ros2/share/ldlidar_ros2/environment/path.sh
+[5.699s] -- Symlinking: /home/xtal/ros2_ws/install/ldlidar_ros2/share/ldlidar_ros2/environment/path.dsv
+[5.708s] -- Symlinking: /home/xtal/ros2_ws/install/ldlidar_ros2/share/ldlidar_ros2/local_setup.bash
+[5.717s] -- Symlinking: /home/xtal/ros2_ws/install/ldlidar_ros2/share/ldlidar_ros2/local_setup.sh
+[5.726s] -- Symlinking: /home/xtal/ros2_ws/install/ldlidar_ros2/share/ldlidar_ros2/local_setup.zsh
+[5.735s] -- Symlinking: /home/xtal/ros2_ws/install/ldlidar_ros2/share/ldlidar_ros2/local_setup.dsv
+[5.744s] -- Symlinking: /home/xtal/ros2_ws/install/ldlidar_ros2/share/ldlidar_ros2/package.dsv
+[5.753s] -- Symlinking: /home/xtal/ros2_ws/install/ldlidar_ros2/share/ament_index/resource_index/packages/ldlidar_ros2
+[5.761s] -- Symlinking: /home/xtal/ros2_ws/install/ldlidar_ros2/share/ldlidar_ros2/cmake/ldlidar_ros2Config.cmake
+[5.770s] -- Symlinking: /home/xtal/ros2_ws/install/ldlidar_ros2/share/ldlidar_ros2/cmake/ldlidar_ros2Config-version.cmake
+[5.779s] -- Symlinking: /home/xtal/ros2_ws/install/ldlidar_ros2/share/ldlidar_ros2/package.xml
+[5.789s] Invoked command in '/home/xtal/ros2_ws/build/ldlidar_ros2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/xtal/ros2_ws/build/ldlidar_ros2

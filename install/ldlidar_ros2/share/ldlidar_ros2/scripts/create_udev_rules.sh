@@ -1,0 +1,1 @@
+/home/xtal/ros2_ws/src/ldlidar_ros2/scripts/create_udev_rules.sh

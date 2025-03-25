@@ -12,5 +12,6 @@ dm.egg-info/entry_points.txt
 dm.egg-info/requires.txt
 dm.egg-info/top_level.txt
 dm.egg-info/zip-safe
+launch/d415.launch.py
 launch/publishers.launch.py
 resource/dm

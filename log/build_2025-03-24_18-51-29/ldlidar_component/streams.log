@@ -1,0 +1,49 @@
+[0.014s] Invoking command in '/home/xtal/ros2_ws/build/ldlidar_component': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/xtal/ros2_ws/src/ldrobot-lidar-ros2/ldlidar_component -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/xtal/ros2_ws/install/ldlidar_component
+[0.184s] -- The C compiler identification is GNU 13.3.0
+[0.206s] -- The CXX compiler identification is GNU 13.3.0
+[0.225s] -- Detecting C compiler ABI info
+[0.316s] -- Detecting C compiler ABI info - done
+[0.324s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.324s] -- Detecting C compile features
+[0.324s] -- Detecting C compile features - done
+[0.334s] -- Detecting CXX compiler ABI info
+[0.425s] -- Detecting CXX compiler ABI info - done
+[0.432s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.432s] -- Detecting CXX compile features
+[0.433s] -- Detecting CXX compile features - done
+[0.433s] --  * Release Mode
+[0.433s] -- * Found ROS2 jazzy
+[0.433s] -- * ROS2 jazzy is officially supported by this package.
+[0.439s] -- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.570s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.634s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.690s] -- Found rclcpp_lifecycle: 28.1.6 (/opt/ros/jazzy/share/rclcpp_lifecycle/cmake)
+[0.756s] -- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.774s] -- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.794s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.816s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.919s] -- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.924s] -- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[1.023s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[1.043s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[1.064s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.168s] -- Found rclcpp_components: 28.1.6 (/opt/ros/jazzy/share/rclcpp_components/cmake)
+[1.231s] [31mCMake Error at CMakeLists.txt:105 (find_package):
+[1.231s]   By not providing "Findnav2_util.cmake" in CMAKE_MODULE_PATH this project
+[1.231s]   has asked CMake to find a package configuration file provided by
+[1.231s]   "nav2_util", but CMake did not find one.
+[1.232s] 
+[1.232s]   Could not find a package configuration file provided by "nav2_util" with
+[1.232s]   any of the following names:
+[1.232s] 
+[1.232s]     nav2_utilConfig.cmake
+[1.232s]     nav2_util-config.cmake
+[1.232s] 
+[1.232s]   Add the installation prefix of "nav2_util" to CMAKE_PREFIX_PATH or set
+[1.232s]   "nav2_util_DIR" to a directory containing one of the above files.  If
+[1.232s]   "nav2_util" provides a separate development package or SDK, be sure it has
+[1.232s]   been installed.
+[1.232s] 
+[1.232s] [0m
+[1.232s] -- Configuring incomplete, errors occurred!
+[1.243s] Invoked command in '/home/xtal/ros2_ws/build/ldlidar_component' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/xtal/ros2_ws/src/ldrobot-lidar-ros2/ldlidar_component -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/xtal/ros2_ws/install/ldlidar_component

@@ -1,0 +1,45 @@
+[ 15%] [32mBuilding CXX object sdk/CMakeFiles/ldlidar_driver.dir/src/serial_interface_linux.cpp.o[0m
+[ 15%] [32mBuilding CXX object sdk/CMakeFiles/ldlidar_driver.dir/src/ldlidar_protocol.cpp.o[0m
+[ 30%] [32mBuilding CXX object sdk/CMakeFiles/ldlidar_driver.dir/src/ldlidar_driver_linux.cpp.o[0m
+[ 30%] [32mBuilding CXX object sdk/CMakeFiles/ldlidar_driver.dir/src/ldlidar_driver.cpp.o[0m
+[ 38%] [32mBuilding CXX object sdk/CMakeFiles/ldlidar_driver.dir/src/log_module.cpp.o[0m
+[ 53%] [32mBuilding CXX object sdk/CMakeFiles/ldlidar_driver.dir/src/network_socket_interface_linux.cpp.o[0m
+[ 53%] [32mBuilding CXX object sdk/CMakeFiles/ldlidar_driver.dir/src/slbf.cpp.o[0m
+[ 61%] [32mBuilding CXX object sdk/CMakeFiles/ldlidar_driver.dir/src/ldlidar_dataprocess.cpp.o[0m
+[ 69%] [32mBuilding CXX object sdk/CMakeFiles/ldlidar_driver.dir/src/sl_transform.cpp.o[0m
+[ 76%] [32mBuilding CXX object sdk/CMakeFiles/ldlidar_driver.dir/src/tofbf.cpp.o[0m
+[ 84%] [32m[1mLinking CXX static library libldlidar_driver.a[0m
+[ 84%] Built target ldlidar_driver
+[ 92%] [32mBuilding CXX object CMakeFiles/ldlidar_ros2_node.dir/src/demo.cpp.o[0m
+[100%] [32m[1mLinking CXX executable ldlidar_ros2_node[0m
+[100%] Built target ldlidar_ros2_node
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/xtal/ros2_ws/install/ldlidar_ros2/lib/ldlidar_ros2/ldlidar_ros2_node
+-- Symlinking: /home/xtal/ros2_ws/install/ldlidar_ros2/share/ldlidar_ros2//launch/ld06.launch.py
+-- Symlinking: /home/xtal/ros2_ws/install/ldlidar_ros2/share/ldlidar_ros2//launch/ld14.launch.py
+-- Symlinking: /home/xtal/ros2_ws/install/ldlidar_ros2/share/ldlidar_ros2//launch/ld14p.launch.py
+-- Symlinking: /home/xtal/ros2_ws/install/ldlidar_ros2/share/ldlidar_ros2//launch/ld19.launch.py
+-- Symlinking: /home/xtal/ros2_ws/install/ldlidar_ros2/share/ldlidar_ros2//launch/viewer_ld06.launch.py
+-- Symlinking: /home/xtal/ros2_ws/install/ldlidar_ros2/share/ldlidar_ros2//launch/viewer_ld14.launch.py
+-- Symlinking: /home/xtal/ros2_ws/install/ldlidar_ros2/share/ldlidar_ros2//launch/viewer_ld14p.launch.py
+-- Symlinking: /home/xtal/ros2_ws/install/ldlidar_ros2/share/ldlidar_ros2//launch/viewer_ld19.launch.py
+-- Symlinking: /home/xtal/ros2_ws/install/ldlidar_ros2/share/ldlidar_ros2//rviz2/ldlidar.rviz
+-- Symlinking: /home/xtal/ros2_ws/install/ldlidar_ros2/share/ldlidar_ros2//scripts/create_udev_rules.sh
+-- Symlinking: /home/xtal/ros2_ws/install/ldlidar_ros2/share/ldlidar_ros2//scripts/delete_udev_rules.sh
+-- Symlinking: /home/xtal/ros2_ws/install/ldlidar_ros2/share/ldlidar_ros2//scripts/ldlidar.rules
+-- Symlinking: /home/xtal/ros2_ws/install/ldlidar_ros2/share/ament_index/resource_index/package_run_dependencies/ldlidar_ros2
+-- Symlinking: /home/xtal/ros2_ws/install/ldlidar_ros2/share/ament_index/resource_index/parent_prefix_path/ldlidar_ros2
+-- Symlinking: /home/xtal/ros2_ws/install/ldlidar_ros2/share/ldlidar_ros2/environment/ament_prefix_path.sh
+-- Symlinking: /home/xtal/ros2_ws/install/ldlidar_ros2/share/ldlidar_ros2/environment/ament_prefix_path.dsv
+-- Symlinking: /home/xtal/ros2_ws/install/ldlidar_ros2/share/ldlidar_ros2/environment/path.sh
+-- Symlinking: /home/xtal/ros2_ws/install/ldlidar_ros2/share/ldlidar_ros2/environment/path.dsv
+-- Symlinking: /home/xtal/ros2_ws/install/ldlidar_ros2/share/ldlidar_ros2/local_setup.bash
+-- Symlinking: /home/xtal/ros2_ws/install/ldlidar_ros2/share/ldlidar_ros2/local_setup.sh
+-- Symlinking: /home/xtal/ros2_ws/install/ldlidar_ros2/share/ldlidar_ros2/local_setup.zsh
+-- Symlinking: /home/xtal/ros2_ws/install/ldlidar_ros2/share/ldlidar_ros2/local_setup.dsv
+-- Symlinking: /home/xtal/ros2_ws/install/ldlidar_ros2/share/ldlidar_ros2/package.dsv
+-- Symlinking: /home/xtal/ros2_ws/install/ldlidar_ros2/share/ament_index/resource_index/packages/ldlidar_ros2
+-- Symlinking: /home/xtal/ros2_ws/install/ldlidar_ros2/share/ldlidar_ros2/cmake/ldlidar_ros2Config.cmake
+-- Symlinking: /home/xtal/ros2_ws/install/ldlidar_ros2/share/ldlidar_ros2/cmake/ldlidar_ros2Config-version.cmake
+-- Symlinking: /home/xtal/ros2_ws/install/ldlidar_ros2/share/ldlidar_ros2/package.xml
