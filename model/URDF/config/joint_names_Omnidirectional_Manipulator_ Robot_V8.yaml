@@ -1,1 +1,0 @@
-controller_joint_names: ['', 'fl_wheel_joint', 'rl_wheel_joint', 'fr_wheel_joint', 'rr_wheel_joint', 'joint_1', 'joint_2', 'joint_3', 'joint_4', 'end_effector_joint', ]
