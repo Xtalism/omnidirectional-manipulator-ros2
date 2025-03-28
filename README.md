@@ -1,0 +1,1 @@
+![Omnidirectional Manipulator](render.png)

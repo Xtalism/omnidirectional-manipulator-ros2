@@ -1,1 +1,0 @@
-/home/xtal/ros2_ws/src/ldrobot-lidar-ros2/ldlidar_component/include/visibility_control.hpp

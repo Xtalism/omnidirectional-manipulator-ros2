@@ -1,1 +1,0 @@
-/home/xtal/ros2_ws/src/dm/launch/publishers.launch.py

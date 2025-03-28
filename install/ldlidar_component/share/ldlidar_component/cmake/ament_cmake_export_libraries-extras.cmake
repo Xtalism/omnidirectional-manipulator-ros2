@@ -1,1 +1,0 @@
-/home/xtal/ros2_ws/build/ldlidar_component/ament_cmake_export_libraries/ament_cmake_export_libraries-extras.cmake

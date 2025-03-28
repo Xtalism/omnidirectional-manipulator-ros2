@@ -1,1 +1,0 @@
-/home/xtal/ros2_ws/src/ldlidar_ros2/launch/ld19.launch.py
