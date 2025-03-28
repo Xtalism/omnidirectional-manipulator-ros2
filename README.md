@@ -14,13 +14,15 @@ Omnidirectional Manipulator Robot using ROS2 and MicroROS.
 
 ## Hardware Requirements
 - ESP32.
-- Four encoder motors.
-- L293D.
-- Xbox Controller.
+- JGB37-520 motors.
+- H bridge L293D.
+- Xbox controller.
 - 18650 batteries.
 - Raspberry Pi 5 (4gb RAM).
 - Arduino Mega 2560.
-- Six MG995 servomotors.
+- MG995 servomotors.
+- Intel Realsense D415.
+- Lidar Sensor LD19 (LDROBOT).
 
 ## Software Requirements
 In order for the project to work we need to have installed [Ubuntu 24.04 LTS Noble Numbat](https://releases.ubuntu.com/noble/) alocated
