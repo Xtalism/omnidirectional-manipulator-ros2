@@ -17,7 +17,7 @@ Omnidirectional Manipulator Robot using ROS2 and MicroROS.
 ## Current Simulation Results
 [![Demonstration](thumbnail.png)](https://www.youtube.com/watch?v=Ag-K_ZEC1xM)
 
-https://github.com/user-attachments/assets/c426e4b0-dd58-40a4-b1c8-1dfd7875682e
+https://github.com/user-attachments/assets/c15b5d20-19f2-44d3-a7d4-bff144a0d707
 
 ## Hardware Requirements
 - ESP32.
