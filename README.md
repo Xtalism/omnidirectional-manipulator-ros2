@@ -4,6 +4,8 @@ Omnidirectional Manipulator Robot using ROS2 and MicroROS.
 
 ![Omnidirectional Manipulator](render.png)
 
+[![Demonstration](thumbnail.png)](https://www.youtube.com/watch?v=Ag-K_ZEC1xM)
+
 ## Table of Contents
 - [Omnidirectional Manipulator Robot using ROS2](#omnidirectional-manipulator-robot-using-ros2)
   - [Table of Contents](#table-of-contents)
