@@ -11,6 +11,7 @@ Omnidirectional Manipulator Robot using ROS2 and MicroROS.
   - [Software Requirements](#software-requirements)
   - [Installation](#installation)
   - [Controller Setup](#controller-setup)
+  - [Project Setup](#project-setup)
 
 ## Hardware Requirements
 - ESP32.
@@ -31,22 +32,31 @@ in a partition with a Windows dual boot or as the main Operating System of your 
 You can try to virtualize it but in my experience, networking and driver problems arouse.
 
 ## Installation
-We need to install [ROS Jazzy](https://wiki.ros.org/jazzy), you can follow the [documentation](https://wiki.ros.org/jazzy/Installation/Ubuntu) on how to install it or you can follow and run these few commands inside Ubuntu's terminal:
+We need to install [ROS Jazzy](https://wiki.ros.org/jazzy), you can follow the [documentation](https://docs.ros.org/en/jazzy/Installation/Ubuntu-Install-Debs.html) on how to install it or you can follow and run these few commands inside Ubuntu's terminal:
 
 ```shell
-sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
+sudo apt update && sudo apt install locales
+sudo locale-gen en_US en_US.UTF-8
+sudo update-locale LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8
+export LANG=en_US.UTF-8
 ```
 
 ```shell
-sudo apt install curl
-curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo apt-key add -
+sudo apt install software-properties-common
+sudo add-apt-repository universe
 ```
 
 ```shell
+sudo apt update && sudo apt install curl -y
+sudo curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key -o /usr/share/keyrings/ros-archive-keyring.gpg
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] http://packages.ros.org/ros2/ubuntu $(. /etc/os-release && echo $UBUNTU_CODENAME) main" | sudo tee /etc/apt/sources.list.d/ros2.list > /dev/null
+```
+
+```shell
+sudo apt update && sudo apt install ros-dev-tools
 sudo apt update
-sudo apt install ros-jazzy-desktop-full
-echo "source /opt/ros/jazzy/setup.bash" >> ~/.bashrc
-source ~/.bashrc
+sudo apt upgrade
+sudo apt install ros-jazzy-desktop
 ```
 
 ## Controller Setup
@@ -82,4 +92,28 @@ crw-rw-XX- 1 root dialout 188, 0 2009-08-14 12:04 /dev/input/jsX
 We need to change XX to rw:
 ```shell
 sudo chmod a+rw /dev/input/jsX
+```
+
+## Project Setup
+
+Clone this repository:
+
+```shell
+git clone https://github.com/Xtalism/ROS2-Omni-Manipulator.git
+```
+
+We need to source and compile our workspace just as follows:
+
+```shell
+source /opt/ros/${ROS_DISTRO}/setup.bash
+cd ros2_ws/
+source install/setup.bash
+colcon build --symlink-install
+```
+
+To run any package or launch file"
+
+```shell
+ros2 run <package_name> <program_name>
+ros2 launch <package_name> <launch_file>
 ```
