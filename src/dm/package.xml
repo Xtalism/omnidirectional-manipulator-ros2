@@ -4,7 +4,7 @@
   <name>dm</name>
   <version>1.0.0</version>
   <description>TODO: Package description</description>
-  <maintainer email="manuel_lego1234@hotmail.com">xtal</maintainer>
+  <maintainer email="manuel.pina.olivas@gmail.com">xtal</maintainer>
   <license>Apache License 2.0</license>
 
   <depend>rclpy</depend>

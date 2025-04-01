@@ -3,9 +3,9 @@ from launch.substitutions import Command, LaunchConfiguration
 from ament_index_python.packages import get_package_share_directory
 
 def generate_launch_description():
-    urdf_file_name = 'urdf_omnidirectional_manipulator.urdf'
+    urdf_file_name = 'robot_model.urdf'
     urdf = os.path.join(
-        get_package_share_directory('urdf_omnidirectional_manipulator'),
+        get_package_share_directory('dm'),
         'urdf',
         urdf_file_name)
     with open(urdf, 'r') as infp:
