@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: dm
+Version: 1.0.0
+Summary: Omnidirectional Manipulator for ROS2
+Maintainer: Manuel Piña Olivas
+Maintainer-email: manuel.pina.olivas@gmail.com
+License: Apache License 2.0
