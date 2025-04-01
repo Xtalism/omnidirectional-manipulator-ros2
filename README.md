@@ -16,6 +16,7 @@ Omnidirectional Manipulator Robot using ROS2 and MicroROS.
 
 ## Current Simulation Results
 [![Demonstration](thumbnail.png)](https://github.com/user-attachments/assets/ba8df593-bef8-4f35-8d6c-bd66c7a07a65)
+
 [Check the project on youtube](https://youtu.be/Ag-K_ZEC1xM) 
 
 ## Hardware Requirements
