@@ -1,0 +1,28 @@
+[0.180s] Invoking command in '/home/xtal/ROS2-Omni-Manipulator/build/urdf_omnidirectional_manipulator': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/xtal/ROS2-Omni-Manipulator/model/urdf_omnidirectional_manipulator -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/xtal/ROS2-Omni-Manipulator/install/urdf_omnidirectional_manipulator
+[0.191s] [0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+[0.191s]   Compatibility with CMake < 3.5 will be removed from a future version of
+[0.191s]   CMake.
+[0.191s] 
+[0.191s]   Update the VERSION argument <min> value or use a ...<max> suffix to tell
+[0.191s]   CMake that the project does not need compatibility with older versions.
+[0.191s] 
+[0.191s] [0m
+[0.218s] [31mCMake Error at CMakeLists.txt:5 (find_package):
+[0.218s]   By not providing "Findcatkin.cmake" in CMAKE_MODULE_PATH this project has
+[0.218s]   asked CMake to find a package configuration file provided by "catkin", but
+[0.219s]   CMake did not find one.
+[0.219s] 
+[0.219s]   Could not find a package configuration file provided by "catkin" with any
+[0.219s]   of the following names:
+[0.219s] 
+[0.219s]     catkinConfig.cmake
+[0.219s]     catkin-config.cmake
+[0.219s] 
+[0.219s]   Add the installation prefix of "catkin" to CMAKE_PREFIX_PATH or set
+[0.219s]   "catkin_DIR" to a directory containing one of the above files.  If "catkin"
+[0.219s]   provides a separate development package or SDK, be sure it has been
+[0.219s]   installed.
+[0.219s] 
+[0.219s] [0m
+[0.220s] -- Configuring incomplete, errors occurred!
+[0.221s] Invoked command in '/home/xtal/ROS2-Omni-Manipulator/build/urdf_omnidirectional_manipulator' returned '1': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/xtal/ROS2-Omni-Manipulator/model/urdf_omnidirectional_manipulator -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/xtal/ROS2-Omni-Manipulator/install/urdf_omnidirectional_manipulator
