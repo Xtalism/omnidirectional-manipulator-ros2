@@ -1,0 +1,1 @@
+/home/xtal/ROS2-omni-manipulator/build/ldlidar_component/ament_cmake_environment_hooks/local_setup.zsh

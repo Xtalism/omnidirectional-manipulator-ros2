@@ -1,0 +1,15 @@
+/home/xtal/ROS2-omni-manipulator/install/ldlidar/share/ament_index/resource_index/package_run_dependencies/ldlidar
+/home/xtal/ROS2-omni-manipulator/install/ldlidar/share/ament_index/resource_index/parent_prefix_path/ldlidar
+/home/xtal/ROS2-omni-manipulator/install/ldlidar/share/ldlidar/environment/ament_prefix_path.sh
+/home/xtal/ROS2-omni-manipulator/install/ldlidar/share/ldlidar/environment/ament_prefix_path.dsv
+/home/xtal/ROS2-omni-manipulator/install/ldlidar/share/ldlidar/environment/path.sh
+/home/xtal/ROS2-omni-manipulator/install/ldlidar/share/ldlidar/environment/path.dsv
+/home/xtal/ROS2-omni-manipulator/install/ldlidar/share/ldlidar/local_setup.bash
+/home/xtal/ROS2-omni-manipulator/install/ldlidar/share/ldlidar/local_setup.sh
+/home/xtal/ROS2-omni-manipulator/install/ldlidar/share/ldlidar/local_setup.zsh
+/home/xtal/ROS2-omni-manipulator/install/ldlidar/share/ldlidar/local_setup.dsv
+/home/xtal/ROS2-omni-manipulator/install/ldlidar/share/ldlidar/package.dsv
+/home/xtal/ROS2-omni-manipulator/install/ldlidar/share/ament_index/resource_index/packages/ldlidar
+/home/xtal/ROS2-omni-manipulator/install/ldlidar/share/ldlidar/cmake/ldlidarConfig.cmake
+/home/xtal/ROS2-omni-manipulator/install/ldlidar/share/ldlidar/cmake/ldlidarConfig-version.cmake
+/home/xtal/ROS2-omni-manipulator/install/ldlidar/share/ldlidar/package.xml

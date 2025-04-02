@@ -1,0 +1,23 @@
+-- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Configuring done (0.4s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/xtal/ROS2-omni-manipulator/build/ldlidar
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/xtal/ROS2-omni-manipulator/install/ldlidar/share/ament_index/resource_index/package_run_dependencies/ldlidar
+-- Symlinking: /home/xtal/ROS2-omni-manipulator/install/ldlidar/share/ament_index/resource_index/parent_prefix_path/ldlidar
+-- Symlinking: /home/xtal/ROS2-omni-manipulator/install/ldlidar/share/ldlidar/environment/ament_prefix_path.sh
+-- Symlinking: /home/xtal/ROS2-omni-manipulator/install/ldlidar/share/ldlidar/environment/ament_prefix_path.dsv
+-- Symlinking: /home/xtal/ROS2-omni-manipulator/install/ldlidar/share/ldlidar/environment/path.sh
+-- Symlinking: /home/xtal/ROS2-omni-manipulator/install/ldlidar/share/ldlidar/environment/path.dsv
+-- Symlinking: /home/xtal/ROS2-omni-manipulator/install/ldlidar/share/ldlidar/local_setup.bash
+-- Symlinking: /home/xtal/ROS2-omni-manipulator/install/ldlidar/share/ldlidar/local_setup.sh
+-- Symlinking: /home/xtal/ROS2-omni-manipulator/install/ldlidar/share/ldlidar/local_setup.zsh
+-- Symlinking: /home/xtal/ROS2-omni-manipulator/install/ldlidar/share/ldlidar/local_setup.dsv
+-- Symlinking: /home/xtal/ROS2-omni-manipulator/install/ldlidar/share/ldlidar/package.dsv
+-- Symlinking: /home/xtal/ROS2-omni-manipulator/install/ldlidar/share/ament_index/resource_index/packages/ldlidar
+-- Symlinking: /home/xtal/ROS2-omni-manipulator/install/ldlidar/share/ldlidar/cmake/ldlidarConfig.cmake
+-- Symlinking: /home/xtal/ROS2-omni-manipulator/install/ldlidar/share/ldlidar/cmake/ldlidarConfig-version.cmake
+-- Symlinking: /home/xtal/ROS2-omni-manipulator/install/ldlidar/share/ldlidar/package.xml
