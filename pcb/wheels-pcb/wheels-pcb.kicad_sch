@@ -4,6 +4,12 @@
 	(generator_version "9.0")
 	(uuid "1ed4948a-430c-468a-a4d9-08bf97f1a7c3")
 	(paper "A4")
+	(title_block
+		(title "Wheels PCB")
+		(date "2025-04-01")
+		(rev "1.0.0")
+		(company "Manuel Piña Olivas")
+	)
 	(lib_symbols
 		(symbol "Connector_Generic:Conn_01x03"
 			(pin_names
