@@ -1,1 +1,0 @@
-/home/xtal/ROS2-omni-manipulator/src/ldrobot-lidar-ros2/ldlidar_component/component/include/ldlidar_component.hpp

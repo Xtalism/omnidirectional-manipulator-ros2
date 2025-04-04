@@ -1,1 +1,0 @@
-/home/xtal/ROS2-omni-manipulator/build/drive_base_msgs/rosidl_generator_c/drive_base_msgs/msg/detail/command_status__type_support.h

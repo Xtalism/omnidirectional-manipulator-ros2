@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/xtal/ROS2-omni-manipulator/build/micro_ros_msgs/rosidl_generator_py/micro_ros_msgs/micro_ros_msgs_s__rosidl_typesupport_c.so" "TARGETS" "micro_ros_msgs_s__rosidl_typesupport_c" "DESTINATION" "lib/python3.12/site-packages/micro_ros_msgs")

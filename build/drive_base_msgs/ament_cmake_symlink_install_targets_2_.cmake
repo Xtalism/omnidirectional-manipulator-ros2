@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/xtal/ROS2-omni-manipulator/build/drive_base_msgs/rosidl_generator_py/drive_base_msgs/drive_base_msgs_s__rosidl_typesupport_c.so" "TARGETS" "drive_base_msgs_s__rosidl_typesupport_c" "DESTINATION" "lib/python3.12/site-packages/drive_base_msgs")

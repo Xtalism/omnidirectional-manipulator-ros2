@@ -1,1 +1,0 @@
-/home/xtal/ROS2-omni-manipulator/build/drive_base_msgs/rosidl_generator_cpp/drive_base_msgs/msg/detail/trv_command__struct.hpp

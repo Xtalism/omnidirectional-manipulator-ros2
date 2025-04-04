@@ -1,1 +1,0 @@
-/home/xtal/ROS2-omni-manipulator/src/micro_ros_setup/scripts/configure_firmware.sh

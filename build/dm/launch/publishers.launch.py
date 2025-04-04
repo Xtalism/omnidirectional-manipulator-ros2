@@ -1,1 +1,0 @@
-/home/xtal/ROS2-omni-manipulator/src/dm/launch/publishers.launch.py

@@ -1,1 +1,0 @@
-/home/xtal/ROS2-omni-manipulator/build/ldlidar_component/ament_cmake_export_libraries/ament_cmake_export_libraries-extras.cmake

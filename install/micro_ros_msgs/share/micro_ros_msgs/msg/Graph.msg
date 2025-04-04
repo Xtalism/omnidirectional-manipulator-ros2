@@ -1,1 +1,0 @@
-/home/xtal/ROS2-omni-manipulator/src/uros/micro_ros_msgs/msg/Graph.msg
