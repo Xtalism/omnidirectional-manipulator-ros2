@@ -1,0 +1,10 @@
+[33mCMake Warning:
+  Manually-specified variables were not used by the project:
+
+    AMENT_CMAKE_SYMLINK_INSTALL
+
+[0m
+Cloning into 'xrceagent'...
+HEAD is now at 7362281 Release v2.4.3
+Cloning into 'spdlog'...
+HEAD is now at eb322062 Bump version to 1.9.2
