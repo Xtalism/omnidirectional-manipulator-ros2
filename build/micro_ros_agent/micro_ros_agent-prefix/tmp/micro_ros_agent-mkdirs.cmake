@@ -4,7 +4,7 @@
 cmake_minimum_required(VERSION 3.5)
 
 file(MAKE_DIRECTORY
-  "/home/xtal/ROS2-omni-manipulator/src/micro-ROS-Agent/micro_ros_agent"
+  "/home/xtal/ROS2-omni-manipulator/src/uros/micro-ROS-Agent/micro_ros_agent"
   "/home/xtal/ROS2-omni-manipulator/build/micro_ros_agent"
   "/home/xtal/ROS2-omni-manipulator/build/micro_ros_agent/micro_ros_agent-prefix"
   "/home/xtal/ROS2-omni-manipulator/build/micro_ros_agent/micro_ros_agent-prefix/tmp"

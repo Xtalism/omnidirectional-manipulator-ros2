@@ -287,7 +287,7 @@ UAGENT_USE_SYSTEM_LOGGER:BOOL=OFF
 UROSAGENT_GENERATE_PROFILE:BOOL=OFF
 
 //Path to a library.
-_lib:FILEPATH=/opt/ros/jazzy/lib/libmicro_ros_msgs__rosidl_typesupport_fastrtps_cpp.so
+_lib:FILEPATH=/home/xtal/ROS2-omni-manipulator/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_typesupport_fastrtps_cpp.so
 
 //The directory containing a CMake configuration file for ament_cmake.
 ament_cmake_DIR:PATH=/opt/ros/jazzy/share/ament_cmake/cmake
@@ -352,9 +352,6 @@ fastrtps_DIR:PATH=/opt/ros/jazzy/share/fastrtps/cmake
 //The directory containing a CMake configuration file for fastrtps_cmake_module.
 fastrtps_cmake_module_DIR:PATH=/opt/ros/jazzy/share/fastrtps_cmake_module/cmake
 
-//The directory containing a CMake configuration file for fmt.
-fmt_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/fmt
-
 //The directory containing a CMake configuration file for foonathan_memory.
 foonathan_memory_DIR:PATH=/opt/ros/jazzy/lib/foonathan_memory/cmake
 
@@ -365,10 +362,10 @@ micro_ros_agent_BINARY_DIR:STATIC=/home/xtal/ROS2-omni-manipulator/build/micro_r
 micro_ros_agent_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
-micro_ros_agent_SOURCE_DIR:STATIC=/home/xtal/ROS2-omni-manipulator/src/micro-ROS-Agent/micro_ros_agent
+micro_ros_agent_SOURCE_DIR:STATIC=/home/xtal/ROS2-omni-manipulator/src/uros/micro-ROS-Agent/micro_ros_agent
 
 //The directory containing a CMake configuration file for micro_ros_msgs.
-micro_ros_msgs_DIR:PATH=/opt/ros/jazzy/share/micro_ros_msgs/cmake
+micro_ros_msgs_DIR:PATH=/home/xtal/ROS2-omni-manipulator/install/micro_ros_msgs/share/micro_ros_msgs/cmake
 
 //The directory containing a CMake configuration file for microxrcedds_agent.
 microxrcedds_agent_DIR:PATH=/home/xtal/ROS2-omni-manipulator/install/micro_ros_agent/share/microxrcedds_agent/cmake
@@ -440,7 +437,7 @@ rosidl_typesupport_introspection_c_DIR:PATH=/opt/ros/jazzy/share/rosidl_typesupp
 rosidl_typesupport_introspection_cpp_DIR:PATH=/opt/ros/jazzy/share/rosidl_typesupport_introspection_cpp/cmake
 
 //The directory containing a CMake configuration file for spdlog.
-spdlog_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/spdlog
+spdlog_DIR:PATH=/home/xtal/ROS2-omni-manipulator/install/micro_ros_agent/lib/cmake/spdlog
 
 //Value Computed by CMake
 uagent_superbuild_BINARY_DIR:STATIC=/home/xtal/ROS2-omni-manipulator/build/micro_ros_agent
@@ -449,7 +446,7 @@ uagent_superbuild_BINARY_DIR:STATIC=/home/xtal/ROS2-omni-manipulator/build/micro
 uagent_superbuild_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
-uagent_superbuild_SOURCE_DIR:STATIC=/home/xtal/ROS2-omni-manipulator/src/micro-ROS-Agent/micro_ros_agent
+uagent_superbuild_SOURCE_DIR:STATIC=/home/xtal/ROS2-omni-manipulator/src/uros/micro-ROS-Agent/micro_ros_agent
 
 //The directory containing a CMake configuration file for xrceagent.
 xrceagent_DIR:PATH=xrceagent_DIR-NOTFOUND
@@ -541,7 +538,7 @@ CMAKE_GENERATOR_TOOLSET:INTERNAL=
 CMAKE_HAVE_LIBC_PTHREAD:INTERNAL=1
 //Source directory with the top level CMakeLists.txt file for this
 // project
-CMAKE_HOME_DIRECTORY:INTERNAL=/home/xtal/ROS2-omni-manipulator/src/micro-ROS-Agent/micro_ros_agent
+CMAKE_HOME_DIRECTORY:INTERNAL=/home/xtal/ROS2-omni-manipulator/src/uros/micro-ROS-Agent/micro_ros_agent
 //Install .so files without execute permission.
 CMAKE_INSTALL_SO_NO_EXE:INTERNAL=1
 //ADVANCED property for variable: CMAKE_LINKER

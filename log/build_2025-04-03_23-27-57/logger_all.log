@@ -1,0 +1,956 @@
+[0.097s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.098s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=16, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x71c904930f20>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x71c9049df500>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x71c9049df500>>, mixin_verb=('build',))
+[0.129s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.129s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.129s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.129s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.129s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.129s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.129s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/xtal/ROS2-omni-manipulator'
+[0.129s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.129s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.129s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.129s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.129s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(pcb) by extensions ['ignore', 'ignore_ament_install']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(pcb) by extension 'ignore'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(pcb) by extension 'ignore_ament_install'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(pcb) by extensions ['colcon_pkg']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(pcb) by extension 'colcon_pkg'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(pcb) by extensions ['colcon_meta']
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(pcb) by extension 'colcon_meta'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(pcb) by extensions ['ros']
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(pcb) by extension 'ros'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(pcb) by extensions ['cmake', 'python']
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(pcb) by extension 'cmake'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(pcb) by extension 'python'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(pcb) by extensions ['python_setup_py']
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(pcb) by extension 'python_setup_py'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(pcb/wheels-pcb) by extensions ['ignore', 'ignore_ament_install']
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(pcb/wheels-pcb) by extension 'ignore'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(pcb/wheels-pcb) by extension 'ignore_ament_install'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(pcb/wheels-pcb) by extensions ['colcon_pkg']
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(pcb/wheels-pcb) by extension 'colcon_pkg'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(pcb/wheels-pcb) by extensions ['colcon_meta']
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(pcb/wheels-pcb) by extension 'colcon_meta'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(pcb/wheels-pcb) by extensions ['ros']
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(pcb/wheels-pcb) by extension 'ros'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(pcb/wheels-pcb) by extensions ['cmake', 'python']
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(pcb/wheels-pcb) by extension 'cmake'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(pcb/wheels-pcb) by extension 'python'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(pcb/wheels-pcb) by extensions ['python_setup_py']
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(pcb/wheels-pcb) by extension 'python_setup_py'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(pcb/wheels-pcb/blueprints) by extensions ['ignore', 'ignore_ament_install']
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(pcb/wheels-pcb/blueprints) by extension 'ignore'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(pcb/wheels-pcb/blueprints) by extension 'ignore_ament_install'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(pcb/wheels-pcb/blueprints) by extensions ['colcon_pkg']
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(pcb/wheels-pcb/blueprints) by extension 'colcon_pkg'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(pcb/wheels-pcb/blueprints) by extensions ['colcon_meta']
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(pcb/wheels-pcb/blueprints) by extension 'colcon_meta'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(pcb/wheels-pcb/blueprints) by extensions ['ros']
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(pcb/wheels-pcb/blueprints) by extension 'ros'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(pcb/wheels-pcb/blueprints) by extensions ['cmake', 'python']
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(pcb/wheels-pcb/blueprints) by extension 'cmake'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(pcb/wheels-pcb/blueprints) by extension 'python'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(pcb/wheels-pcb/blueprints) by extensions ['python_setup_py']
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(pcb/wheels-pcb/blueprints) by extension 'python_setup_py'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(pcb/wheels-pcb/wheels-pcb-backups) by extensions ['ignore', 'ignore_ament_install']
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(pcb/wheels-pcb/wheels-pcb-backups) by extension 'ignore'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(pcb/wheels-pcb/wheels-pcb-backups) by extension 'ignore_ament_install'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(pcb/wheels-pcb/wheels-pcb-backups) by extensions ['colcon_pkg']
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(pcb/wheels-pcb/wheels-pcb-backups) by extension 'colcon_pkg'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(pcb/wheels-pcb/wheels-pcb-backups) by extensions ['colcon_meta']
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(pcb/wheels-pcb/wheels-pcb-backups) by extension 'colcon_meta'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(pcb/wheels-pcb/wheels-pcb-backups) by extensions ['ros']
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(pcb/wheels-pcb/wheels-pcb-backups) by extension 'ros'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(pcb/wheels-pcb/wheels-pcb-backups) by extensions ['cmake', 'python']
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(pcb/wheels-pcb/wheels-pcb-backups) by extension 'cmake'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(pcb/wheels-pcb/wheels-pcb-backups) by extension 'python'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(pcb/wheels-pcb/wheels-pcb-backups) by extensions ['python_setup_py']
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(pcb/wheels-pcb/wheels-pcb-backups) by extension 'python_setup_py'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/dm) by extensions ['ignore', 'ignore_ament_install']
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/dm) by extension 'ignore'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/dm) by extension 'ignore_ament_install'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/dm) by extensions ['colcon_pkg']
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/dm) by extension 'colcon_pkg'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/dm) by extensions ['colcon_meta']
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/dm) by extension 'colcon_meta'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/dm) by extensions ['ros']
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/dm) by extension 'ros'
+[0.155s] DEBUG:colcon.colcon_core.package_identification:Package 'src/dm' with type 'ros.ament_python' and name 'dm'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/kinematics) by extensions ['ignore', 'ignore_ament_install']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/kinematics) by extension 'ignore'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/kinematics) by extension 'ignore_ament_install'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/kinematics) by extensions ['colcon_pkg']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/kinematics) by extension 'colcon_pkg'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/kinematics) by extensions ['colcon_meta']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/kinematics) by extension 'colcon_meta'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/kinematics) by extensions ['ros']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/kinematics) by extension 'ros'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/kinematics) by extensions ['cmake', 'python']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/kinematics) by extension 'cmake'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/kinematics) by extension 'python'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/kinematics) by extensions ['python_setup_py']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/kinematics) by extension 'python_setup_py'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldrobot-lidar-ros2) by extensions ['ignore', 'ignore_ament_install']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldrobot-lidar-ros2) by extension 'ignore'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldrobot-lidar-ros2) by extension 'ignore_ament_install'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldrobot-lidar-ros2) by extensions ['colcon_pkg']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldrobot-lidar-ros2) by extension 'colcon_pkg'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldrobot-lidar-ros2) by extensions ['colcon_meta']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldrobot-lidar-ros2) by extension 'colcon_meta'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldrobot-lidar-ros2) by extensions ['ros']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldrobot-lidar-ros2) by extension 'ros'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldrobot-lidar-ros2) by extensions ['cmake', 'python']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldrobot-lidar-ros2) by extension 'cmake'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldrobot-lidar-ros2) by extension 'python'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldrobot-lidar-ros2) by extensions ['python_setup_py']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldrobot-lidar-ros2) by extension 'python_setup_py'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldrobot-lidar-ros2/3d_model) by extensions ['ignore', 'ignore_ament_install']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldrobot-lidar-ros2/3d_model) by extension 'ignore'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldrobot-lidar-ros2/3d_model) by extension 'ignore_ament_install'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldrobot-lidar-ros2/3d_model) by extensions ['colcon_pkg']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldrobot-lidar-ros2/3d_model) by extension 'colcon_pkg'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldrobot-lidar-ros2/3d_model) by extensions ['colcon_meta']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldrobot-lidar-ros2/3d_model) by extension 'colcon_meta'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldrobot-lidar-ros2/3d_model) by extensions ['ros']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldrobot-lidar-ros2/3d_model) by extension 'ros'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldrobot-lidar-ros2/3d_model) by extensions ['cmake', 'python']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldrobot-lidar-ros2/3d_model) by extension 'cmake'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldrobot-lidar-ros2/3d_model) by extension 'python'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldrobot-lidar-ros2/3d_model) by extensions ['python_setup_py']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldrobot-lidar-ros2/3d_model) by extension 'python_setup_py'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldrobot-lidar-ros2/docs) by extensions ['ignore', 'ignore_ament_install']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldrobot-lidar-ros2/docs) by extension 'ignore'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldrobot-lidar-ros2/docs) by extension 'ignore_ament_install'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldrobot-lidar-ros2/docs) by extensions ['colcon_pkg']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldrobot-lidar-ros2/docs) by extension 'colcon_pkg'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldrobot-lidar-ros2/docs) by extensions ['colcon_meta']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldrobot-lidar-ros2/docs) by extension 'colcon_meta'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldrobot-lidar-ros2/docs) by extensions ['ros']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldrobot-lidar-ros2/docs) by extension 'ros'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldrobot-lidar-ros2/docs) by extensions ['cmake', 'python']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldrobot-lidar-ros2/docs) by extension 'cmake'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldrobot-lidar-ros2/docs) by extension 'python'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldrobot-lidar-ros2/docs) by extensions ['python_setup_py']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldrobot-lidar-ros2/docs) by extension 'python_setup_py'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldrobot-lidar-ros2/images) by extensions ['ignore', 'ignore_ament_install']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldrobot-lidar-ros2/images) by extension 'ignore'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldrobot-lidar-ros2/images) by extension 'ignore_ament_install'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldrobot-lidar-ros2/images) by extensions ['colcon_pkg']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldrobot-lidar-ros2/images) by extension 'colcon_pkg'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldrobot-lidar-ros2/images) by extensions ['colcon_meta']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldrobot-lidar-ros2/images) by extension 'colcon_meta'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldrobot-lidar-ros2/images) by extensions ['ros']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldrobot-lidar-ros2/images) by extension 'ros'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldrobot-lidar-ros2/images) by extensions ['cmake', 'python']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldrobot-lidar-ros2/images) by extension 'cmake'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldrobot-lidar-ros2/images) by extension 'python'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldrobot-lidar-ros2/images) by extensions ['python_setup_py']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldrobot-lidar-ros2/images) by extension 'python_setup_py'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldrobot-lidar-ros2/ldlidar) by extensions ['ignore', 'ignore_ament_install']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldrobot-lidar-ros2/ldlidar) by extension 'ignore'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldrobot-lidar-ros2/ldlidar) by extension 'ignore_ament_install'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldrobot-lidar-ros2/ldlidar) by extensions ['colcon_pkg']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldrobot-lidar-ros2/ldlidar) by extension 'colcon_pkg'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldrobot-lidar-ros2/ldlidar) by extensions ['colcon_meta']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldrobot-lidar-ros2/ldlidar) by extension 'colcon_meta'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldrobot-lidar-ros2/ldlidar) by extensions ['ros']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldrobot-lidar-ros2/ldlidar) by extension 'ros'
+[0.158s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ldrobot-lidar-ros2/ldlidar' with type 'ros.ament_cmake' and name 'ldlidar'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldrobot-lidar-ros2/ldlidar_component) by extensions ['ignore', 'ignore_ament_install']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldrobot-lidar-ros2/ldlidar_component) by extension 'ignore'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldrobot-lidar-ros2/ldlidar_component) by extension 'ignore_ament_install'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldrobot-lidar-ros2/ldlidar_component) by extensions ['colcon_pkg']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldrobot-lidar-ros2/ldlidar_component) by extension 'colcon_pkg'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldrobot-lidar-ros2/ldlidar_component) by extensions ['colcon_meta']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldrobot-lidar-ros2/ldlidar_component) by extension 'colcon_meta'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldrobot-lidar-ros2/ldlidar_component) by extensions ['ros']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldrobot-lidar-ros2/ldlidar_component) by extension 'ros'
+[0.159s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ldrobot-lidar-ros2/ldlidar_component' with type 'ros.ament_cmake' and name 'ldlidar_component'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldrobot-lidar-ros2/ldlidar_node) by extensions ['ignore', 'ignore_ament_install']
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldrobot-lidar-ros2/ldlidar_node) by extension 'ignore'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldrobot-lidar-ros2/ldlidar_node) by extension 'ignore_ament_install'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldrobot-lidar-ros2/ldlidar_node) by extensions ['colcon_pkg']
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldrobot-lidar-ros2/ldlidar_node) by extension 'colcon_pkg'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldrobot-lidar-ros2/ldlidar_node) by extensions ['colcon_meta']
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldrobot-lidar-ros2/ldlidar_node) by extension 'colcon_meta'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldrobot-lidar-ros2/ldlidar_node) by extensions ['ros']
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldrobot-lidar-ros2/ldlidar_node) by extension 'ros'
+[0.160s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ldrobot-lidar-ros2/ldlidar_node' with type 'ros.ament_cmake' and name 'ldlidar_node'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldrobot-lidar-ros2/rules) by extensions ['ignore', 'ignore_ament_install']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldrobot-lidar-ros2/rules) by extension 'ignore'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldrobot-lidar-ros2/rules) by extension 'ignore_ament_install'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldrobot-lidar-ros2/rules) by extensions ['colcon_pkg']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldrobot-lidar-ros2/rules) by extension 'colcon_pkg'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldrobot-lidar-ros2/rules) by extensions ['colcon_meta']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldrobot-lidar-ros2/rules) by extension 'colcon_meta'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldrobot-lidar-ros2/rules) by extensions ['ros']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldrobot-lidar-ros2/rules) by extension 'ros'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldrobot-lidar-ros2/rules) by extensions ['cmake', 'python']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldrobot-lidar-ros2/rules) by extension 'cmake'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldrobot-lidar-ros2/rules) by extension 'python'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldrobot-lidar-ros2/rules) by extensions ['python_setup_py']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldrobot-lidar-ros2/rules) by extension 'python_setup_py'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldrobot-lidar-ros2/scripts) by extensions ['ignore', 'ignore_ament_install']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldrobot-lidar-ros2/scripts) by extension 'ignore'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldrobot-lidar-ros2/scripts) by extension 'ignore_ament_install'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldrobot-lidar-ros2/scripts) by extensions ['colcon_pkg']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldrobot-lidar-ros2/scripts) by extension 'colcon_pkg'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldrobot-lidar-ros2/scripts) by extensions ['colcon_meta']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldrobot-lidar-ros2/scripts) by extension 'colcon_meta'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldrobot-lidar-ros2/scripts) by extensions ['ros']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldrobot-lidar-ros2/scripts) by extension 'ros'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldrobot-lidar-ros2/scripts) by extensions ['cmake', 'python']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldrobot-lidar-ros2/scripts) by extension 'cmake'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldrobot-lidar-ros2/scripts) by extension 'python'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldrobot-lidar-ros2/scripts) by extensions ['python_setup_py']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldrobot-lidar-ros2/scripts) by extension 'python_setup_py'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/micro_ros_setup) by extensions ['ignore', 'ignore_ament_install']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/micro_ros_setup) by extension 'ignore'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/micro_ros_setup) by extension 'ignore_ament_install'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/micro_ros_setup) by extensions ['colcon_pkg']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/micro_ros_setup) by extension 'colcon_pkg'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/micro_ros_setup) by extensions ['colcon_meta']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/micro_ros_setup) by extension 'colcon_meta'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/micro_ros_setup) by extensions ['ros']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/micro_ros_setup) by extension 'ros'
+[0.161s] DEBUG:colcon.colcon_core.package_identification:Package 'src/micro_ros_setup' with type 'ros.ament_cmake' and name 'micro_ros_setup'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/microros_ws) by extensions ['ignore', 'ignore_ament_install']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/microros_ws) by extension 'ignore'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/microros_ws) by extension 'ignore_ament_install'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/microros_ws) by extensions ['colcon_pkg']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/microros_ws) by extension 'colcon_pkg'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/microros_ws) by extensions ['colcon_meta']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/microros_ws) by extension 'colcon_meta'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/microros_ws) by extensions ['ros']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/microros_ws) by extension 'ros'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/microros_ws) by extensions ['cmake', 'python']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/microros_ws) by extension 'cmake'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/microros_ws) by extension 'python'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/microros_ws) by extensions ['python_setup_py']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/microros_ws) by extension 'python_setup_py'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/microros_ws/include) by extensions ['ignore', 'ignore_ament_install']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/microros_ws/include) by extension 'ignore'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/microros_ws/include) by extension 'ignore_ament_install'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/microros_ws/include) by extensions ['colcon_pkg']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/microros_ws/include) by extension 'colcon_pkg'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/microros_ws/include) by extensions ['colcon_meta']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/microros_ws/include) by extension 'colcon_meta'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/microros_ws/include) by extensions ['ros']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/microros_ws/include) by extension 'ros'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/microros_ws/include) by extensions ['cmake', 'python']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/microros_ws/include) by extension 'cmake'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/microros_ws/include) by extension 'python'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/microros_ws/include) by extensions ['python_setup_py']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/microros_ws/include) by extension 'python_setup_py'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/microros_ws/lib) by extensions ['ignore', 'ignore_ament_install']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/microros_ws/lib) by extension 'ignore'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/microros_ws/lib) by extension 'ignore_ament_install'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/microros_ws/lib) by extensions ['colcon_pkg']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/microros_ws/lib) by extension 'colcon_pkg'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/microros_ws/lib) by extensions ['colcon_meta']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/microros_ws/lib) by extension 'colcon_meta'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/microros_ws/lib) by extensions ['ros']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/microros_ws/lib) by extension 'ros'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/microros_ws/lib) by extensions ['cmake', 'python']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/microros_ws/lib) by extension 'cmake'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/microros_ws/lib) by extension 'python'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/microros_ws/lib) by extensions ['python_setup_py']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/microros_ws/lib) by extension 'python_setup_py'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/microros_ws/src) by extensions ['ignore', 'ignore_ament_install']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/microros_ws/src) by extension 'ignore'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/microros_ws/src) by extension 'ignore_ament_install'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/microros_ws/src) by extensions ['colcon_pkg']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/microros_ws/src) by extension 'colcon_pkg'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/microros_ws/src) by extensions ['colcon_meta']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/microros_ws/src) by extension 'colcon_meta'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/microros_ws/src) by extensions ['ros']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/microros_ws/src) by extension 'ros'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/microros_ws/src) by extensions ['cmake', 'python']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/microros_ws/src) by extension 'cmake'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/microros_ws/src) by extension 'python'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/microros_ws/src) by extensions ['python_setup_py']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/microros_ws/src) by extension 'python_setup_py'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/microros_ws/test) by extensions ['ignore', 'ignore_ament_install']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/microros_ws/test) by extension 'ignore'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/microros_ws/test) by extension 'ignore_ament_install'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/microros_ws/test) by extensions ['colcon_pkg']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/microros_ws/test) by extension 'colcon_pkg'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/microros_ws/test) by extensions ['colcon_meta']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/microros_ws/test) by extension 'colcon_meta'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/microros_ws/test) by extensions ['ros']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/microros_ws/test) by extension 'ros'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/microros_ws/test) by extensions ['cmake', 'python']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/microros_ws/test) by extension 'cmake'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/microros_ws/test) by extension 'python'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/microros_ws/test) by extensions ['python_setup_py']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/microros_ws/test) by extension 'python_setup_py'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros) by extensions ['ignore', 'ignore_ament_install']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros) by extension 'ignore'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros) by extension 'ignore_ament_install'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros) by extensions ['colcon_pkg']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros) by extension 'colcon_pkg'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros) by extensions ['colcon_meta']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros) by extension 'colcon_meta'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros) by extensions ['ros']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros) by extension 'ros'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros) by extensions ['cmake', 'python']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros) by extension 'cmake'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros) by extension 'python'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros) by extensions ['python_setup_py']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros) by extension 'python_setup_py'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/drive_base) by extensions ['ignore', 'ignore_ament_install']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/drive_base) by extension 'ignore'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/drive_base) by extension 'ignore_ament_install'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/drive_base) by extensions ['colcon_pkg']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/drive_base) by extension 'colcon_pkg'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/drive_base) by extensions ['colcon_meta']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/drive_base) by extension 'colcon_meta'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/drive_base) by extensions ['ros']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/drive_base) by extension 'ros'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/drive_base) by extensions ['cmake', 'python']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/drive_base) by extension 'cmake'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/drive_base) by extension 'python'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/drive_base) by extensions ['python_setup_py']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/drive_base) by extension 'python_setup_py'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/drive_base/drive_base_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/drive_base/drive_base_msgs) by extension 'ignore'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/drive_base/drive_base_msgs) by extension 'ignore_ament_install'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/drive_base/drive_base_msgs) by extensions ['colcon_pkg']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/drive_base/drive_base_msgs) by extension 'colcon_pkg'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/drive_base/drive_base_msgs) by extensions ['colcon_meta']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/drive_base/drive_base_msgs) by extension 'colcon_meta'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/drive_base/drive_base_msgs) by extensions ['ros']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/drive_base/drive_base_msgs) by extension 'ros'
+[0.165s] DEBUG:colcon.colcon_core.package_identification:Package 'src/uros/drive_base/drive_base_msgs' with type 'ros.ament_cmake' and name 'drive_base_msgs'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent) by extensions ['ignore', 'ignore_ament_install']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent) by extension 'ignore'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent) by extension 'ignore_ament_install'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent) by extensions ['colcon_pkg']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent) by extension 'colcon_pkg'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent) by extensions ['colcon_meta']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent) by extension 'colcon_meta'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent) by extensions ['ros']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent) by extension 'ros'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent) by extensions ['cmake', 'python']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent) by extension 'cmake'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent) by extension 'python'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent) by extensions ['python_setup_py']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent) by extension 'python_setup_py'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/micro_ros_agent) by extensions ['ignore', 'ignore_ament_install']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/micro_ros_agent) by extension 'ignore'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/micro_ros_agent) by extension 'ignore_ament_install'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/micro_ros_agent) by extensions ['colcon_pkg']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/micro_ros_agent) by extension 'colcon_pkg'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/micro_ros_agent) by extensions ['colcon_meta']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/micro_ros_agent) by extension 'colcon_meta'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/micro_ros_agent) by extensions ['ros']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/micro_ros_agent) by extension 'ros'
+[0.167s] DEBUG:colcon.colcon_core.package_identification:Package 'src/uros/micro-ROS-Agent/micro_ros_agent' with type 'ros.ament_cmake' and name 'micro_ros_agent'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap) by extensions ['ignore', 'ignore_ament_install']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap) by extension 'ignore'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap) by extension 'ignore_ament_install'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap) by extensions ['colcon_pkg']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap) by extension 'colcon_pkg'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap) by extensions ['colcon_meta']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap) by extension 'colcon_meta'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap) by extensions ['ros']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap) by extension 'ros'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap) by extensions ['cmake', 'python']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap) by extension 'cmake'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap) by extension 'python'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap) by extensions ['python_setup_py']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap) by extension 'python_setup_py'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap/hooks) by extensions ['ignore', 'ignore_ament_install']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap/hooks) by extension 'ignore'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap/hooks) by extension 'ignore_ament_install'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap/hooks) by extensions ['colcon_pkg']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap/hooks) by extension 'colcon_pkg'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap/hooks) by extensions ['colcon_meta']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap/hooks) by extension 'colcon_meta'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap/hooks) by extensions ['ros']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap/hooks) by extension 'ros'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap/hooks) by extensions ['cmake', 'python']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap/hooks) by extension 'cmake'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap/hooks) by extension 'python'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap/hooks) by extensions ['python_setup_py']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap/hooks) by extension 'python_setup_py'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap/local) by extensions ['ignore', 'ignore_ament_install']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap/local) by extension 'ignore'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap/local) by extension 'ignore_ament_install'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap/local) by extensions ['colcon_pkg']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap/local) by extension 'colcon_pkg'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap/local) by extensions ['colcon_meta']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap/local) by extension 'colcon_meta'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap/local) by extensions ['ros']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap/local) by extension 'ros'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap/local) by extensions ['cmake', 'python']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap/local) by extension 'cmake'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap/local) by extension 'python'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap/local) by extensions ['python_setup_py']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap/local) by extension 'python_setup_py'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro_ros_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro_ros_msgs) by extension 'ignore'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro_ros_msgs) by extension 'ignore_ament_install'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro_ros_msgs) by extensions ['colcon_pkg']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro_ros_msgs) by extension 'colcon_pkg'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro_ros_msgs) by extensions ['colcon_meta']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro_ros_msgs) by extension 'colcon_meta'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro_ros_msgs) by extensions ['ros']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro_ros_msgs) by extension 'ros'
+[0.169s] DEBUG:colcon.colcon_core.package_identification:Package 'src/uros/micro_ros_msgs' with type 'ros.ament_cmake' and name 'micro_ros_msgs'
+[0.169s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.169s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.169s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.169s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.169s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.184s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.184s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.184s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/xtal/ROS2-omni-manipulator/install/micro_ros_setup' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.184s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/xtal/ROS2-omni-manipulator/install/micro_ros_agent' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.184s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/xtal/ROS2-omni-manipulator/install/ldlidar' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.184s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/xtal/ROS2-omni-manipulator/install/ldlidar_node' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.184s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/xtal/ROS2-omni-manipulator/install/ldlidar_component' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.185s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/xtal/ROS2-omni-manipulator/install/dm' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.185s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/xtal/ROS2-omni-manipulator/install/micro_ros_setup' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.185s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/xtal/ROS2-omni-manipulator/install/micro_ros_agent' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.185s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/xtal/ROS2-omni-manipulator/install/ldlidar' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.185s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/xtal/ROS2-omni-manipulator/install/ldlidar_node' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.185s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/xtal/ROS2-omni-manipulator/install/ldlidar_component' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.185s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 0 installed packages in /home/xtal/ROS2-omni-manipulator/install
+[0.187s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 415 installed packages in /opt/ros/jazzy
+[0.188s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.233s] Level 5:colcon.colcon_core.verb:set package 'dm' build argument 'cmake_args' from command line to 'None'
+[0.233s] Level 5:colcon.colcon_core.verb:set package 'dm' build argument 'cmake_target' from command line to 'None'
+[0.233s] Level 5:colcon.colcon_core.verb:set package 'dm' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.233s] Level 5:colcon.colcon_core.verb:set package 'dm' build argument 'cmake_clean_cache' from command line to 'False'
+[0.233s] Level 5:colcon.colcon_core.verb:set package 'dm' build argument 'cmake_clean_first' from command line to 'False'
+[0.233s] Level 5:colcon.colcon_core.verb:set package 'dm' build argument 'cmake_force_configure' from command line to 'False'
+[0.233s] Level 5:colcon.colcon_core.verb:set package 'dm' build argument 'ament_cmake_args' from command line to 'None'
+[0.233s] Level 5:colcon.colcon_core.verb:set package 'dm' build argument 'catkin_cmake_args' from command line to 'None'
+[0.233s] Level 5:colcon.colcon_core.verb:set package 'dm' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.233s] DEBUG:colcon.colcon_core.verb:Building package 'dm' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/xtal/ROS2-omni-manipulator/build/dm', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/xtal/ROS2-omni-manipulator/install/dm', 'merge_install': False, 'path': '/home/xtal/ROS2-omni-manipulator/src/dm', 'symlink_install': True, 'test_result_base': None}
+[0.233s] Level 5:colcon.colcon_core.verb:set package 'drive_base_msgs' build argument 'cmake_args' from command line to 'None'
+[0.233s] Level 5:colcon.colcon_core.verb:set package 'drive_base_msgs' build argument 'cmake_target' from command line to 'None'
+[0.233s] Level 5:colcon.colcon_core.verb:set package 'drive_base_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.234s] Level 5:colcon.colcon_core.verb:set package 'drive_base_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.234s] Level 5:colcon.colcon_core.verb:set package 'drive_base_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.234s] Level 5:colcon.colcon_core.verb:set package 'drive_base_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.234s] Level 5:colcon.colcon_core.verb:set package 'drive_base_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.234s] Level 5:colcon.colcon_core.verb:set package 'drive_base_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.234s] Level 5:colcon.colcon_core.verb:set package 'drive_base_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.234s] DEBUG:colcon.colcon_core.verb:Building package 'drive_base_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/xtal/ROS2-omni-manipulator/build/drive_base_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/xtal/ROS2-omni-manipulator/install/drive_base_msgs', 'merge_install': False, 'path': '/home/xtal/ROS2-omni-manipulator/src/uros/drive_base/drive_base_msgs', 'symlink_install': True, 'test_result_base': None}
+[0.234s] Level 5:colcon.colcon_core.verb:set package 'ldlidar_component' build argument 'cmake_args' from command line to 'None'
+[0.234s] Level 5:colcon.colcon_core.verb:set package 'ldlidar_component' build argument 'cmake_target' from command line to 'None'
+[0.234s] Level 5:colcon.colcon_core.verb:set package 'ldlidar_component' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.234s] Level 5:colcon.colcon_core.verb:set package 'ldlidar_component' build argument 'cmake_clean_cache' from command line to 'False'
+[0.234s] Level 5:colcon.colcon_core.verb:set package 'ldlidar_component' build argument 'cmake_clean_first' from command line to 'False'
+[0.234s] Level 5:colcon.colcon_core.verb:set package 'ldlidar_component' build argument 'cmake_force_configure' from command line to 'False'
+[0.234s] Level 5:colcon.colcon_core.verb:set package 'ldlidar_component' build argument 'ament_cmake_args' from command line to 'None'
+[0.234s] Level 5:colcon.colcon_core.verb:set package 'ldlidar_component' build argument 'catkin_cmake_args' from command line to 'None'
+[0.234s] Level 5:colcon.colcon_core.verb:set package 'ldlidar_component' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.234s] DEBUG:colcon.colcon_core.verb:Building package 'ldlidar_component' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/xtal/ROS2-omni-manipulator/build/ldlidar_component', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/xtal/ROS2-omni-manipulator/install/ldlidar_component', 'merge_install': False, 'path': '/home/xtal/ROS2-omni-manipulator/src/ldrobot-lidar-ros2/ldlidar_component', 'symlink_install': True, 'test_result_base': None}
+[0.234s] Level 5:colcon.colcon_core.verb:set package 'micro_ros_msgs' build argument 'cmake_args' from command line to 'None'
+[0.234s] Level 5:colcon.colcon_core.verb:set package 'micro_ros_msgs' build argument 'cmake_target' from command line to 'None'
+[0.234s] Level 5:colcon.colcon_core.verb:set package 'micro_ros_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.234s] Level 5:colcon.colcon_core.verb:set package 'micro_ros_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.234s] Level 5:colcon.colcon_core.verb:set package 'micro_ros_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.234s] Level 5:colcon.colcon_core.verb:set package 'micro_ros_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.234s] Level 5:colcon.colcon_core.verb:set package 'micro_ros_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.234s] Level 5:colcon.colcon_core.verb:set package 'micro_ros_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.234s] Level 5:colcon.colcon_core.verb:set package 'micro_ros_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.234s] DEBUG:colcon.colcon_core.verb:Building package 'micro_ros_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/xtal/ROS2-omni-manipulator/build/micro_ros_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/xtal/ROS2-omni-manipulator/install/micro_ros_msgs', 'merge_install': False, 'path': '/home/xtal/ROS2-omni-manipulator/src/uros/micro_ros_msgs', 'symlink_install': True, 'test_result_base': None}
+[0.234s] Level 5:colcon.colcon_core.verb:set package 'micro_ros_setup' build argument 'cmake_args' from command line to 'None'
+[0.234s] Level 5:colcon.colcon_core.verb:set package 'micro_ros_setup' build argument 'cmake_target' from command line to 'None'
+[0.235s] Level 5:colcon.colcon_core.verb:set package 'micro_ros_setup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.235s] Level 5:colcon.colcon_core.verb:set package 'micro_ros_setup' build argument 'cmake_clean_cache' from command line to 'False'
+[0.235s] Level 5:colcon.colcon_core.verb:set package 'micro_ros_setup' build argument 'cmake_clean_first' from command line to 'False'
+[0.235s] Level 5:colcon.colcon_core.verb:set package 'micro_ros_setup' build argument 'cmake_force_configure' from command line to 'False'
+[0.235s] Level 5:colcon.colcon_core.verb:set package 'micro_ros_setup' build argument 'ament_cmake_args' from command line to 'None'
+[0.235s] Level 5:colcon.colcon_core.verb:set package 'micro_ros_setup' build argument 'catkin_cmake_args' from command line to 'None'
+[0.235s] Level 5:colcon.colcon_core.verb:set package 'micro_ros_setup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.235s] DEBUG:colcon.colcon_core.verb:Building package 'micro_ros_setup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/xtal/ROS2-omni-manipulator/build/micro_ros_setup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/xtal/ROS2-omni-manipulator/install/micro_ros_setup', 'merge_install': False, 'path': '/home/xtal/ROS2-omni-manipulator/src/micro_ros_setup', 'symlink_install': True, 'test_result_base': None}
+[0.235s] Level 5:colcon.colcon_core.verb:set package 'ldlidar_node' build argument 'cmake_args' from command line to 'None'
+[0.235s] Level 5:colcon.colcon_core.verb:set package 'ldlidar_node' build argument 'cmake_target' from command line to 'None'
+[0.235s] Level 5:colcon.colcon_core.verb:set package 'ldlidar_node' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.235s] Level 5:colcon.colcon_core.verb:set package 'ldlidar_node' build argument 'cmake_clean_cache' from command line to 'False'
+[0.235s] Level 5:colcon.colcon_core.verb:set package 'ldlidar_node' build argument 'cmake_clean_first' from command line to 'False'
+[0.235s] Level 5:colcon.colcon_core.verb:set package 'ldlidar_node' build argument 'cmake_force_configure' from command line to 'False'
+[0.235s] Level 5:colcon.colcon_core.verb:set package 'ldlidar_node' build argument 'ament_cmake_args' from command line to 'None'
+[0.235s] Level 5:colcon.colcon_core.verb:set package 'ldlidar_node' build argument 'catkin_cmake_args' from command line to 'None'
+[0.235s] Level 5:colcon.colcon_core.verb:set package 'ldlidar_node' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.235s] DEBUG:colcon.colcon_core.verb:Building package 'ldlidar_node' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/xtal/ROS2-omni-manipulator/build/ldlidar_node', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/xtal/ROS2-omni-manipulator/install/ldlidar_node', 'merge_install': False, 'path': '/home/xtal/ROS2-omni-manipulator/src/ldrobot-lidar-ros2/ldlidar_node', 'symlink_install': True, 'test_result_base': None}
+[0.235s] Level 5:colcon.colcon_core.verb:set package 'micro_ros_agent' build argument 'cmake_args' from command line to 'None'
+[0.235s] Level 5:colcon.colcon_core.verb:set package 'micro_ros_agent' build argument 'cmake_target' from command line to 'None'
+[0.235s] Level 5:colcon.colcon_core.verb:set package 'micro_ros_agent' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.235s] Level 5:colcon.colcon_core.verb:set package 'micro_ros_agent' build argument 'cmake_clean_cache' from command line to 'False'
+[0.235s] Level 5:colcon.colcon_core.verb:set package 'micro_ros_agent' build argument 'cmake_clean_first' from command line to 'False'
+[0.235s] Level 5:colcon.colcon_core.verb:set package 'micro_ros_agent' build argument 'cmake_force_configure' from command line to 'False'
+[0.235s] Level 5:colcon.colcon_core.verb:set package 'micro_ros_agent' build argument 'ament_cmake_args' from command line to 'None'
+[0.235s] Level 5:colcon.colcon_core.verb:set package 'micro_ros_agent' build argument 'catkin_cmake_args' from command line to 'None'
+[0.235s] Level 5:colcon.colcon_core.verb:set package 'micro_ros_agent' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.235s] DEBUG:colcon.colcon_core.verb:Building package 'micro_ros_agent' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/xtal/ROS2-omni-manipulator/build/micro_ros_agent', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/xtal/ROS2-omni-manipulator/install/micro_ros_agent', 'merge_install': False, 'path': '/home/xtal/ROS2-omni-manipulator/src/uros/micro-ROS-Agent/micro_ros_agent', 'symlink_install': True, 'test_result_base': None}
+[0.235s] Level 5:colcon.colcon_core.verb:set package 'ldlidar' build argument 'cmake_args' from command line to 'None'
+[0.235s] Level 5:colcon.colcon_core.verb:set package 'ldlidar' build argument 'cmake_target' from command line to 'None'
+[0.235s] Level 5:colcon.colcon_core.verb:set package 'ldlidar' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.235s] Level 5:colcon.colcon_core.verb:set package 'ldlidar' build argument 'cmake_clean_cache' from command line to 'False'
+[0.235s] Level 5:colcon.colcon_core.verb:set package 'ldlidar' build argument 'cmake_clean_first' from command line to 'False'
+[0.235s] Level 5:colcon.colcon_core.verb:set package 'ldlidar' build argument 'cmake_force_configure' from command line to 'False'
+[0.236s] Level 5:colcon.colcon_core.verb:set package 'ldlidar' build argument 'ament_cmake_args' from command line to 'None'
+[0.236s] Level 5:colcon.colcon_core.verb:set package 'ldlidar' build argument 'catkin_cmake_args' from command line to 'None'
+[0.236s] Level 5:colcon.colcon_core.verb:set package 'ldlidar' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.236s] DEBUG:colcon.colcon_core.verb:Building package 'ldlidar' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/xtal/ROS2-omni-manipulator/build/ldlidar', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/xtal/ROS2-omni-manipulator/install/ldlidar', 'merge_install': False, 'path': '/home/xtal/ROS2-omni-manipulator/src/ldrobot-lidar-ros2/ldlidar', 'symlink_install': True, 'test_result_base': None}
+[0.236s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.236s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.236s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/xtal/ROS2-omni-manipulator/src/ldrobot-lidar-ros2/ldlidar_component' with build type 'ament_cmake'
+[0.237s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/xtal/ROS2-omni-manipulator/src/ldrobot-lidar-ros2/ldlidar_component'
+[0.238s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.238s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.238s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.242s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/xtal/ROS2-omni-manipulator/src/uros/micro_ros_msgs' with build type 'ament_cmake'
+[0.242s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/xtal/ROS2-omni-manipulator/src/uros/micro_ros_msgs'
+[0.242s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.242s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.245s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/xtal/ROS2-omni-manipulator/src/dm' with build type 'ament_python'
+[0.245s] Level 1:colcon.colcon_core.shell:create_environment_hook('dm', 'ament_prefix_path')
+[0.245s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/xtal/ROS2-omni-manipulator/install/dm/share/dm/hook/ament_prefix_path.ps1'
+[0.245s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/xtal/ROS2-omni-manipulator/install/dm/share/dm/hook/ament_prefix_path.dsv'
+[0.246s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/xtal/ROS2-omni-manipulator/install/dm/share/dm/hook/ament_prefix_path.sh'
+[0.246s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.246s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.249s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/xtal/ROS2-omni-manipulator/src/uros/drive_base/drive_base_msgs' with build type 'ament_cmake'
+[0.249s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/xtal/ROS2-omni-manipulator/src/uros/drive_base/drive_base_msgs'
+[0.249s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.250s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.253s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/xtal/ROS2-omni-manipulator/src/micro_ros_setup' with build type 'ament_cmake'
+[0.253s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/xtal/ROS2-omni-manipulator/src/micro_ros_setup'
+[0.253s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.253s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.260s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/xtal/ROS2-omni-manipulator/build/ldlidar_component': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/xtal/ROS2-omni-manipulator/install/dm:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/xtal/ROS2-omni-manipulator/src/ldrobot-lidar-ros2/ldlidar_component -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/xtal/ROS2-omni-manipulator/install/ldlidar_component
+[0.262s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/xtal/ROS2-omni-manipulator/build/micro_ros_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/xtal/ROS2-omni-manipulator/install/dm:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/xtal/ROS2-omni-manipulator/src/uros/micro_ros_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/xtal/ROS2-omni-manipulator/install/micro_ros_msgs
+[0.475s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/xtal/ROS2-omni-manipulator/src/dm'
+[0.475s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.475s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.480s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/xtal/ROS2-omni-manipulator/build/drive_base_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/xtal/ROS2-omni-manipulator/install/dm:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/xtal/ROS2-omni-manipulator/src/uros/drive_base/drive_base_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/xtal/ROS2-omni-manipulator/install/drive_base_msgs
+[0.483s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/xtal/ROS2-omni-manipulator/build/micro_ros_setup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/xtal/ROS2-omni-manipulator/install/dm:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/xtal/ROS2-omni-manipulator/src/micro_ros_setup -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/xtal/ROS2-omni-manipulator/install/micro_ros_setup
+[1.191s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/xtal/ROS2-omni-manipulator/build/dm': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/xtal/ROS2-omni-manipulator/build/dm/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/xtal/ROS2-omni-manipulator/install/dm/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/xtal/ROS2-omni-manipulator/build/dm/build --no-deps symlink_data
+[1.225s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/xtal/ROS2-omni-manipulator/build/micro_ros_setup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/xtal/ROS2-omni-manipulator/install/dm:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/xtal/ROS2-omni-manipulator/src/micro_ros_setup -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/xtal/ROS2-omni-manipulator/install/micro_ros_setup
+[1.226s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/xtal/ROS2-omni-manipulator/build/micro_ros_setup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/xtal/ROS2-omni-manipulator/install/dm:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/xtal/ROS2-omni-manipulator/build/micro_ros_setup -- -j16 -l16
+[1.272s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/xtal/ROS2-omni-manipulator/build/micro_ros_setup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/xtal/ROS2-omni-manipulator/install/dm:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/xtal/ROS2-omni-manipulator/build/micro_ros_setup -- -j16 -l16
+[1.283s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/xtal/ROS2-omni-manipulator/build/micro_ros_setup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/xtal/ROS2-omni-manipulator/install/dm:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/xtal/ROS2-omni-manipulator/build/micro_ros_setup
+[1.589s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(micro_ros_setup)
+[1.589s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/xtal/ROS2-omni-manipulator/build/micro_ros_setup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/xtal/ROS2-omni-manipulator/install/dm:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/xtal/ROS2-omni-manipulator/build/micro_ros_setup
+[1.591s] Level 1:colcon.colcon_core.environment:checking '/home/xtal/ROS2-omni-manipulator/install/micro_ros_setup' for CMake module files
+[1.591s] Level 1:colcon.colcon_core.environment:checking '/home/xtal/ROS2-omni-manipulator/install/micro_ros_setup' for CMake config files
+[1.592s] Level 1:colcon.colcon_core.shell:create_environment_hook('micro_ros_setup', 'cmake_prefix_path')
+[1.592s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/xtal/ROS2-omni-manipulator/install/micro_ros_setup/share/micro_ros_setup/hook/cmake_prefix_path.ps1'
+[1.592s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/xtal/ROS2-omni-manipulator/install/micro_ros_setup/share/micro_ros_setup/hook/cmake_prefix_path.dsv'
+[1.592s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/xtal/ROS2-omni-manipulator/install/micro_ros_setup/share/micro_ros_setup/hook/cmake_prefix_path.sh'
+[1.593s] Level 1:colcon.colcon_core.environment:checking '/home/xtal/ROS2-omni-manipulator/install/micro_ros_setup/lib'
+[1.593s] Level 1:colcon.colcon_core.environment:checking '/home/xtal/ROS2-omni-manipulator/install/micro_ros_setup/bin'
+[1.593s] Level 1:colcon.colcon_core.environment:checking '/home/xtal/ROS2-omni-manipulator/install/micro_ros_setup/lib/pkgconfig/micro_ros_setup.pc'
+[1.593s] Level 1:colcon.colcon_core.environment:checking '/home/xtal/ROS2-omni-manipulator/install/micro_ros_setup/lib/python3.12/site-packages'
+[1.593s] Level 1:colcon.colcon_core.environment:checking '/home/xtal/ROS2-omni-manipulator/install/micro_ros_setup/bin'
+[1.594s] INFO:colcon.colcon_core.shell:Creating package script '/home/xtal/ROS2-omni-manipulator/install/micro_ros_setup/share/micro_ros_setup/package.ps1'
+[1.594s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/xtal/ROS2-omni-manipulator/install/micro_ros_setup/share/micro_ros_setup/package.dsv'
+[1.594s] INFO:colcon.colcon_core.shell:Creating package script '/home/xtal/ROS2-omni-manipulator/install/micro_ros_setup/share/micro_ros_setup/package.sh'
+[1.595s] INFO:colcon.colcon_core.shell:Creating package script '/home/xtal/ROS2-omni-manipulator/install/micro_ros_setup/share/micro_ros_setup/package.bash'
+[1.595s] INFO:colcon.colcon_core.shell:Creating package script '/home/xtal/ROS2-omni-manipulator/install/micro_ros_setup/share/micro_ros_setup/package.zsh'
+[1.596s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/xtal/ROS2-omni-manipulator/install/micro_ros_setup/share/colcon-core/packages/micro_ros_setup)
+[1.596s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(micro_ros_setup)
+[1.596s] Level 1:colcon.colcon_core.environment:checking '/home/xtal/ROS2-omni-manipulator/install/micro_ros_setup' for CMake module files
+[1.597s] Level 1:colcon.colcon_core.environment:checking '/home/xtal/ROS2-omni-manipulator/install/micro_ros_setup' for CMake config files
+[1.597s] Level 1:colcon.colcon_core.shell:create_environment_hook('micro_ros_setup', 'cmake_prefix_path')
+[1.597s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/xtal/ROS2-omni-manipulator/install/micro_ros_setup/share/micro_ros_setup/hook/cmake_prefix_path.ps1'
+[1.598s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/xtal/ROS2-omni-manipulator/install/micro_ros_setup/share/micro_ros_setup/hook/cmake_prefix_path.dsv'
+[1.598s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/xtal/ROS2-omni-manipulator/install/micro_ros_setup/share/micro_ros_setup/hook/cmake_prefix_path.sh'
+[1.598s] Level 1:colcon.colcon_core.environment:checking '/home/xtal/ROS2-omni-manipulator/install/micro_ros_setup/lib'
+[1.598s] Level 1:colcon.colcon_core.environment:checking '/home/xtal/ROS2-omni-manipulator/install/micro_ros_setup/bin'
+[1.598s] Level 1:colcon.colcon_core.environment:checking '/home/xtal/ROS2-omni-manipulator/install/micro_ros_setup/lib/pkgconfig/micro_ros_setup.pc'
+[1.598s] Level 1:colcon.colcon_core.environment:checking '/home/xtal/ROS2-omni-manipulator/install/micro_ros_setup/lib/python3.12/site-packages'
+[1.599s] Level 1:colcon.colcon_core.environment:checking '/home/xtal/ROS2-omni-manipulator/install/micro_ros_setup/bin'
+[1.599s] INFO:colcon.colcon_core.shell:Creating package script '/home/xtal/ROS2-omni-manipulator/install/micro_ros_setup/share/micro_ros_setup/package.ps1'
+[1.599s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/xtal/ROS2-omni-manipulator/install/micro_ros_setup/share/micro_ros_setup/package.dsv'
+[1.599s] INFO:colcon.colcon_core.shell:Creating package script '/home/xtal/ROS2-omni-manipulator/install/micro_ros_setup/share/micro_ros_setup/package.sh'
+[1.600s] INFO:colcon.colcon_core.shell:Creating package script '/home/xtal/ROS2-omni-manipulator/install/micro_ros_setup/share/micro_ros_setup/package.bash'
+[1.600s] INFO:colcon.colcon_core.shell:Creating package script '/home/xtal/ROS2-omni-manipulator/install/micro_ros_setup/share/micro_ros_setup/package.zsh'
+[1.601s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/xtal/ROS2-omni-manipulator/install/micro_ros_setup/share/colcon-core/packages/micro_ros_setup)
+[1.953s] Level 1:colcon.colcon_core.shell:create_environment_hook('dm', 'pythonpath_develop')
+[1.953s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/xtal/ROS2-omni-manipulator/build/dm' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/xtal/ROS2-omni-manipulator/build/dm/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/xtal/ROS2-omni-manipulator/install/dm/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/xtal/ROS2-omni-manipulator/build/dm/build --no-deps symlink_data
+[1.954s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/xtal/ROS2-omni-manipulator/build/dm/share/dm/hook/pythonpath_develop.ps1'
+[1.954s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/xtal/ROS2-omni-manipulator/build/dm/share/dm/hook/pythonpath_develop.dsv'
+[1.954s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/xtal/ROS2-omni-manipulator/build/dm/share/dm/hook/pythonpath_develop.sh'
+[1.955s] Level 1:colcon.colcon_core.environment:checking '/home/xtal/ROS2-omni-manipulator/install/dm' for CMake module files
+[1.955s] Level 1:colcon.colcon_core.environment:checking '/home/xtal/ROS2-omni-manipulator/install/dm' for CMake config files
+[1.956s] Level 1:colcon.colcon_core.environment:checking '/home/xtal/ROS2-omni-manipulator/install/dm/lib'
+[1.956s] Level 1:colcon.colcon_core.environment:checking '/home/xtal/ROS2-omni-manipulator/install/dm/bin'
+[1.956s] Level 1:colcon.colcon_core.environment:checking '/home/xtal/ROS2-omni-manipulator/install/dm/lib/pkgconfig/dm.pc'
+[1.956s] Level 1:colcon.colcon_core.environment:checking '/home/xtal/ROS2-omni-manipulator/install/dm/lib/python3.12/site-packages'
+[1.956s] Level 1:colcon.colcon_core.shell:create_environment_hook('dm', 'pythonpath')
+[1.956s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/xtal/ROS2-omni-manipulator/install/dm/share/dm/hook/pythonpath.ps1'
+[1.956s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/xtal/ROS2-omni-manipulator/install/dm/share/dm/hook/pythonpath.dsv'
+[1.957s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/xtal/ROS2-omni-manipulator/install/dm/share/dm/hook/pythonpath.sh'
+[1.957s] Level 1:colcon.colcon_core.environment:checking '/home/xtal/ROS2-omni-manipulator/install/dm/bin'
+[1.957s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dm)
+[1.957s] INFO:colcon.colcon_core.shell:Creating package script '/home/xtal/ROS2-omni-manipulator/install/dm/share/dm/package.ps1'
+[1.958s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/xtal/ROS2-omni-manipulator/install/dm/share/dm/package.dsv'
+[1.958s] INFO:colcon.colcon_core.shell:Creating package script '/home/xtal/ROS2-omni-manipulator/install/dm/share/dm/package.sh'
+[1.959s] INFO:colcon.colcon_core.shell:Creating package script '/home/xtal/ROS2-omni-manipulator/install/dm/share/dm/package.bash'
+[1.959s] INFO:colcon.colcon_core.shell:Creating package script '/home/xtal/ROS2-omni-manipulator/install/dm/share/dm/package.zsh'
+[1.959s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/xtal/ROS2-omni-manipulator/install/dm/share/colcon-core/packages/dm)
+[2.006s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/xtal/ROS2-omni-manipulator/build/ldlidar_component' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/xtal/ROS2-omni-manipulator/install/dm:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/xtal/ROS2-omni-manipulator/src/ldrobot-lidar-ros2/ldlidar_component -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/xtal/ROS2-omni-manipulator/install/ldlidar_component
+[2.008s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/xtal/ROS2-omni-manipulator/build/ldlidar_component': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/xtal/ROS2-omni-manipulator/install/dm:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/xtal/ROS2-omni-manipulator/build/ldlidar_component -- -j16 -l16
+[3.280s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/xtal/ROS2-omni-manipulator/build/micro_ros_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/xtal/ROS2-omni-manipulator/install/dm:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/xtal/ROS2-omni-manipulator/src/uros/micro_ros_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/xtal/ROS2-omni-manipulator/install/micro_ros_msgs
+[3.281s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/xtal/ROS2-omni-manipulator/build/micro_ros_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/xtal/ROS2-omni-manipulator/install/dm:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/xtal/ROS2-omni-manipulator/build/micro_ros_msgs -- -j16 -l16
+[3.674s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/xtal/ROS2-omni-manipulator/build/drive_base_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/xtal/ROS2-omni-manipulator/install/dm:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/xtal/ROS2-omni-manipulator/src/uros/drive_base/drive_base_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/xtal/ROS2-omni-manipulator/install/drive_base_msgs
+[3.675s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/xtal/ROS2-omni-manipulator/build/drive_base_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/xtal/ROS2-omni-manipulator/install/dm:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/xtal/ROS2-omni-manipulator/build/drive_base_msgs -- -j16 -l16
+[6.781s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/xtal/ROS2-omni-manipulator/build/micro_ros_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/xtal/ROS2-omni-manipulator/install/dm:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/xtal/ROS2-omni-manipulator/build/micro_ros_msgs -- -j16 -l16
+[6.782s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/xtal/ROS2-omni-manipulator/build/micro_ros_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/xtal/ROS2-omni-manipulator/install/dm:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/xtal/ROS2-omni-manipulator/build/micro_ros_msgs
+[7.927s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(micro_ros_msgs)
+[7.927s] Level 1:colcon.colcon_core.environment:checking '/home/xtal/ROS2-omni-manipulator/install/micro_ros_msgs' for CMake module files
+[7.928s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/xtal/ROS2-omni-manipulator/build/micro_ros_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/xtal/ROS2-omni-manipulator/install/dm:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/xtal/ROS2-omni-manipulator/build/micro_ros_msgs
+[7.928s] Level 1:colcon.colcon_core.environment:checking '/home/xtal/ROS2-omni-manipulator/install/micro_ros_msgs' for CMake config files
+[7.929s] Level 1:colcon.colcon_core.shell:create_environment_hook('micro_ros_msgs', 'cmake_prefix_path')
+[7.929s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/xtal/ROS2-omni-manipulator/install/micro_ros_msgs/share/micro_ros_msgs/hook/cmake_prefix_path.ps1'
+[7.929s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/xtal/ROS2-omni-manipulator/install/micro_ros_msgs/share/micro_ros_msgs/hook/cmake_prefix_path.dsv'
+[7.929s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/xtal/ROS2-omni-manipulator/install/micro_ros_msgs/share/micro_ros_msgs/hook/cmake_prefix_path.sh'
+[7.930s] Level 1:colcon.colcon_core.environment:checking '/home/xtal/ROS2-omni-manipulator/install/micro_ros_msgs/lib'
+[7.930s] Level 1:colcon.colcon_core.shell:create_environment_hook('micro_ros_msgs', 'ld_library_path_lib')
+[7.930s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/xtal/ROS2-omni-manipulator/install/micro_ros_msgs/share/micro_ros_msgs/hook/ld_library_path_lib.ps1'
+[7.930s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/xtal/ROS2-omni-manipulator/install/micro_ros_msgs/share/micro_ros_msgs/hook/ld_library_path_lib.dsv'
+[7.930s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/xtal/ROS2-omni-manipulator/install/micro_ros_msgs/share/micro_ros_msgs/hook/ld_library_path_lib.sh'
+[7.931s] Level 1:colcon.colcon_core.environment:checking '/home/xtal/ROS2-omni-manipulator/install/micro_ros_msgs/bin'
+[7.931s] Level 1:colcon.colcon_core.environment:checking '/home/xtal/ROS2-omni-manipulator/install/micro_ros_msgs/lib/pkgconfig/micro_ros_msgs.pc'
+[7.931s] Level 1:colcon.colcon_core.environment:checking '/home/xtal/ROS2-omni-manipulator/install/micro_ros_msgs/lib/python3.12/site-packages'
+[7.931s] Level 1:colcon.colcon_core.shell:create_environment_hook('micro_ros_msgs', 'pythonpath')
+[7.931s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/xtal/ROS2-omni-manipulator/install/micro_ros_msgs/share/micro_ros_msgs/hook/pythonpath.ps1'
+[7.931s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/xtal/ROS2-omni-manipulator/install/micro_ros_msgs/share/micro_ros_msgs/hook/pythonpath.dsv'
+[7.932s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/xtal/ROS2-omni-manipulator/install/micro_ros_msgs/share/micro_ros_msgs/hook/pythonpath.sh'
+[7.932s] Level 1:colcon.colcon_core.environment:checking '/home/xtal/ROS2-omni-manipulator/install/micro_ros_msgs/bin'
+[7.932s] INFO:colcon.colcon_core.shell:Creating package script '/home/xtal/ROS2-omni-manipulator/install/micro_ros_msgs/share/micro_ros_msgs/package.ps1'
+[7.933s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/xtal/ROS2-omni-manipulator/install/micro_ros_msgs/share/micro_ros_msgs/package.dsv'
+[7.933s] INFO:colcon.colcon_core.shell:Creating package script '/home/xtal/ROS2-omni-manipulator/install/micro_ros_msgs/share/micro_ros_msgs/package.sh'
+[7.933s] INFO:colcon.colcon_core.shell:Creating package script '/home/xtal/ROS2-omni-manipulator/install/micro_ros_msgs/share/micro_ros_msgs/package.bash'
+[7.933s] INFO:colcon.colcon_core.shell:Creating package script '/home/xtal/ROS2-omni-manipulator/install/micro_ros_msgs/share/micro_ros_msgs/package.zsh'
+[7.934s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/xtal/ROS2-omni-manipulator/install/micro_ros_msgs/share/colcon-core/packages/micro_ros_msgs)
+[7.934s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(micro_ros_msgs)
+[7.934s] Level 1:colcon.colcon_core.environment:checking '/home/xtal/ROS2-omni-manipulator/install/micro_ros_msgs' for CMake module files
+[7.935s] Level 1:colcon.colcon_core.environment:checking '/home/xtal/ROS2-omni-manipulator/install/micro_ros_msgs' for CMake config files
+[7.935s] Level 1:colcon.colcon_core.shell:create_environment_hook('micro_ros_msgs', 'cmake_prefix_path')
+[7.935s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/xtal/ROS2-omni-manipulator/install/micro_ros_msgs/share/micro_ros_msgs/hook/cmake_prefix_path.ps1'
+[7.935s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/xtal/ROS2-omni-manipulator/install/micro_ros_msgs/share/micro_ros_msgs/hook/cmake_prefix_path.dsv'
+[7.936s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/xtal/ROS2-omni-manipulator/install/micro_ros_msgs/share/micro_ros_msgs/hook/cmake_prefix_path.sh'
+[7.936s] Level 1:colcon.colcon_core.environment:checking '/home/xtal/ROS2-omni-manipulator/install/micro_ros_msgs/lib'
+[7.936s] Level 1:colcon.colcon_core.shell:create_environment_hook('micro_ros_msgs', 'ld_library_path_lib')
+[7.936s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/xtal/ROS2-omni-manipulator/install/micro_ros_msgs/share/micro_ros_msgs/hook/ld_library_path_lib.ps1'
+[7.937s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/xtal/ROS2-omni-manipulator/install/micro_ros_msgs/share/micro_ros_msgs/hook/ld_library_path_lib.dsv'
+[7.937s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/xtal/ROS2-omni-manipulator/install/micro_ros_msgs/share/micro_ros_msgs/hook/ld_library_path_lib.sh'
+[7.937s] Level 1:colcon.colcon_core.environment:checking '/home/xtal/ROS2-omni-manipulator/install/micro_ros_msgs/bin'
+[7.937s] Level 1:colcon.colcon_core.environment:checking '/home/xtal/ROS2-omni-manipulator/install/micro_ros_msgs/lib/pkgconfig/micro_ros_msgs.pc'
+[7.937s] Level 1:colcon.colcon_core.environment:checking '/home/xtal/ROS2-omni-manipulator/install/micro_ros_msgs/lib/python3.12/site-packages'
+[7.937s] Level 1:colcon.colcon_core.shell:create_environment_hook('micro_ros_msgs', 'pythonpath')
+[7.938s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/xtal/ROS2-omni-manipulator/install/micro_ros_msgs/share/micro_ros_msgs/hook/pythonpath.ps1'
+[7.938s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/xtal/ROS2-omni-manipulator/install/micro_ros_msgs/share/micro_ros_msgs/hook/pythonpath.dsv'
+[7.938s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/xtal/ROS2-omni-manipulator/install/micro_ros_msgs/share/micro_ros_msgs/hook/pythonpath.sh'
+[7.938s] Level 1:colcon.colcon_core.environment:checking '/home/xtal/ROS2-omni-manipulator/install/micro_ros_msgs/bin'
+[7.939s] INFO:colcon.colcon_core.shell:Creating package script '/home/xtal/ROS2-omni-manipulator/install/micro_ros_msgs/share/micro_ros_msgs/package.ps1'
+[7.939s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/xtal/ROS2-omni-manipulator/install/micro_ros_msgs/share/micro_ros_msgs/package.dsv'
+[7.939s] INFO:colcon.colcon_core.shell:Creating package script '/home/xtal/ROS2-omni-manipulator/install/micro_ros_msgs/share/micro_ros_msgs/package.sh'
+[7.940s] INFO:colcon.colcon_core.shell:Creating package script '/home/xtal/ROS2-omni-manipulator/install/micro_ros_msgs/share/micro_ros_msgs/package.bash'
+[7.940s] INFO:colcon.colcon_core.shell:Creating package script '/home/xtal/ROS2-omni-manipulator/install/micro_ros_msgs/share/micro_ros_msgs/package.zsh'
+[7.940s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/xtal/ROS2-omni-manipulator/install/micro_ros_msgs/share/colcon-core/packages/micro_ros_msgs)
+[7.940s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/xtal/ROS2-omni-manipulator/src/uros/micro-ROS-Agent/micro_ros_agent' with build type 'ament_cmake'
+[7.941s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/xtal/ROS2-omni-manipulator/src/uros/micro-ROS-Agent/micro_ros_agent'
+[7.941s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[7.941s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[7.953s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/xtal/ROS2-omni-manipulator/build/micro_ros_agent': AMENT_PREFIX_PATH=/home/xtal/ROS2-omni-manipulator/install/micro_ros_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/xtal/ROS2-omni-manipulator/install/micro_ros_msgs:/home/xtal/ROS2-omni-manipulator/install/micro_ros_setup:/home/xtal/ROS2-omni-manipulator/install/micro_ros_agent:/home/xtal/ROS2-omni-manipulator/install/ldlidar:/home/xtal/ROS2-omni-manipulator/install/ldlidar_node:/home/xtal/ROS2-omni-manipulator/install/ldlidar_component:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/xtal/ROS2-omni-manipulator/install/dm:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/xtal/ROS2-omni-manipulator/install/micro_ros_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/xtal/ROS2-omni-manipulator/install/micro_ros_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake /home/xtal/ROS2-omni-manipulator/src/uros/micro-ROS-Agent/micro_ros_agent -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/xtal/ROS2-omni-manipulator/install/micro_ros_agent
+[8.358s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/xtal/ROS2-omni-manipulator/build/micro_ros_agent' returned '0': AMENT_PREFIX_PATH=/home/xtal/ROS2-omni-manipulator/install/micro_ros_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/xtal/ROS2-omni-manipulator/install/micro_ros_msgs:/home/xtal/ROS2-omni-manipulator/install/micro_ros_setup:/home/xtal/ROS2-omni-manipulator/install/micro_ros_agent:/home/xtal/ROS2-omni-manipulator/install/ldlidar:/home/xtal/ROS2-omni-manipulator/install/ldlidar_node:/home/xtal/ROS2-omni-manipulator/install/ldlidar_component:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/xtal/ROS2-omni-manipulator/install/dm:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/xtal/ROS2-omni-manipulator/install/micro_ros_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/xtal/ROS2-omni-manipulator/install/micro_ros_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake /home/xtal/ROS2-omni-manipulator/src/uros/micro-ROS-Agent/micro_ros_agent -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/xtal/ROS2-omni-manipulator/install/micro_ros_agent
+[8.359s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/xtal/ROS2-omni-manipulator/build/micro_ros_agent': AMENT_PREFIX_PATH=/home/xtal/ROS2-omni-manipulator/install/micro_ros_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/xtal/ROS2-omni-manipulator/install/micro_ros_msgs:/home/xtal/ROS2-omni-manipulator/install/micro_ros_setup:/home/xtal/ROS2-omni-manipulator/install/micro_ros_agent:/home/xtal/ROS2-omni-manipulator/install/ldlidar:/home/xtal/ROS2-omni-manipulator/install/ldlidar_node:/home/xtal/ROS2-omni-manipulator/install/ldlidar_component:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/xtal/ROS2-omni-manipulator/install/dm:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/xtal/ROS2-omni-manipulator/install/micro_ros_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/xtal/ROS2-omni-manipulator/install/micro_ros_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/xtal/ROS2-omni-manipulator/build/micro_ros_agent -- -j16 -l16
+[8.395s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/xtal/ROS2-omni-manipulator/build/drive_base_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/xtal/ROS2-omni-manipulator/install/dm:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/xtal/ROS2-omni-manipulator/build/drive_base_msgs -- -j16 -l16
+[8.395s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/xtal/ROS2-omni-manipulator/build/drive_base_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/xtal/ROS2-omni-manipulator/install/dm:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/xtal/ROS2-omni-manipulator/build/drive_base_msgs
+[9.685s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(drive_base_msgs)
+[9.685s] Level 1:colcon.colcon_core.environment:checking '/home/xtal/ROS2-omni-manipulator/install/drive_base_msgs' for CMake module files
+[9.686s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/xtal/ROS2-omni-manipulator/build/drive_base_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/xtal/ROS2-omni-manipulator/install/dm:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/xtal/ROS2-omni-manipulator/build/drive_base_msgs
+[9.686s] Level 1:colcon.colcon_core.environment:checking '/home/xtal/ROS2-omni-manipulator/install/drive_base_msgs' for CMake config files
+[9.686s] Level 1:colcon.colcon_core.shell:create_environment_hook('drive_base_msgs', 'cmake_prefix_path')
+[9.686s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/share/drive_base_msgs/hook/cmake_prefix_path.ps1'
+[9.687s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/share/drive_base_msgs/hook/cmake_prefix_path.dsv'
+[9.687s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/share/drive_base_msgs/hook/cmake_prefix_path.sh'
+[9.687s] Level 1:colcon.colcon_core.environment:checking '/home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/lib'
+[9.688s] Level 1:colcon.colcon_core.shell:create_environment_hook('drive_base_msgs', 'ld_library_path_lib')
+[9.688s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/share/drive_base_msgs/hook/ld_library_path_lib.ps1'
+[9.688s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/share/drive_base_msgs/hook/ld_library_path_lib.dsv'
+[9.688s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/share/drive_base_msgs/hook/ld_library_path_lib.sh'
+[9.688s] Level 1:colcon.colcon_core.environment:checking '/home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/bin'
+[9.688s] Level 1:colcon.colcon_core.environment:checking '/home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/lib/pkgconfig/drive_base_msgs.pc'
+[9.689s] Level 1:colcon.colcon_core.environment:checking '/home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/lib/python3.12/site-packages'
+[9.689s] Level 1:colcon.colcon_core.shell:create_environment_hook('drive_base_msgs', 'pythonpath')
+[9.689s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/share/drive_base_msgs/hook/pythonpath.ps1'
+[9.689s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/share/drive_base_msgs/hook/pythonpath.dsv'
+[9.689s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/share/drive_base_msgs/hook/pythonpath.sh'
+[9.690s] Level 1:colcon.colcon_core.environment:checking '/home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/bin'
+[9.690s] INFO:colcon.colcon_core.shell:Creating package script '/home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/share/drive_base_msgs/package.ps1'
+[9.690s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/share/drive_base_msgs/package.dsv'
+[9.690s] INFO:colcon.colcon_core.shell:Creating package script '/home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/share/drive_base_msgs/package.sh'
+[9.691s] INFO:colcon.colcon_core.shell:Creating package script '/home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/share/drive_base_msgs/package.bash'
+[9.691s] INFO:colcon.colcon_core.shell:Creating package script '/home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/share/drive_base_msgs/package.zsh'
+[9.691s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/share/colcon-core/packages/drive_base_msgs)
+[9.692s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(drive_base_msgs)
+[9.692s] Level 1:colcon.colcon_core.environment:checking '/home/xtal/ROS2-omni-manipulator/install/drive_base_msgs' for CMake module files
+[9.692s] Level 1:colcon.colcon_core.environment:checking '/home/xtal/ROS2-omni-manipulator/install/drive_base_msgs' for CMake config files
+[9.692s] Level 1:colcon.colcon_core.shell:create_environment_hook('drive_base_msgs', 'cmake_prefix_path')
+[9.692s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/share/drive_base_msgs/hook/cmake_prefix_path.ps1'
+[9.693s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/share/drive_base_msgs/hook/cmake_prefix_path.dsv'
+[9.693s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/share/drive_base_msgs/hook/cmake_prefix_path.sh'
+[9.693s] Level 1:colcon.colcon_core.environment:checking '/home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/lib'
+[9.693s] Level 1:colcon.colcon_core.shell:create_environment_hook('drive_base_msgs', 'ld_library_path_lib')
+[9.694s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/share/drive_base_msgs/hook/ld_library_path_lib.ps1'
+[9.705s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/share/drive_base_msgs/hook/ld_library_path_lib.dsv'
+[9.705s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/share/drive_base_msgs/hook/ld_library_path_lib.sh'
+[9.705s] Level 1:colcon.colcon_core.environment:checking '/home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/bin'
+[9.705s] Level 1:colcon.colcon_core.environment:checking '/home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/lib/pkgconfig/drive_base_msgs.pc'
+[9.706s] Level 1:colcon.colcon_core.environment:checking '/home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/lib/python3.12/site-packages'
+[9.706s] Level 1:colcon.colcon_core.shell:create_environment_hook('drive_base_msgs', 'pythonpath')
+[9.706s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/share/drive_base_msgs/hook/pythonpath.ps1'
+[9.706s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/share/drive_base_msgs/hook/pythonpath.dsv'
+[9.706s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/share/drive_base_msgs/hook/pythonpath.sh'
+[9.707s] Level 1:colcon.colcon_core.environment:checking '/home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/bin'
+[9.707s] INFO:colcon.colcon_core.shell:Creating package script '/home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/share/drive_base_msgs/package.ps1'
+[9.707s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/share/drive_base_msgs/package.dsv'
+[9.708s] INFO:colcon.colcon_core.shell:Creating package script '/home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/share/drive_base_msgs/package.sh'
+[9.708s] INFO:colcon.colcon_core.shell:Creating package script '/home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/share/drive_base_msgs/package.bash'
+[9.708s] INFO:colcon.colcon_core.shell:Creating package script '/home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/share/drive_base_msgs/package.zsh'
+[9.708s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/share/colcon-core/packages/drive_base_msgs)
+[10.792s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/xtal/ROS2-omni-manipulator/build/ldlidar_component' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/xtal/ROS2-omni-manipulator/install/dm:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/xtal/ROS2-omni-manipulator/build/ldlidar_component -- -j16 -l16
+[10.793s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/xtal/ROS2-omni-manipulator/build/ldlidar_component': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/xtal/ROS2-omni-manipulator/install/dm:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/xtal/ROS2-omni-manipulator/build/ldlidar_component
+[11.156s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ldlidar_component)
+[11.157s] Level 1:colcon.colcon_core.environment:checking '/home/xtal/ROS2-omni-manipulator/install/ldlidar_component' for CMake module files
+[11.157s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/xtal/ROS2-omni-manipulator/build/ldlidar_component' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/xtal/ROS2-omni-manipulator/install/dm:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/xtal/ROS2-omni-manipulator/build/ldlidar_component
+[11.157s] Level 1:colcon.colcon_core.environment:checking '/home/xtal/ROS2-omni-manipulator/install/ldlidar_component' for CMake config files
+[11.158s] Level 1:colcon.colcon_core.shell:create_environment_hook('ldlidar_component', 'cmake_prefix_path')
+[11.158s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/xtal/ROS2-omni-manipulator/install/ldlidar_component/share/ldlidar_component/hook/cmake_prefix_path.ps1'
+[11.158s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/xtal/ROS2-omni-manipulator/install/ldlidar_component/share/ldlidar_component/hook/cmake_prefix_path.dsv'
+[11.159s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/xtal/ROS2-omni-manipulator/install/ldlidar_component/share/ldlidar_component/hook/cmake_prefix_path.sh'
+[11.159s] Level 1:colcon.colcon_core.environment:checking '/home/xtal/ROS2-omni-manipulator/install/ldlidar_component/lib'
+[11.159s] Level 1:colcon.colcon_core.shell:create_environment_hook('ldlidar_component', 'ld_library_path_lib')
+[11.159s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/xtal/ROS2-omni-manipulator/install/ldlidar_component/share/ldlidar_component/hook/ld_library_path_lib.ps1'
+[11.160s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/xtal/ROS2-omni-manipulator/install/ldlidar_component/share/ldlidar_component/hook/ld_library_path_lib.dsv'
+[11.160s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/xtal/ROS2-omni-manipulator/install/ldlidar_component/share/ldlidar_component/hook/ld_library_path_lib.sh'
+[11.160s] Level 1:colcon.colcon_core.environment:checking '/home/xtal/ROS2-omni-manipulator/install/ldlidar_component/bin'
+[11.160s] Level 1:colcon.colcon_core.environment:checking '/home/xtal/ROS2-omni-manipulator/install/ldlidar_component/lib/pkgconfig/ldlidar_component.pc'
+[11.160s] Level 1:colcon.colcon_core.environment:checking '/home/xtal/ROS2-omni-manipulator/install/ldlidar_component/lib/python3.12/site-packages'
+[11.160s] Level 1:colcon.colcon_core.environment:checking '/home/xtal/ROS2-omni-manipulator/install/ldlidar_component/bin'
+[11.160s] INFO:colcon.colcon_core.shell:Creating package script '/home/xtal/ROS2-omni-manipulator/install/ldlidar_component/share/ldlidar_component/package.ps1'
+[11.161s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/xtal/ROS2-omni-manipulator/install/ldlidar_component/share/ldlidar_component/package.dsv'
+[11.161s] INFO:colcon.colcon_core.shell:Creating package script '/home/xtal/ROS2-omni-manipulator/install/ldlidar_component/share/ldlidar_component/package.sh'
+[11.161s] INFO:colcon.colcon_core.shell:Creating package script '/home/xtal/ROS2-omni-manipulator/install/ldlidar_component/share/ldlidar_component/package.bash'
+[11.162s] INFO:colcon.colcon_core.shell:Creating package script '/home/xtal/ROS2-omni-manipulator/install/ldlidar_component/share/ldlidar_component/package.zsh'
+[11.162s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/xtal/ROS2-omni-manipulator/install/ldlidar_component/share/colcon-core/packages/ldlidar_component)
+[11.162s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ldlidar_component)
+[11.162s] Level 1:colcon.colcon_core.environment:checking '/home/xtal/ROS2-omni-manipulator/install/ldlidar_component' for CMake module files
+[11.163s] Level 1:colcon.colcon_core.environment:checking '/home/xtal/ROS2-omni-manipulator/install/ldlidar_component' for CMake config files
+[11.163s] Level 1:colcon.colcon_core.shell:create_environment_hook('ldlidar_component', 'cmake_prefix_path')
+[11.163s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/xtal/ROS2-omni-manipulator/install/ldlidar_component/share/ldlidar_component/hook/cmake_prefix_path.ps1'
+[11.164s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/xtal/ROS2-omni-manipulator/install/ldlidar_component/share/ldlidar_component/hook/cmake_prefix_path.dsv'
+[11.164s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/xtal/ROS2-omni-manipulator/install/ldlidar_component/share/ldlidar_component/hook/cmake_prefix_path.sh'
+[11.165s] Level 1:colcon.colcon_core.environment:checking '/home/xtal/ROS2-omni-manipulator/install/ldlidar_component/lib'
+[11.165s] Level 1:colcon.colcon_core.shell:create_environment_hook('ldlidar_component', 'ld_library_path_lib')
+[11.165s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/xtal/ROS2-omni-manipulator/install/ldlidar_component/share/ldlidar_component/hook/ld_library_path_lib.ps1'
+[11.166s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/xtal/ROS2-omni-manipulator/install/ldlidar_component/share/ldlidar_component/hook/ld_library_path_lib.dsv'
+[11.166s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/xtal/ROS2-omni-manipulator/install/ldlidar_component/share/ldlidar_component/hook/ld_library_path_lib.sh'
+[11.166s] Level 1:colcon.colcon_core.environment:checking '/home/xtal/ROS2-omni-manipulator/install/ldlidar_component/bin'
+[11.166s] Level 1:colcon.colcon_core.environment:checking '/home/xtal/ROS2-omni-manipulator/install/ldlidar_component/lib/pkgconfig/ldlidar_component.pc'
+[11.166s] Level 1:colcon.colcon_core.environment:checking '/home/xtal/ROS2-omni-manipulator/install/ldlidar_component/lib/python3.12/site-packages'
+[11.166s] Level 1:colcon.colcon_core.environment:checking '/home/xtal/ROS2-omni-manipulator/install/ldlidar_component/bin'
+[11.167s] INFO:colcon.colcon_core.shell:Creating package script '/home/xtal/ROS2-omni-manipulator/install/ldlidar_component/share/ldlidar_component/package.ps1'
+[11.167s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/xtal/ROS2-omni-manipulator/install/ldlidar_component/share/ldlidar_component/package.dsv'
+[11.167s] INFO:colcon.colcon_core.shell:Creating package script '/home/xtal/ROS2-omni-manipulator/install/ldlidar_component/share/ldlidar_component/package.sh'
+[11.168s] INFO:colcon.colcon_core.shell:Creating package script '/home/xtal/ROS2-omni-manipulator/install/ldlidar_component/share/ldlidar_component/package.bash'
+[11.168s] INFO:colcon.colcon_core.shell:Creating package script '/home/xtal/ROS2-omni-manipulator/install/ldlidar_component/share/ldlidar_component/package.zsh'
+[11.168s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/xtal/ROS2-omni-manipulator/install/ldlidar_component/share/colcon-core/packages/ldlidar_component)
+[11.169s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/xtal/ROS2-omni-manipulator/src/ldrobot-lidar-ros2/ldlidar_node' with build type 'ament_cmake'
+[11.169s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/xtal/ROS2-omni-manipulator/src/ldrobot-lidar-ros2/ldlidar_node'
+[11.169s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[11.169s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[11.180s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/xtal/ROS2-omni-manipulator/build/ldlidar_node': CMAKE_PREFIX_PATH=/home/xtal/ROS2-omni-manipulator/install/ldlidar_component:/home/xtal/ROS2-omni-manipulator/install/micro_ros_setup:/home/xtal/ROS2-omni-manipulator/install/micro_ros_agent:/home/xtal/ROS2-omni-manipulator/install/ldlidar:/home/xtal/ROS2-omni-manipulator/install/ldlidar_node:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/xtal/ROS2-omni-manipulator/install/dm:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/xtal/ROS2-omni-manipulator/install/ldlidar_component/lib:/home/xtal/ROS2-omni-manipulator/install/micro_ros_agent/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib /usr/bin/cmake /home/xtal/ROS2-omni-manipulator/src/ldrobot-lidar-ros2/ldlidar_node -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/xtal/ROS2-omni-manipulator/install/ldlidar_node
+[12.081s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/xtal/ROS2-omni-manipulator/build/ldlidar_node' returned '0': CMAKE_PREFIX_PATH=/home/xtal/ROS2-omni-manipulator/install/ldlidar_component:/home/xtal/ROS2-omni-manipulator/install/micro_ros_setup:/home/xtal/ROS2-omni-manipulator/install/micro_ros_agent:/home/xtal/ROS2-omni-manipulator/install/ldlidar:/home/xtal/ROS2-omni-manipulator/install/ldlidar_node:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/xtal/ROS2-omni-manipulator/install/dm:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/xtal/ROS2-omni-manipulator/install/ldlidar_component/lib:/home/xtal/ROS2-omni-manipulator/install/micro_ros_agent/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib /usr/bin/cmake /home/xtal/ROS2-omni-manipulator/src/ldrobot-lidar-ros2/ldlidar_node -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/xtal/ROS2-omni-manipulator/install/ldlidar_node
+[12.081s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/xtal/ROS2-omni-manipulator/build/ldlidar_node': CMAKE_PREFIX_PATH=/home/xtal/ROS2-omni-manipulator/install/ldlidar_component:/home/xtal/ROS2-omni-manipulator/install/micro_ros_setup:/home/xtal/ROS2-omni-manipulator/install/micro_ros_agent:/home/xtal/ROS2-omni-manipulator/install/ldlidar:/home/xtal/ROS2-omni-manipulator/install/ldlidar_node:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/xtal/ROS2-omni-manipulator/install/dm:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/xtal/ROS2-omni-manipulator/install/ldlidar_component/lib:/home/xtal/ROS2-omni-manipulator/install/micro_ros_agent/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib /usr/bin/cmake --build /home/xtal/ROS2-omni-manipulator/build/ldlidar_node -- -j16 -l16
+[12.122s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/xtal/ROS2-omni-manipulator/build/ldlidar_node' returned '0': CMAKE_PREFIX_PATH=/home/xtal/ROS2-omni-manipulator/install/ldlidar_component:/home/xtal/ROS2-omni-manipulator/install/micro_ros_setup:/home/xtal/ROS2-omni-manipulator/install/micro_ros_agent:/home/xtal/ROS2-omni-manipulator/install/ldlidar:/home/xtal/ROS2-omni-manipulator/install/ldlidar_node:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/xtal/ROS2-omni-manipulator/install/dm:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/xtal/ROS2-omni-manipulator/install/ldlidar_component/lib:/home/xtal/ROS2-omni-manipulator/install/micro_ros_agent/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib /usr/bin/cmake --build /home/xtal/ROS2-omni-manipulator/build/ldlidar_node -- -j16 -l16
+[12.123s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/xtal/ROS2-omni-manipulator/build/ldlidar_node': CMAKE_PREFIX_PATH=/home/xtal/ROS2-omni-manipulator/install/ldlidar_component:/home/xtal/ROS2-omni-manipulator/install/micro_ros_setup:/home/xtal/ROS2-omni-manipulator/install/micro_ros_agent:/home/xtal/ROS2-omni-manipulator/install/ldlidar:/home/xtal/ROS2-omni-manipulator/install/ldlidar_node:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/xtal/ROS2-omni-manipulator/install/dm:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/xtal/ROS2-omni-manipulator/install/ldlidar_component/lib:/home/xtal/ROS2-omni-manipulator/install/micro_ros_agent/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib /usr/bin/cmake --install /home/xtal/ROS2-omni-manipulator/build/ldlidar_node
+[12.468s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ldlidar_node)
+[12.468s] Level 1:colcon.colcon_core.environment:checking '/home/xtal/ROS2-omni-manipulator/install/ldlidar_node' for CMake module files
+[12.469s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/xtal/ROS2-omni-manipulator/build/ldlidar_node' returned '0': CMAKE_PREFIX_PATH=/home/xtal/ROS2-omni-manipulator/install/ldlidar_component:/home/xtal/ROS2-omni-manipulator/install/micro_ros_setup:/home/xtal/ROS2-omni-manipulator/install/micro_ros_agent:/home/xtal/ROS2-omni-manipulator/install/ldlidar:/home/xtal/ROS2-omni-manipulator/install/ldlidar_node:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/xtal/ROS2-omni-manipulator/install/dm:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/xtal/ROS2-omni-manipulator/install/ldlidar_component/lib:/home/xtal/ROS2-omni-manipulator/install/micro_ros_agent/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib /usr/bin/cmake --install /home/xtal/ROS2-omni-manipulator/build/ldlidar_node
+[12.469s] Level 1:colcon.colcon_core.environment:checking '/home/xtal/ROS2-omni-manipulator/install/ldlidar_node' for CMake config files
+[12.470s] Level 1:colcon.colcon_core.shell:create_environment_hook('ldlidar_node', 'cmake_prefix_path')
+[12.470s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/xtal/ROS2-omni-manipulator/install/ldlidar_node/share/ldlidar_node/hook/cmake_prefix_path.ps1'
+[12.470s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/xtal/ROS2-omni-manipulator/install/ldlidar_node/share/ldlidar_node/hook/cmake_prefix_path.dsv'
+[12.471s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/xtal/ROS2-omni-manipulator/install/ldlidar_node/share/ldlidar_node/hook/cmake_prefix_path.sh'
+[12.471s] Level 1:colcon.colcon_core.environment:checking '/home/xtal/ROS2-omni-manipulator/install/ldlidar_node/bin'
+[12.472s] Level 1:colcon.colcon_core.environment:checking '/home/xtal/ROS2-omni-manipulator/install/ldlidar_node/lib/pkgconfig/ldlidar_node.pc'
+[12.472s] Level 1:colcon.colcon_core.environment:checking '/home/xtal/ROS2-omni-manipulator/install/ldlidar_node/lib/python3.12/site-packages'
+[12.472s] Level 1:colcon.colcon_core.environment:checking '/home/xtal/ROS2-omni-manipulator/install/ldlidar_node/bin'
+[12.472s] INFO:colcon.colcon_core.shell:Creating package script '/home/xtal/ROS2-omni-manipulator/install/ldlidar_node/share/ldlidar_node/package.ps1'
+[12.472s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/xtal/ROS2-omni-manipulator/install/ldlidar_node/share/ldlidar_node/package.dsv'
+[12.473s] INFO:colcon.colcon_core.shell:Creating package script '/home/xtal/ROS2-omni-manipulator/install/ldlidar_node/share/ldlidar_node/package.sh'
+[12.473s] INFO:colcon.colcon_core.shell:Creating package script '/home/xtal/ROS2-omni-manipulator/install/ldlidar_node/share/ldlidar_node/package.bash'
+[12.473s] INFO:colcon.colcon_core.shell:Creating package script '/home/xtal/ROS2-omni-manipulator/install/ldlidar_node/share/ldlidar_node/package.zsh'
+[12.473s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/xtal/ROS2-omni-manipulator/install/ldlidar_node/share/colcon-core/packages/ldlidar_node)
+[12.474s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ldlidar_node)
+[12.474s] Level 1:colcon.colcon_core.environment:checking '/home/xtal/ROS2-omni-manipulator/install/ldlidar_node' for CMake module files
+[12.474s] Level 1:colcon.colcon_core.environment:checking '/home/xtal/ROS2-omni-manipulator/install/ldlidar_node' for CMake config files
+[12.475s] Level 1:colcon.colcon_core.shell:create_environment_hook('ldlidar_node', 'cmake_prefix_path')
+[12.475s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/xtal/ROS2-omni-manipulator/install/ldlidar_node/share/ldlidar_node/hook/cmake_prefix_path.ps1'
+[12.475s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/xtal/ROS2-omni-manipulator/install/ldlidar_node/share/ldlidar_node/hook/cmake_prefix_path.dsv'
+[12.475s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/xtal/ROS2-omni-manipulator/install/ldlidar_node/share/ldlidar_node/hook/cmake_prefix_path.sh'
+[12.476s] Level 1:colcon.colcon_core.environment:checking '/home/xtal/ROS2-omni-manipulator/install/ldlidar_node/bin'
+[12.476s] Level 1:colcon.colcon_core.environment:checking '/home/xtal/ROS2-omni-manipulator/install/ldlidar_node/lib/pkgconfig/ldlidar_node.pc'
+[12.476s] Level 1:colcon.colcon_core.environment:checking '/home/xtal/ROS2-omni-manipulator/install/ldlidar_node/lib/python3.12/site-packages'
+[12.476s] Level 1:colcon.colcon_core.environment:checking '/home/xtal/ROS2-omni-manipulator/install/ldlidar_node/bin'
+[12.476s] INFO:colcon.colcon_core.shell:Creating package script '/home/xtal/ROS2-omni-manipulator/install/ldlidar_node/share/ldlidar_node/package.ps1'
+[12.476s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/xtal/ROS2-omni-manipulator/install/ldlidar_node/share/ldlidar_node/package.dsv'
+[12.477s] INFO:colcon.colcon_core.shell:Creating package script '/home/xtal/ROS2-omni-manipulator/install/ldlidar_node/share/ldlidar_node/package.sh'
+[12.477s] INFO:colcon.colcon_core.shell:Creating package script '/home/xtal/ROS2-omni-manipulator/install/ldlidar_node/share/ldlidar_node/package.bash'
+[12.477s] INFO:colcon.colcon_core.shell:Creating package script '/home/xtal/ROS2-omni-manipulator/install/ldlidar_node/share/ldlidar_node/package.zsh'
+[12.478s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/xtal/ROS2-omni-manipulator/install/ldlidar_node/share/colcon-core/packages/ldlidar_node)
+[12.478s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/xtal/ROS2-omni-manipulator/src/ldrobot-lidar-ros2/ldlidar' with build type 'ament_cmake'
+[12.478s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/xtal/ROS2-omni-manipulator/src/ldrobot-lidar-ros2/ldlidar'
+[12.478s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[12.478s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[12.489s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/xtal/ROS2-omni-manipulator/build/ldlidar': CMAKE_PREFIX_PATH=/home/xtal/ROS2-omni-manipulator/install/ldlidar_node:/home/xtal/ROS2-omni-manipulator/install/ldlidar_component:/home/xtal/ROS2-omni-manipulator/install/micro_ros_setup:/home/xtal/ROS2-omni-manipulator/install/micro_ros_agent:/home/xtal/ROS2-omni-manipulator/install/ldlidar:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/xtal/ROS2-omni-manipulator/install/dm:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/xtal/ROS2-omni-manipulator/install/ldlidar_component/lib:/home/xtal/ROS2-omni-manipulator/install/micro_ros_agent/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib /usr/bin/cmake /home/xtal/ROS2-omni-manipulator/src/ldrobot-lidar-ros2/ldlidar -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/xtal/ROS2-omni-manipulator/install/ldlidar
+[12.869s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/xtal/ROS2-omni-manipulator/build/ldlidar' returned '0': CMAKE_PREFIX_PATH=/home/xtal/ROS2-omni-manipulator/install/ldlidar_node:/home/xtal/ROS2-omni-manipulator/install/ldlidar_component:/home/xtal/ROS2-omni-manipulator/install/micro_ros_setup:/home/xtal/ROS2-omni-manipulator/install/micro_ros_agent:/home/xtal/ROS2-omni-manipulator/install/ldlidar:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/xtal/ROS2-omni-manipulator/install/dm:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/xtal/ROS2-omni-manipulator/install/ldlidar_component/lib:/home/xtal/ROS2-omni-manipulator/install/micro_ros_agent/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib /usr/bin/cmake /home/xtal/ROS2-omni-manipulator/src/ldrobot-lidar-ros2/ldlidar -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/xtal/ROS2-omni-manipulator/install/ldlidar
+[12.870s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/xtal/ROS2-omni-manipulator/build/ldlidar': CMAKE_PREFIX_PATH=/home/xtal/ROS2-omni-manipulator/install/ldlidar_node:/home/xtal/ROS2-omni-manipulator/install/ldlidar_component:/home/xtal/ROS2-omni-manipulator/install/micro_ros_setup:/home/xtal/ROS2-omni-manipulator/install/micro_ros_agent:/home/xtal/ROS2-omni-manipulator/install/ldlidar:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/xtal/ROS2-omni-manipulator/install/dm:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/xtal/ROS2-omni-manipulator/install/ldlidar_component/lib:/home/xtal/ROS2-omni-manipulator/install/micro_ros_agent/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib /usr/bin/cmake --build /home/xtal/ROS2-omni-manipulator/build/ldlidar -- -j16 -l16
+[12.910s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/xtal/ROS2-omni-manipulator/build/ldlidar' returned '0': CMAKE_PREFIX_PATH=/home/xtal/ROS2-omni-manipulator/install/ldlidar_node:/home/xtal/ROS2-omni-manipulator/install/ldlidar_component:/home/xtal/ROS2-omni-manipulator/install/micro_ros_setup:/home/xtal/ROS2-omni-manipulator/install/micro_ros_agent:/home/xtal/ROS2-omni-manipulator/install/ldlidar:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/xtal/ROS2-omni-manipulator/install/dm:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/xtal/ROS2-omni-manipulator/install/ldlidar_component/lib:/home/xtal/ROS2-omni-manipulator/install/micro_ros_agent/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib /usr/bin/cmake --build /home/xtal/ROS2-omni-manipulator/build/ldlidar -- -j16 -l16
+[12.911s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/xtal/ROS2-omni-manipulator/build/ldlidar': CMAKE_PREFIX_PATH=/home/xtal/ROS2-omni-manipulator/install/ldlidar_node:/home/xtal/ROS2-omni-manipulator/install/ldlidar_component:/home/xtal/ROS2-omni-manipulator/install/micro_ros_setup:/home/xtal/ROS2-omni-manipulator/install/micro_ros_agent:/home/xtal/ROS2-omni-manipulator/install/ldlidar:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/xtal/ROS2-omni-manipulator/install/dm:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/xtal/ROS2-omni-manipulator/install/ldlidar_component/lib:/home/xtal/ROS2-omni-manipulator/install/micro_ros_agent/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib /usr/bin/cmake --install /home/xtal/ROS2-omni-manipulator/build/ldlidar
+[13.068s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ldlidar)
+[13.068s] Level 1:colcon.colcon_core.environment:checking '/home/xtal/ROS2-omni-manipulator/install/ldlidar' for CMake module files
+[13.069s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/xtal/ROS2-omni-manipulator/build/ldlidar' returned '0': CMAKE_PREFIX_PATH=/home/xtal/ROS2-omni-manipulator/install/ldlidar_node:/home/xtal/ROS2-omni-manipulator/install/ldlidar_component:/home/xtal/ROS2-omni-manipulator/install/micro_ros_setup:/home/xtal/ROS2-omni-manipulator/install/micro_ros_agent:/home/xtal/ROS2-omni-manipulator/install/ldlidar:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/xtal/ROS2-omni-manipulator/install/dm:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/xtal/ROS2-omni-manipulator/install/ldlidar_component/lib:/home/xtal/ROS2-omni-manipulator/install/micro_ros_agent/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib /usr/bin/cmake --install /home/xtal/ROS2-omni-manipulator/build/ldlidar
+[13.069s] Level 1:colcon.colcon_core.environment:checking '/home/xtal/ROS2-omni-manipulator/install/ldlidar' for CMake config files
+[13.069s] Level 1:colcon.colcon_core.shell:create_environment_hook('ldlidar', 'cmake_prefix_path')
+[13.069s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/xtal/ROS2-omni-manipulator/install/ldlidar/share/ldlidar/hook/cmake_prefix_path.ps1'
+[13.070s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/xtal/ROS2-omni-manipulator/install/ldlidar/share/ldlidar/hook/cmake_prefix_path.dsv'
+[13.070s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/xtal/ROS2-omni-manipulator/install/ldlidar/share/ldlidar/hook/cmake_prefix_path.sh'
+[13.070s] Level 1:colcon.colcon_core.environment:checking '/home/xtal/ROS2-omni-manipulator/install/ldlidar/bin'
+[13.070s] Level 1:colcon.colcon_core.environment:checking '/home/xtal/ROS2-omni-manipulator/install/ldlidar/lib/pkgconfig/ldlidar.pc'
+[13.071s] Level 1:colcon.colcon_core.environment:checking '/home/xtal/ROS2-omni-manipulator/install/ldlidar/lib/python3.12/site-packages'
+[13.071s] Level 1:colcon.colcon_core.environment:checking '/home/xtal/ROS2-omni-manipulator/install/ldlidar/bin'
+[13.071s] INFO:colcon.colcon_core.shell:Creating package script '/home/xtal/ROS2-omni-manipulator/install/ldlidar/share/ldlidar/package.ps1'
+[13.071s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/xtal/ROS2-omni-manipulator/install/ldlidar/share/ldlidar/package.dsv'
+[13.071s] INFO:colcon.colcon_core.shell:Creating package script '/home/xtal/ROS2-omni-manipulator/install/ldlidar/share/ldlidar/package.sh'
+[13.072s] INFO:colcon.colcon_core.shell:Creating package script '/home/xtal/ROS2-omni-manipulator/install/ldlidar/share/ldlidar/package.bash'
+[13.072s] INFO:colcon.colcon_core.shell:Creating package script '/home/xtal/ROS2-omni-manipulator/install/ldlidar/share/ldlidar/package.zsh'
+[13.072s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/xtal/ROS2-omni-manipulator/install/ldlidar/share/colcon-core/packages/ldlidar)
+[13.072s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ldlidar)
+[13.073s] Level 1:colcon.colcon_core.environment:checking '/home/xtal/ROS2-omni-manipulator/install/ldlidar' for CMake module files
+[13.073s] Level 1:colcon.colcon_core.environment:checking '/home/xtal/ROS2-omni-manipulator/install/ldlidar' for CMake config files
+[13.073s] Level 1:colcon.colcon_core.shell:create_environment_hook('ldlidar', 'cmake_prefix_path')
+[13.073s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/xtal/ROS2-omni-manipulator/install/ldlidar/share/ldlidar/hook/cmake_prefix_path.ps1'
+[13.073s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/xtal/ROS2-omni-manipulator/install/ldlidar/share/ldlidar/hook/cmake_prefix_path.dsv'
+[13.074s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/xtal/ROS2-omni-manipulator/install/ldlidar/share/ldlidar/hook/cmake_prefix_path.sh'
+[13.074s] Level 1:colcon.colcon_core.environment:checking '/home/xtal/ROS2-omni-manipulator/install/ldlidar/bin'
+[13.074s] Level 1:colcon.colcon_core.environment:checking '/home/xtal/ROS2-omni-manipulator/install/ldlidar/lib/pkgconfig/ldlidar.pc'
+[13.074s] Level 1:colcon.colcon_core.environment:checking '/home/xtal/ROS2-omni-manipulator/install/ldlidar/lib/python3.12/site-packages'
+[13.074s] Level 1:colcon.colcon_core.environment:checking '/home/xtal/ROS2-omni-manipulator/install/ldlidar/bin'
+[13.075s] INFO:colcon.colcon_core.shell:Creating package script '/home/xtal/ROS2-omni-manipulator/install/ldlidar/share/ldlidar/package.ps1'
+[13.075s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/xtal/ROS2-omni-manipulator/install/ldlidar/share/ldlidar/package.dsv'
+[13.075s] INFO:colcon.colcon_core.shell:Creating package script '/home/xtal/ROS2-omni-manipulator/install/ldlidar/share/ldlidar/package.sh'
+[13.075s] INFO:colcon.colcon_core.shell:Creating package script '/home/xtal/ROS2-omni-manipulator/install/ldlidar/share/ldlidar/package.bash'
+[13.076s] INFO:colcon.colcon_core.shell:Creating package script '/home/xtal/ROS2-omni-manipulator/install/ldlidar/share/ldlidar/package.zsh'
+[13.076s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/xtal/ROS2-omni-manipulator/install/ldlidar/share/colcon-core/packages/ldlidar)
+[49.233s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/xtal/ROS2-omni-manipulator/build/micro_ros_agent' returned '0': AMENT_PREFIX_PATH=/home/xtal/ROS2-omni-manipulator/install/micro_ros_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/xtal/ROS2-omni-manipulator/install/micro_ros_msgs:/home/xtal/ROS2-omni-manipulator/install/micro_ros_setup:/home/xtal/ROS2-omni-manipulator/install/micro_ros_agent:/home/xtal/ROS2-omni-manipulator/install/ldlidar:/home/xtal/ROS2-omni-manipulator/install/ldlidar_node:/home/xtal/ROS2-omni-manipulator/install/ldlidar_component:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/xtal/ROS2-omni-manipulator/install/dm:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/xtal/ROS2-omni-manipulator/install/micro_ros_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/xtal/ROS2-omni-manipulator/install/micro_ros_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/xtal/ROS2-omni-manipulator/build/micro_ros_agent -- -j16 -l16
+[49.234s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/xtal/ROS2-omni-manipulator/build/micro_ros_agent': AMENT_PREFIX_PATH=/home/xtal/ROS2-omni-manipulator/install/micro_ros_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/xtal/ROS2-omni-manipulator/install/micro_ros_msgs:/home/xtal/ROS2-omni-manipulator/install/micro_ros_setup:/home/xtal/ROS2-omni-manipulator/install/micro_ros_agent:/home/xtal/ROS2-omni-manipulator/install/ldlidar:/home/xtal/ROS2-omni-manipulator/install/ldlidar_node:/home/xtal/ROS2-omni-manipulator/install/ldlidar_component:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/xtal/ROS2-omni-manipulator/install/dm:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/xtal/ROS2-omni-manipulator/install/micro_ros_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/xtal/ROS2-omni-manipulator/install/micro_ros_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/xtal/ROS2-omni-manipulator/build/micro_ros_agent
+[49.451s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(micro_ros_agent)
+[49.451s] Level 1:colcon.colcon_core.environment:checking '/home/xtal/ROS2-omni-manipulator/install/micro_ros_agent' for CMake module files
+[49.452s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/xtal/ROS2-omni-manipulator/build/micro_ros_agent' returned '0': AMENT_PREFIX_PATH=/home/xtal/ROS2-omni-manipulator/install/micro_ros_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/xtal/ROS2-omni-manipulator/install/micro_ros_msgs:/home/xtal/ROS2-omni-manipulator/install/micro_ros_setup:/home/xtal/ROS2-omni-manipulator/install/micro_ros_agent:/home/xtal/ROS2-omni-manipulator/install/ldlidar:/home/xtal/ROS2-omni-manipulator/install/ldlidar_node:/home/xtal/ROS2-omni-manipulator/install/ldlidar_component:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/xtal/ROS2-omni-manipulator/install/dm:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/xtal/ROS2-omni-manipulator/install/micro_ros_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/xtal/ROS2-omni-manipulator/install/micro_ros_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/xtal/ROS2-omni-manipulator/build/micro_ros_agent
+[49.452s] Level 1:colcon.colcon_core.environment:checking '/home/xtal/ROS2-omni-manipulator/install/micro_ros_agent' for CMake config files
+[49.452s] Level 1:colcon.colcon_core.shell:create_environment_hook('micro_ros_agent', 'cmake_prefix_path')
+[49.453s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/xtal/ROS2-omni-manipulator/install/micro_ros_agent/share/micro_ros_agent/hook/cmake_prefix_path.ps1'
+[49.453s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/xtal/ROS2-omni-manipulator/install/micro_ros_agent/share/micro_ros_agent/hook/cmake_prefix_path.dsv'
+[49.453s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/xtal/ROS2-omni-manipulator/install/micro_ros_agent/share/micro_ros_agent/hook/cmake_prefix_path.sh'
+[49.454s] Level 1:colcon.colcon_core.environment:checking '/home/xtal/ROS2-omni-manipulator/install/micro_ros_agent/lib'
+[49.454s] Level 1:colcon.colcon_core.shell:create_environment_hook('micro_ros_agent', 'ld_library_path_lib')
+[49.454s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/xtal/ROS2-omni-manipulator/install/micro_ros_agent/share/micro_ros_agent/hook/ld_library_path_lib.ps1'
+[49.454s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/xtal/ROS2-omni-manipulator/install/micro_ros_agent/share/micro_ros_agent/hook/ld_library_path_lib.dsv'
+[49.454s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/xtal/ROS2-omni-manipulator/install/micro_ros_agent/share/micro_ros_agent/hook/ld_library_path_lib.sh'
+[49.455s] Level 1:colcon.colcon_core.environment:checking '/home/xtal/ROS2-omni-manipulator/install/micro_ros_agent/bin'
+[49.455s] Level 1:colcon.colcon_core.environment:checking '/home/xtal/ROS2-omni-manipulator/install/micro_ros_agent/lib/pkgconfig/micro_ros_agent.pc'
+[49.455s] Level 1:colcon.colcon_core.environment:checking '/home/xtal/ROS2-omni-manipulator/install/micro_ros_agent/lib/python3.12/site-packages'
+[49.455s] Level 1:colcon.colcon_core.environment:checking '/home/xtal/ROS2-omni-manipulator/install/micro_ros_agent/bin'
+[49.455s] INFO:colcon.colcon_core.shell:Creating package script '/home/xtal/ROS2-omni-manipulator/install/micro_ros_agent/share/micro_ros_agent/package.ps1'
+[49.456s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/xtal/ROS2-omni-manipulator/install/micro_ros_agent/share/micro_ros_agent/package.dsv'
+[49.456s] INFO:colcon.colcon_core.shell:Creating package script '/home/xtal/ROS2-omni-manipulator/install/micro_ros_agent/share/micro_ros_agent/package.sh'
+[49.456s] INFO:colcon.colcon_core.shell:Creating package script '/home/xtal/ROS2-omni-manipulator/install/micro_ros_agent/share/micro_ros_agent/package.bash'
+[49.456s] INFO:colcon.colcon_core.shell:Creating package script '/home/xtal/ROS2-omni-manipulator/install/micro_ros_agent/share/micro_ros_agent/package.zsh'
+[49.457s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/xtal/ROS2-omni-manipulator/install/micro_ros_agent/share/colcon-core/packages/micro_ros_agent)
+[49.457s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(micro_ros_agent)
+[49.457s] Level 1:colcon.colcon_core.environment:checking '/home/xtal/ROS2-omni-manipulator/install/micro_ros_agent' for CMake module files
+[49.458s] Level 1:colcon.colcon_core.environment:checking '/home/xtal/ROS2-omni-manipulator/install/micro_ros_agent' for CMake config files
+[49.458s] Level 1:colcon.colcon_core.shell:create_environment_hook('micro_ros_agent', 'cmake_prefix_path')
+[49.458s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/xtal/ROS2-omni-manipulator/install/micro_ros_agent/share/micro_ros_agent/hook/cmake_prefix_path.ps1'
+[49.458s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/xtal/ROS2-omni-manipulator/install/micro_ros_agent/share/micro_ros_agent/hook/cmake_prefix_path.dsv'
+[49.459s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/xtal/ROS2-omni-manipulator/install/micro_ros_agent/share/micro_ros_agent/hook/cmake_prefix_path.sh'
+[49.459s] Level 1:colcon.colcon_core.environment:checking '/home/xtal/ROS2-omni-manipulator/install/micro_ros_agent/lib'
+[49.459s] Level 1:colcon.colcon_core.shell:create_environment_hook('micro_ros_agent', 'ld_library_path_lib')
+[49.460s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/xtal/ROS2-omni-manipulator/install/micro_ros_agent/share/micro_ros_agent/hook/ld_library_path_lib.ps1'
+[49.460s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/xtal/ROS2-omni-manipulator/install/micro_ros_agent/share/micro_ros_agent/hook/ld_library_path_lib.dsv'
+[49.460s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/xtal/ROS2-omni-manipulator/install/micro_ros_agent/share/micro_ros_agent/hook/ld_library_path_lib.sh'
+[49.461s] Level 1:colcon.colcon_core.environment:checking '/home/xtal/ROS2-omni-manipulator/install/micro_ros_agent/bin'
+[49.461s] Level 1:colcon.colcon_core.environment:checking '/home/xtal/ROS2-omni-manipulator/install/micro_ros_agent/lib/pkgconfig/micro_ros_agent.pc'
+[49.461s] Level 1:colcon.colcon_core.environment:checking '/home/xtal/ROS2-omni-manipulator/install/micro_ros_agent/lib/python3.12/site-packages'
+[49.461s] Level 1:colcon.colcon_core.environment:checking '/home/xtal/ROS2-omni-manipulator/install/micro_ros_agent/bin'
+[49.461s] INFO:colcon.colcon_core.shell:Creating package script '/home/xtal/ROS2-omni-manipulator/install/micro_ros_agent/share/micro_ros_agent/package.ps1'
+[49.462s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/xtal/ROS2-omni-manipulator/install/micro_ros_agent/share/micro_ros_agent/package.dsv'
+[49.462s] INFO:colcon.colcon_core.shell:Creating package script '/home/xtal/ROS2-omni-manipulator/install/micro_ros_agent/share/micro_ros_agent/package.sh'
+[49.462s] INFO:colcon.colcon_core.shell:Creating package script '/home/xtal/ROS2-omni-manipulator/install/micro_ros_agent/share/micro_ros_agent/package.bash'
+[49.463s] INFO:colcon.colcon_core.shell:Creating package script '/home/xtal/ROS2-omni-manipulator/install/micro_ros_agent/share/micro_ros_agent/package.zsh'
+[49.463s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/xtal/ROS2-omni-manipulator/install/micro_ros_agent/share/colcon-core/packages/micro_ros_agent)
+[49.463s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[49.463s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[49.463s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[49.463s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[49.471s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[49.471s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[49.471s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[49.482s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[49.482s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/xtal/ROS2-omni-manipulator/install/local_setup.ps1'
+[49.483s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/xtal/ROS2-omni-manipulator/install/_local_setup_util_ps1.py'
+[49.484s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/xtal/ROS2-omni-manipulator/install/setup.ps1'
+[49.485s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/xtal/ROS2-omni-manipulator/install/local_setup.sh'
+[49.485s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/xtal/ROS2-omni-manipulator/install/_local_setup_util_sh.py'
+[49.485s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/xtal/ROS2-omni-manipulator/install/setup.sh'
+[49.486s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/xtal/ROS2-omni-manipulator/install/local_setup.bash'
+[49.487s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/xtal/ROS2-omni-manipulator/install/setup.bash'
+[49.488s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/xtal/ROS2-omni-manipulator/install/local_setup.zsh'
+[49.489s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/xtal/ROS2-omni-manipulator/install/setup.zsh'

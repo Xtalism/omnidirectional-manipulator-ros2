@@ -1,0 +1,14 @@
+Simulation results:
+
+V(planck):                6.62607e-19fV
+V(boltz):                 1.38065e-08fV
+V(echarge):               0.000160218fV
+V(kelvin):                -273.15V
+V(i):                     0V
+V(c):                     299.792MegV
+V(e):                     2.71828V
+V(pi):                    3.14159V
+V(FALSE):                 0V
+V(no):                    0V
+V(TRUE):                  1V
+V(yes):                   1V

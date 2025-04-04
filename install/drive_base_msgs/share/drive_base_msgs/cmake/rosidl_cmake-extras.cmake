@@ -1,0 +1,1 @@
+/home/xtal/ROS2-omni-manipulator/build/drive_base_msgs/rosidl_cmake/rosidl_cmake-extras.cmake

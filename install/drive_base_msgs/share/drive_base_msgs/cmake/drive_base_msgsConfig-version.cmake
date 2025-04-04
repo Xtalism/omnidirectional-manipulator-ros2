@@ -1,0 +1,1 @@
+/home/xtal/ROS2-omni-manipulator/build/drive_base_msgs/ament_cmake_core/drive_base_msgsConfig-version.cmake

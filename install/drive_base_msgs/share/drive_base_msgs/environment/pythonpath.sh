@@ -1,0 +1,1 @@
+/home/xtal/ROS2-omni-manipulator/build/drive_base_msgs/ament_cmake_environment_hooks/pythonpath.sh

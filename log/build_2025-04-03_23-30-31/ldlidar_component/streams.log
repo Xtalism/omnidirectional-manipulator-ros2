@@ -1,0 +1,41 @@
+[0.024s] Invoking command in '/home/xtal/ROS2-omni-manipulator/build/ldlidar_component': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/xtal/ROS2-omni-manipulator/install/dm:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/xtal/ROS2-omni-manipulator/build/ldlidar_component -- -j16 -l16
+[0.256s] [ 70%] Built target ldlidar
+[0.257s] [100%] Built target ldlidar_component
+[0.259s] Invoked command in '/home/xtal/ROS2-omni-manipulator/build/ldlidar_component' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/xtal/ROS2-omni-manipulator/install/dm:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/xtal/ROS2-omni-manipulator/build/ldlidar_component -- -j16 -l16
+[0.269s] Invoking command in '/home/xtal/ROS2-omni-manipulator/build/ldlidar_component': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/xtal/ROS2-omni-manipulator/install/dm:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/xtal/ROS2-omni-manipulator/build/ldlidar_component
+[0.277s] -- Install configuration: "Release"
+[0.277s] -- Execute custom install script
+[0.277s] -- Up-to-date symlink: /home/xtal/ROS2-omni-manipulator/install/ldlidar_component/lib/libldlidar_component.so
+[0.278s] -- Up-to-date symlink: /home/xtal/ROS2-omni-manipulator/install/ldlidar_component/include/ldlidar_component//defines.hpp
+[0.278s] -- Up-to-date symlink: /home/xtal/ROS2-omni-manipulator/install/ldlidar_component/include/ldlidar_component//ldlidar_component.hpp
+[0.278s] -- Up-to-date symlink: /home/xtal/ROS2-omni-manipulator/install/ldlidar_component/include/ldlidar_component//ldlidar_tools.hpp
+[0.278s] -- Up-to-date symlink: /home/xtal/ROS2-omni-manipulator/install/ldlidar_component/include/ldlidar_component//visibility_control.hpp
+[0.278s] -- Up-to-date symlink: /home/xtal/ROS2-omni-manipulator/install/ldlidar_component/include/ldlidar_component//ldlidar_datatype.h
+[0.278s] -- Up-to-date symlink: /home/xtal/ROS2-omni-manipulator/install/ldlidar_component/include/ldlidar_component//ldlidar_driver.h
+[0.279s] -- Up-to-date symlink: /home/xtal/ROS2-omni-manipulator/install/ldlidar_component/include/ldlidar_component//lipkg.h
+[0.279s] -- Up-to-date symlink: /home/xtal/ROS2-omni-manipulator/install/ldlidar_component/include/ldlidar_component//tofbf.h
+[0.279s] -- Up-to-date symlink: /home/xtal/ROS2-omni-manipulator/install/ldlidar_component/include/ldlidar_component//log_module.h
+[0.279s] -- Up-to-date symlink: /home/xtal/ROS2-omni-manipulator/install/ldlidar_component/include/ldlidar_component//network_socket_interface_linux.h
+[0.279s] -- Up-to-date symlink: /home/xtal/ROS2-omni-manipulator/install/ldlidar_component/include/ldlidar_component//serial_interface_linux.h
+[0.279s] -- Up-to-date symlink: /home/xtal/ROS2-omni-manipulator/install/ldlidar_component/share/ldlidar_component/environment/library_path.sh
+[0.279s] -- Up-to-date symlink: /home/xtal/ROS2-omni-manipulator/install/ldlidar_component/share/ldlidar_component/environment/library_path.dsv
+[0.280s] -- Up-to-date symlink: /home/xtal/ROS2-omni-manipulator/install/ldlidar_component/share/ament_index/resource_index/package_run_dependencies/ldlidar_component
+[0.280s] -- Up-to-date symlink: /home/xtal/ROS2-omni-manipulator/install/ldlidar_component/share/ament_index/resource_index/parent_prefix_path/ldlidar_component
+[0.280s] -- Up-to-date symlink: /home/xtal/ROS2-omni-manipulator/install/ldlidar_component/share/ldlidar_component/environment/ament_prefix_path.sh
+[0.280s] -- Up-to-date symlink: /home/xtal/ROS2-omni-manipulator/install/ldlidar_component/share/ldlidar_component/environment/ament_prefix_path.dsv
+[0.280s] -- Up-to-date symlink: /home/xtal/ROS2-omni-manipulator/install/ldlidar_component/share/ldlidar_component/environment/path.sh
+[0.280s] -- Up-to-date symlink: /home/xtal/ROS2-omni-manipulator/install/ldlidar_component/share/ldlidar_component/environment/path.dsv
+[0.280s] -- Up-to-date symlink: /home/xtal/ROS2-omni-manipulator/install/ldlidar_component/share/ldlidar_component/local_setup.bash
+[0.280s] -- Up-to-date symlink: /home/xtal/ROS2-omni-manipulator/install/ldlidar_component/share/ldlidar_component/local_setup.sh
+[0.281s] -- Up-to-date symlink: /home/xtal/ROS2-omni-manipulator/install/ldlidar_component/share/ldlidar_component/local_setup.zsh
+[0.282s] -- Up-to-date symlink: /home/xtal/ROS2-omni-manipulator/install/ldlidar_component/share/ldlidar_component/local_setup.dsv
+[0.282s] -- Symlinking: /home/xtal/ROS2-omni-manipulator/install/ldlidar_component/share/ldlidar_component/package.dsv
+[0.290s] -- Up-to-date symlink: /home/xtal/ROS2-omni-manipulator/install/ldlidar_component/share/ament_index/resource_index/packages/ldlidar_component
+[0.291s] -- Up-to-date symlink: /home/xtal/ROS2-omni-manipulator/install/ldlidar_component/share/ament_index/resource_index/rclcpp_components/ldlidar_component
+[0.291s] -- Up-to-date symlink: /home/xtal/ROS2-omni-manipulator/install/ldlidar_component/share/ldlidar_component/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.291s] -- Up-to-date symlink: /home/xtal/ROS2-omni-manipulator/install/ldlidar_component/share/ldlidar_component/cmake/ament_cmake_export_libraries-extras.cmake
+[0.291s] -- Up-to-date symlink: /home/xtal/ROS2-omni-manipulator/install/ldlidar_component/share/ldlidar_component/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.291s] -- Up-to-date symlink: /home/xtal/ROS2-omni-manipulator/install/ldlidar_component/share/ldlidar_component/cmake/ldlidar_componentConfig.cmake
+[0.291s] -- Up-to-date symlink: /home/xtal/ROS2-omni-manipulator/install/ldlidar_component/share/ldlidar_component/cmake/ldlidar_componentConfig-version.cmake
+[0.291s] -- Up-to-date symlink: /home/xtal/ROS2-omni-manipulator/install/ldlidar_component/share/ldlidar_component/package.xml
+[0.293s] Invoked command in '/home/xtal/ROS2-omni-manipulator/build/ldlidar_component' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/xtal/ROS2-omni-manipulator/install/dm:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/xtal/ROS2-omni-manipulator/build/ldlidar_component

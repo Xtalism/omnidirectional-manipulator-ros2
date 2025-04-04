@@ -1,0 +1,293 @@
+[0.230s] Invoking command in '/home/xtal/ROS2-omni-manipulator/build/drive_base_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/xtal/ROS2-omni-manipulator/install/dm:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/xtal/ROS2-omni-manipulator/src/uros/drive_base/drive_base_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/xtal/ROS2-omni-manipulator/install/drive_base_msgs
+[0.281s] -- The C compiler identification is GNU 13.3.0
+[0.338s] -- The CXX compiler identification is GNU 13.3.0
+[0.354s] -- Detecting C compiler ABI info
+[0.444s] -- Detecting C compiler ABI info - done
+[0.452s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.452s] -- Detecting C compile features
+[0.452s] -- Detecting C compile features - done
+[0.462s] -- Detecting CXX compiler ABI info
+[0.562s] -- Detecting CXX compiler ABI info - done
+[0.571s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.571s] -- Detecting CXX compile features
+[0.571s] -- Detecting CXX compile features - done
+[0.576s] -- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.728s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.806s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.865s] -- Found std_msgs: 5.3.5 (/opt/ros/jazzy/share/std_msgs/cmake)
+[0.923s] -- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.942s] -- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.965s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.987s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.025s] -- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[1.045s] -- Found rosidl_adapter: 4.6.5 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[1.610s] -- Found ament_cmake_cppcheck: 0.17.1 (/opt/ros/jazzy/share/ament_cmake_cppcheck/cmake)
+[1.614s] -- Found ament_cmake_cpplint: 0.17.1 (/opt/ros/jazzy/share/ament_cmake_cpplint/cmake)
+[1.619s] -- Found ament_cmake_uncrustify: 0.17.1 (/opt/ros/jazzy/share/ament_cmake_uncrustify/cmake)
+[1.624s] -- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)
+[2.433s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.738s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.743s] -- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)
+[2.872s] -- Found PythonExtra: /usr/bin/python3  
+[3.294s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed 
+[3.341s] -- Found ament_cmake_flake8: 0.17.1 (/opt/ros/jazzy/share/ament_cmake_flake8/cmake)
+[3.346s] -- Found ament_cmake_pep257: 0.17.1 (/opt/ros/jazzy/share/ament_cmake_pep257/cmake)
+[3.356s] -- Configuring done (3.1s)
+[3.397s] -- Generating done (0.0s)
+[3.408s] -- Build files have been written to: /home/xtal/ROS2-omni-manipulator/build/drive_base_msgs
+[3.425s] Invoked command in '/home/xtal/ROS2-omni-manipulator/build/drive_base_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/xtal/ROS2-omni-manipulator/install/dm:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/xtal/ROS2-omni-manipulator/src/uros/drive_base/drive_base_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/xtal/ROS2-omni-manipulator/install/drive_base_msgs
+[3.425s] Invoking command in '/home/xtal/ROS2-omni-manipulator/build/drive_base_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/xtal/ROS2-omni-manipulator/install/dm:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/xtal/ROS2-omni-manipulator/build/drive_base_msgs -- -j16 -l16
+[3.485s] [  1%] [34m[1mGenerating type hashes for ROS interfaces[0m
+[3.497s] [  1%] Built target ament_cmake_python_symlink_drive_base_msgs
+[3.780s] running egg_info
+[3.781s] creating drive_base_msgs.egg-info
+[3.820s] writing drive_base_msgs.egg-info/PKG-INFO
+[3.820s] writing dependency_links to drive_base_msgs.egg-info/dependency_links.txt
+[3.820s] writing top-level names to drive_base_msgs.egg-info/top_level.txt
+[3.821s] writing manifest file 'drive_base_msgs.egg-info/SOURCES.txt'
+[3.931s] reading manifest file 'drive_base_msgs.egg-info/SOURCES.txt'
+[3.932s] writing manifest file 'drive_base_msgs.egg-info/SOURCES.txt'
+[3.977s] [  1%] Built target ament_cmake_python_build_drive_base_msgs_egg
+[3.993s] [  1%] Built target drive_base_msgs__rosidl_generator_type_description
+[4.008s] [  3%] [34m[1mGenerating C code for ROS interfaces[0m
+[4.028s] [  4%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[5.030s] [  4%] Built target drive_base_msgs__cpp
+[5.044s] [  9%] [32mBuilding C object CMakeFiles/drive_base_msgs__rosidl_generator_c.dir/rosidl_generator_c/drive_base_msgs/msg/detail/command_header__description.c.o[0m
+[5.044s] [  9%] [32mBuilding C object CMakeFiles/drive_base_msgs__rosidl_generator_c.dir/rosidl_generator_c/drive_base_msgs/msg/detail/command_header__type_support.c.o[0m
+[5.044s] [  9%] [32mBuilding C object CMakeFiles/drive_base_msgs__rosidl_generator_c.dir/rosidl_generator_c/drive_base_msgs/msg/detail/command_header__functions.c.o[0m
+[5.045s] [ 10%] [32mBuilding C object CMakeFiles/drive_base_msgs__rosidl_generator_c.dir/rosidl_generator_c/drive_base_msgs/msg/detail/command_status__functions.c.o[0m
+[5.045s] [ 14%] [32mBuilding C object CMakeFiles/drive_base_msgs__rosidl_generator_c.dir/rosidl_generator_c/drive_base_msgs/msg/detail/command_status__type_support.c.o[0m
+[5.045s] [ 14%] [32mBuilding C object CMakeFiles/drive_base_msgs__rosidl_generator_c.dir/rosidl_generator_c/drive_base_msgs/msg/detail/trv_command__functions.c.o[0m
+[5.045s] [ 15%] [32mBuilding C object CMakeFiles/drive_base_msgs__rosidl_generator_c.dir/rosidl_generator_c/drive_base_msgs/msg/detail/base_info__functions.c.o[0m
+[5.045s] [ 17%] [32mBuilding C object CMakeFiles/drive_base_msgs__rosidl_generator_c.dir/rosidl_generator_c/drive_base_msgs/msg/detail/base_info__description.c.o[0m
+[5.045s] [ 18%] [32mBuilding C object CMakeFiles/drive_base_msgs__rosidl_generator_c.dir/rosidl_generator_c/drive_base_msgs/msg/detail/trv_command__type_support.c.o[0m
+[5.045s] [ 20%] [32mBuilding C object CMakeFiles/drive_base_msgs__rosidl_generator_c.dir/rosidl_generator_c/drive_base_msgs/msg/detail/command_status__description.c.o[0m
+[5.045s] [ 21%] [32mBuilding C object CMakeFiles/drive_base_msgs__rosidl_generator_c.dir/rosidl_generator_c/drive_base_msgs/msg/detail/base_info__type_support.c.o[0m
+[5.045s] [ 23%] [32mBuilding C object CMakeFiles/drive_base_msgs__rosidl_generator_c.dir/rosidl_generator_c/drive_base_msgs/msg/detail/trv_command__description.c.o[0m
+[5.117s] [ 25%] [32m[1mLinking C shared library libdrive_base_msgs__rosidl_generator_c.so[0m
+[5.162s] [ 25%] Built target drive_base_msgs__rosidl_generator_c
+[5.176s] [ 34%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[5.176s] [ 34%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[5.176s] [ 34%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[5.176s] [ 34%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[5.176s] [ 34%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[5.176s] [ 34%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[5.756s] [ 40%] [32mBuilding CXX object CMakeFiles/drive_base_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/drive_base_msgs/msg/base_info__type_support.cpp.o[0m
+[5.756s] [ 40%] [32mBuilding CXX object CMakeFiles/drive_base_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/drive_base_msgs/msg/trv_command__type_support.cpp.o[0m
+[5.757s] [ 40%] [32mBuilding CXX object CMakeFiles/drive_base_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/drive_base_msgs/msg/command_header__type_support.cpp.o[0m
+[5.757s] [ 40%] [32mBuilding CXX object CMakeFiles/drive_base_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/drive_base_msgs/msg/command_status__type_support.cpp.o[0m
+[5.824s] [ 42%] [32m[1mLinking CXX shared library libdrive_base_msgs__rosidl_typesupport_c.so[0m
+[5.851s] [ 43%] [32mBuilding C object CMakeFiles/drive_base_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/drive_base_msgs/msg/detail/command_header__type_support.c.o[0m
+[5.856s] [ 45%] [32mBuilding C object CMakeFiles/drive_base_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/drive_base_msgs/msg/detail/command_status__type_support.c.o[0m
+[5.862s] [ 48%] [32mBuilding C object CMakeFiles/drive_base_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/drive_base_msgs/msg/detail/base_info__type_support.c.o[0m
+[5.862s] [ 48%] [32mBuilding C object CMakeFiles/drive_base_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/drive_base_msgs/msg/detail/trv_command__type_support.c.o[0m
+[5.884s] [ 50%] [32mBuilding CXX object CMakeFiles/drive_base_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/drive_base_msgs/msg/command_header__type_support.cpp.o[0m
+[5.884s] [ 51%] [32mBuilding CXX object CMakeFiles/drive_base_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/drive_base_msgs/msg/base_info__type_support.cpp.o[0m
+[5.885s] [ 53%] [32mBuilding CXX object CMakeFiles/drive_base_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/drive_base_msgs/msg/trv_command__type_support.cpp.o[0m
+[5.894s] [ 54%] [32mBuilding CXX object CMakeFiles/drive_base_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/drive_base_msgs/msg/command_status__type_support.cpp.o[0m
+[5.902s] [ 54%] Built target drive_base_msgs__rosidl_typesupport_c
+[5.931s] [ 56%] [32m[1mLinking C shared library libdrive_base_msgs__rosidl_typesupport_introspection_c.so[0m
+[5.966s] [ 60%] [32mBuilding CXX object CMakeFiles/drive_base_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/drive_base_msgs/msg/detail/command_status__type_support_c.cpp.o[0m
+[5.966s] [ 60%] [32mBuilding CXX object CMakeFiles/drive_base_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/drive_base_msgs/msg/detail/command_header__type_support_c.cpp.o[0m
+[5.966s] [ 60%] [32mBuilding CXX object CMakeFiles/drive_base_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/drive_base_msgs/msg/detail/trv_command__type_support_c.cpp.o[0m
+[5.966s] [ 62%] [32mBuilding CXX object CMakeFiles/drive_base_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/drive_base_msgs/msg/detail/base_info__type_support_c.cpp.o[0m
+[5.969s] [ 64%] [32mBuilding CXX object CMakeFiles/drive_base_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/drive_base_msgs/msg/detail/command_header__type_support.cpp.o[0m
+[5.970s] [ 65%] [32mBuilding CXX object CMakeFiles/drive_base_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/drive_base_msgs/msg/detail/base_info__type_support.cpp.o[0m
+[5.975s] [ 67%] [32mBuilding CXX object CMakeFiles/drive_base_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/drive_base_msgs/msg/detail/trv_command__type_support.cpp.o[0m
+[5.982s] [ 68%] [32mBuilding CXX object CMakeFiles/drive_base_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/drive_base_msgs/msg/detail/command_status__type_support.cpp.o[0m
+[5.982s] [ 68%] Built target drive_base_msgs__rosidl_typesupport_introspection_c
+[6.122s] [ 70%] [32mBuilding CXX object CMakeFiles/drive_base_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/drive_base_msgs/msg/detail/dds_fastrtps/command_header__type_support.cpp.o[0m
+[6.135s] [ 73%] [32mBuilding CXX object CMakeFiles/drive_base_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/drive_base_msgs/msg/detail/dds_fastrtps/base_info__type_support.cpp.o[0m
+[6.140s] [ 73%] [32mBuilding CXX object CMakeFiles/drive_base_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/drive_base_msgs/msg/detail/dds_fastrtps/trv_command__type_support.cpp.o[0m
+[6.140s] [ 75%] [32mBuilding CXX object CMakeFiles/drive_base_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/drive_base_msgs/msg/detail/dds_fastrtps/command_status__type_support.cpp.o[0m
+[6.474s] [ 76%] [32m[1mLinking CXX shared library libdrive_base_msgs__rosidl_typesupport_cpp.so[0m
+[6.551s] [ 76%] Built target drive_base_msgs__rosidl_typesupport_cpp
+[6.565s] [ 78%] [32m[1mLinking CXX shared library libdrive_base_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[6.679s] [ 78%] Built target drive_base_msgs__rosidl_typesupport_introspection_cpp
+[6.762s] [ 79%] [32m[1mLinking CXX shared library libdrive_base_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[6.816s] [ 79%] Built target drive_base_msgs__rosidl_typesupport_fastrtps_c
+[6.882s] [ 81%] [32m[1mLinking CXX shared library libdrive_base_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[6.929s] [ 81%] Built target drive_base_msgs__rosidl_typesupport_fastrtps_cpp
+[6.950s] [ 81%] Built target drive_base_msgs
+[6.974s] [ 82%] [34m[1mGenerating Python code for ROS interfaces[0m
+[7.784s] [ 82%] Built target drive_base_msgs__py
+[7.806s] [ 89%] [32mBuilding C object CMakeFiles/drive_base_msgs__rosidl_generator_py.dir/rosidl_generator_py/drive_base_msgs/msg/_command_status_s.c.o[0m
+[7.807s] [ 89%] [32mBuilding C object CMakeFiles/drive_base_msgs__rosidl_generator_py.dir/rosidl_generator_py/drive_base_msgs/msg/_trv_command_s.c.o[0m
+[7.807s] [ 89%] [32mBuilding C object CMakeFiles/drive_base_msgs__rosidl_generator_py.dir/rosidl_generator_py/drive_base_msgs/msg/_base_info_s.c.o[0m
+[7.807s] [ 89%] [32mBuilding C object CMakeFiles/drive_base_msgs__rosidl_generator_py.dir/rosidl_generator_py/drive_base_msgs/msg/_command_header_s.c.o[0m
+[7.928s] [ 90%] [32m[1mLinking C shared library libdrive_base_msgs__rosidl_generator_py.so[0m
+[7.970s] [ 90%] Built target drive_base_msgs__rosidl_generator_py
+[7.993s] [ 95%] [32mBuilding C object CMakeFiles/drive_base_msgs_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/drive_base_msgs/_drive_base_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[7.993s] [ 95%] [32mBuilding C object CMakeFiles/drive_base_msgs_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/drive_base_msgs/_drive_base_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[7.993s] [ 95%] [32mBuilding C object CMakeFiles/drive_base_msgs_s__rosidl_typesupport_c.dir/rosidl_generator_py/drive_base_msgs/_drive_base_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[8.090s] [ 96%] [32m[1mLinking C shared module rosidl_generator_py/drive_base_msgs/drive_base_msgs_s__rosidl_typesupport_c.so[0m
+[8.090s] [ 98%] [32m[1mLinking C shared module rosidl_generator_py/drive_base_msgs/drive_base_msgs_s__rosidl_typesupport_introspection_c.so[0m
+[8.095s] [100%] [32m[1mLinking C shared module rosidl_generator_py/drive_base_msgs/drive_base_msgs_s__rosidl_typesupport_fastrtps_c.so[0m
+[8.125s] [100%] Built target drive_base_msgs_s__rosidl_typesupport_introspection_c
+[8.126s] [100%] Built target drive_base_msgs_s__rosidl_typesupport_c
+[8.132s] [100%] Built target drive_base_msgs_s__rosidl_typesupport_fastrtps_c
+[8.145s] Invoked command in '/home/xtal/ROS2-omni-manipulator/build/drive_base_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/xtal/ROS2-omni-manipulator/install/dm:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/xtal/ROS2-omni-manipulator/build/drive_base_msgs -- -j16 -l16
+[8.146s] Invoking command in '/home/xtal/ROS2-omni-manipulator/build/drive_base_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/xtal/ROS2-omni-manipulator/install/dm:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/xtal/ROS2-omni-manipulator/build/drive_base_msgs
+[8.155s] -- Install configuration: ""
+[8.155s] -- Execute custom install script
+[8.156s] -- Symlinking: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/share/ament_index/resource_index/rosidl_interfaces/drive_base_msgs
+[8.165s] -- Symlinking: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/share/drive_base_msgs/msg/CommandHeader.json
+[8.175s] -- Symlinking: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/share/drive_base_msgs/msg/BaseInfo.json
+[8.183s] -- Symlinking: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/share/drive_base_msgs/msg/CommandStatus.json
+[8.192s] -- Symlinking: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/share/drive_base_msgs/msg/TRVCommand.json
+[8.203s] -- Symlinking: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/include/drive_base_msgs/drive_base_msgs/msg/base_info.h
+[8.212s] -- Symlinking: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/include/drive_base_msgs/drive_base_msgs/msg/command_header.h
+[8.222s] -- Symlinking: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/include/drive_base_msgs/drive_base_msgs/msg/command_status.h
+[8.232s] -- Symlinking: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/include/drive_base_msgs/drive_base_msgs/msg/detail/base_info__functions.h
+[8.242s] -- Symlinking: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/include/drive_base_msgs/drive_base_msgs/msg/detail/base_info__struct.h
+[8.251s] -- Symlinking: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/include/drive_base_msgs/drive_base_msgs/msg/detail/base_info__type_support.h
+[8.261s] -- Symlinking: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/include/drive_base_msgs/drive_base_msgs/msg/detail/command_header__functions.h
+[8.271s] -- Symlinking: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/include/drive_base_msgs/drive_base_msgs/msg/detail/command_header__struct.h
+[8.281s] -- Symlinking: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/include/drive_base_msgs/drive_base_msgs/msg/detail/command_header__type_support.h
+[8.291s] -- Symlinking: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/include/drive_base_msgs/drive_base_msgs/msg/detail/command_status__functions.h
+[8.300s] -- Symlinking: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/include/drive_base_msgs/drive_base_msgs/msg/detail/command_status__struct.h
+[8.311s] -- Symlinking: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/include/drive_base_msgs/drive_base_msgs/msg/detail/command_status__type_support.h
+[8.321s] -- Symlinking: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/include/drive_base_msgs/drive_base_msgs/msg/detail/trv_command__functions.h
+[8.332s] -- Symlinking: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/include/drive_base_msgs/drive_base_msgs/msg/detail/trv_command__struct.h
+[8.343s] -- Symlinking: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/include/drive_base_msgs/drive_base_msgs/msg/detail/trv_command__type_support.h
+[8.352s] -- Symlinking: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/include/drive_base_msgs/drive_base_msgs/msg/rosidl_generator_c__visibility_control.h
+[8.362s] -- Symlinking: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/include/drive_base_msgs/drive_base_msgs/msg/trv_command.h
+[8.372s] -- Symlinking: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/share/drive_base_msgs/environment/library_path.sh
+[8.382s] -- Symlinking: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/share/drive_base_msgs/environment/library_path.dsv
+[8.392s] -- Symlinking: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/include/drive_base_msgs/drive_base_msgs/msg/detail/base_info__rosidl_typesupport_fastrtps_c.h
+[8.402s] -- Symlinking: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/include/drive_base_msgs/drive_base_msgs/msg/detail/command_header__rosidl_typesupport_fastrtps_c.h
+[8.413s] -- Symlinking: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/include/drive_base_msgs/drive_base_msgs/msg/detail/command_status__rosidl_typesupport_fastrtps_c.h
+[8.423s] -- Symlinking: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/include/drive_base_msgs/drive_base_msgs/msg/detail/trv_command__rosidl_typesupport_fastrtps_c.h
+[8.433s] -- Symlinking: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/include/drive_base_msgs/drive_base_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[8.444s] -- Symlinking: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/include/drive_base_msgs/drive_base_msgs/msg/base_info.hpp
+[8.454s] -- Symlinking: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/include/drive_base_msgs/drive_base_msgs/msg/command_header.hpp
+[8.463s] -- Symlinking: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/include/drive_base_msgs/drive_base_msgs/msg/command_status.hpp
+[8.473s] -- Symlinking: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/include/drive_base_msgs/drive_base_msgs/msg/detail/base_info__builder.hpp
+[8.483s] -- Symlinking: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/include/drive_base_msgs/drive_base_msgs/msg/detail/base_info__struct.hpp
+[8.493s] -- Symlinking: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/include/drive_base_msgs/drive_base_msgs/msg/detail/base_info__traits.hpp
+[8.503s] -- Symlinking: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/include/drive_base_msgs/drive_base_msgs/msg/detail/base_info__type_support.hpp
+[8.514s] -- Symlinking: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/include/drive_base_msgs/drive_base_msgs/msg/detail/command_header__builder.hpp
+[8.524s] -- Symlinking: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/include/drive_base_msgs/drive_base_msgs/msg/detail/command_header__struct.hpp
+[8.535s] -- Symlinking: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/include/drive_base_msgs/drive_base_msgs/msg/detail/command_header__traits.hpp
+[8.545s] -- Symlinking: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/include/drive_base_msgs/drive_base_msgs/msg/detail/command_header__type_support.hpp
+[8.555s] -- Symlinking: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/include/drive_base_msgs/drive_base_msgs/msg/detail/command_status__builder.hpp
+[8.566s] -- Symlinking: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/include/drive_base_msgs/drive_base_msgs/msg/detail/command_status__struct.hpp
+[8.576s] -- Symlinking: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/include/drive_base_msgs/drive_base_msgs/msg/detail/command_status__traits.hpp
+[8.586s] -- Symlinking: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/include/drive_base_msgs/drive_base_msgs/msg/detail/command_status__type_support.hpp
+[8.596s] -- Symlinking: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/include/drive_base_msgs/drive_base_msgs/msg/detail/trv_command__builder.hpp
+[8.606s] -- Symlinking: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/include/drive_base_msgs/drive_base_msgs/msg/detail/trv_command__struct.hpp
+[8.618s] -- Symlinking: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/include/drive_base_msgs/drive_base_msgs/msg/detail/trv_command__traits.hpp
+[8.628s] -- Symlinking: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/include/drive_base_msgs/drive_base_msgs/msg/detail/trv_command__type_support.hpp
+[8.638s] -- Symlinking: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/include/drive_base_msgs/drive_base_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[8.650s] -- Symlinking: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/include/drive_base_msgs/drive_base_msgs/msg/trv_command.hpp
+[8.661s] -- Symlinking: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/include/drive_base_msgs/drive_base_msgs/msg/detail/base_info__rosidl_typesupport_fastrtps_cpp.hpp
+[8.671s] -- Symlinking: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/include/drive_base_msgs/drive_base_msgs/msg/detail/command_header__rosidl_typesupport_fastrtps_cpp.hpp
+[8.682s] -- Symlinking: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/include/drive_base_msgs/drive_base_msgs/msg/detail/command_status__rosidl_typesupport_fastrtps_cpp.hpp
+[8.693s] -- Symlinking: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/include/drive_base_msgs/drive_base_msgs/msg/detail/trv_command__rosidl_typesupport_fastrtps_cpp.hpp
+[8.704s] -- Symlinking: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/include/drive_base_msgs/drive_base_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[8.716s] -- Symlinking: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/include/drive_base_msgs/drive_base_msgs/msg/detail/base_info__rosidl_typesupport_introspection_c.h
+[8.727s] -- Symlinking: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/include/drive_base_msgs/drive_base_msgs/msg/detail/command_header__rosidl_typesupport_introspection_c.h
+[8.738s] -- Symlinking: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/include/drive_base_msgs/drive_base_msgs/msg/detail/command_status__rosidl_typesupport_introspection_c.h
+[8.749s] -- Symlinking: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/include/drive_base_msgs/drive_base_msgs/msg/detail/trv_command__rosidl_typesupport_introspection_c.h
+[8.760s] -- Symlinking: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/include/drive_base_msgs/drive_base_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[8.772s] -- Symlinking: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/include/drive_base_msgs/drive_base_msgs/msg/detail/base_info__rosidl_typesupport_introspection_cpp.hpp
+[8.783s] -- Symlinking: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/include/drive_base_msgs/drive_base_msgs/msg/detail/command_header__rosidl_typesupport_introspection_cpp.hpp
+[8.794s] -- Symlinking: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/include/drive_base_msgs/drive_base_msgs/msg/detail/command_status__rosidl_typesupport_introspection_cpp.hpp
+[8.805s] -- Symlinking: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/include/drive_base_msgs/drive_base_msgs/msg/detail/trv_command__rosidl_typesupport_introspection_cpp.hpp
+[8.816s] -- Symlinking: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/share/drive_base_msgs/environment/pythonpath.sh
+[8.828s] -- Symlinking: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/share/drive_base_msgs/environment/pythonpath.dsv
+[8.839s] -- Symlinking: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/lib/python3.12/site-packages/drive_base_msgs-0.0.0-py3.12.egg-info/PKG-INFO
+[8.850s] -- Symlinking: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/lib/python3.12/site-packages/drive_base_msgs-0.0.0-py3.12.egg-info/SOURCES.txt
+[8.860s] -- Symlinking: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/lib/python3.12/site-packages/drive_base_msgs-0.0.0-py3.12.egg-info/dependency_links.txt
+[8.871s] -- Symlinking: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/lib/python3.12/site-packages/drive_base_msgs-0.0.0-py3.12.egg-info/top_level.txt
+[8.882s] -- Symlinking: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/lib/python3.12/site-packages/drive_base_msgs/__init__.py
+[8.893s] -- Symlinking: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/lib/python3.12/site-packages/drive_base_msgs/_drive_base_msgs_s.ep.rosidl_typesupport_c.c
+[8.904s] -- Symlinking: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/lib/python3.12/site-packages/drive_base_msgs/_drive_base_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[8.916s] -- Symlinking: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/lib/python3.12/site-packages/drive_base_msgs/_drive_base_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[8.927s] -- Symlinking: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/lib/python3.12/site-packages/drive_base_msgs/drive_base_msgs_s__rosidl_typesupport_c.so
+[8.939s] -- Symlinking: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/lib/python3.12/site-packages/drive_base_msgs/drive_base_msgs_s__rosidl_typesupport_fastrtps_c.so
+[8.950s] -- Symlinking: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/lib/python3.12/site-packages/drive_base_msgs/drive_base_msgs_s__rosidl_typesupport_introspection_c.so
+[8.961s] -- Symlinking: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/lib/python3.12/site-packages/drive_base_msgs/msg/__init__.py
+[8.972s] -- Symlinking: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/lib/python3.12/site-packages/drive_base_msgs/msg/_base_info.py
+[8.982s] -- Symlinking: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/lib/python3.12/site-packages/drive_base_msgs/msg/_base_info_s.c
+[8.994s] -- Symlinking: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/lib/python3.12/site-packages/drive_base_msgs/msg/_command_header.py
+[9.004s] -- Symlinking: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/lib/python3.12/site-packages/drive_base_msgs/msg/_command_header_s.c
+[9.016s] -- Symlinking: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/lib/python3.12/site-packages/drive_base_msgs/msg/_command_status.py
+[9.028s] -- Symlinking: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/lib/python3.12/site-packages/drive_base_msgs/msg/_command_status_s.c
+[9.040s] -- Symlinking: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/lib/python3.12/site-packages/drive_base_msgs/msg/_trv_command.py
+[9.051s] -- Symlinking: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/lib/python3.12/site-packages/drive_base_msgs/msg/_trv_command_s.c
+[9.061s] -- Up-to-date symlink: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/lib/python3.12/site-packages/drive_base_msgs/drive_base_msgs_s__rosidl_typesupport_fastrtps_c.so
+[9.061s] -- Up-to-date symlink: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/lib/python3.12/site-packages/drive_base_msgs/drive_base_msgs_s__rosidl_typesupport_introspection_c.so
+[9.062s] -- Up-to-date symlink: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/lib/python3.12/site-packages/drive_base_msgs/drive_base_msgs_s__rosidl_typesupport_c.so
+[9.062s] -- Symlinking: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/share/drive_base_msgs/msg/CommandHeader.idl
+[9.072s] -- Symlinking: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/share/drive_base_msgs/msg/BaseInfo.idl
+[9.083s] -- Symlinking: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/share/drive_base_msgs/msg/CommandStatus.idl
+[9.092s] -- Symlinking: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/share/drive_base_msgs/msg/TRVCommand.idl
+[9.102s] -- Symlinking: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/share/drive_base_msgs/msg/CommandHeader.msg
+[9.113s] -- Symlinking: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/share/drive_base_msgs/msg/BaseInfo.msg
+[9.125s] -- Symlinking: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/share/drive_base_msgs/msg/CommandStatus.msg
+[9.136s] -- Symlinking: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/share/drive_base_msgs/msg/TRVCommand.msg
+[9.146s] -- Symlinking: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/share/ament_index/resource_index/package_run_dependencies/drive_base_msgs
+[9.156s] -- Symlinking: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/share/ament_index/resource_index/parent_prefix_path/drive_base_msgs
+[9.166s] -- Symlinking: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/share/drive_base_msgs/environment/ament_prefix_path.sh
+[9.177s] -- Symlinking: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/share/drive_base_msgs/environment/ament_prefix_path.dsv
+[9.188s] -- Symlinking: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/share/drive_base_msgs/environment/path.sh
+[9.198s] -- Symlinking: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/share/drive_base_msgs/environment/path.dsv
+[9.209s] -- Symlinking: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/share/drive_base_msgs/local_setup.bash
+[9.221s] -- Symlinking: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/share/drive_base_msgs/local_setup.sh
+[9.232s] -- Symlinking: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/share/drive_base_msgs/local_setup.zsh
+[9.242s] -- Symlinking: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/share/drive_base_msgs/local_setup.dsv
+[9.253s] -- Symlinking: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/share/drive_base_msgs/package.dsv
+[9.266s] -- Symlinking: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/share/ament_index/resource_index/packages/drive_base_msgs
+[9.276s] -- Symlinking: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/share/drive_base_msgs/cmake/rosidl_cmake-extras.cmake
+[9.288s] -- Symlinking: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/share/drive_base_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[9.300s] -- Symlinking: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/share/drive_base_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[9.311s] -- Symlinking: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/share/drive_base_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[9.322s] -- Symlinking: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/share/drive_base_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[9.332s] -- Symlinking: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/share/drive_base_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[9.342s] -- Symlinking: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/share/drive_base_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[9.354s] -- Symlinking: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/share/drive_base_msgs/cmake/drive_base_msgsConfig.cmake
+[9.365s] -- Symlinking: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/share/drive_base_msgs/cmake/drive_base_msgsConfig-version.cmake
+[9.374s] -- Symlinking: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/share/drive_base_msgs/package.xml
+[9.384s] -- Installing: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/lib/libdrive_base_msgs__rosidl_generator_c.so
+[9.385s] -- Set non-toolchain portion of runtime path of "/home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/lib/libdrive_base_msgs__rosidl_generator_c.so" to ""
+[9.385s] -- Installing: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/lib/libdrive_base_msgs__rosidl_typesupport_fastrtps_c.so
+[9.385s] -- Set non-toolchain portion of runtime path of "/home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/lib/libdrive_base_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[9.385s] -- Installing: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/lib/libdrive_base_msgs__rosidl_typesupport_fastrtps_cpp.so
+[9.386s] -- Set non-toolchain portion of runtime path of "/home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/lib/libdrive_base_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[9.386s] -- Installing: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/lib/libdrive_base_msgs__rosidl_typesupport_introspection_c.so
+[9.386s] -- Set non-toolchain portion of runtime path of "/home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/lib/libdrive_base_msgs__rosidl_typesupport_introspection_c.so" to ""
+[9.386s] -- Installing: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/lib/libdrive_base_msgs__rosidl_typesupport_c.so
+[9.386s] -- Set non-toolchain portion of runtime path of "/home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/lib/libdrive_base_msgs__rosidl_typesupport_c.so" to ""
+[9.387s] -- Installing: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/lib/libdrive_base_msgs__rosidl_typesupport_introspection_cpp.so
+[9.387s] -- Set non-toolchain portion of runtime path of "/home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/lib/libdrive_base_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[9.387s] -- Installing: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/lib/libdrive_base_msgs__rosidl_typesupport_cpp.so
+[9.387s] -- Set non-toolchain portion of runtime path of "/home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/lib/libdrive_base_msgs__rosidl_typesupport_cpp.so" to ""
+[9.425s] Listing '/home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/lib/python3.12/site-packages/drive_base_msgs'...
+[9.425s] Compiling '/home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/lib/python3.12/site-packages/drive_base_msgs/__init__.py'...
+[9.425s] Listing '/home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/lib/python3.12/site-packages/drive_base_msgs/msg'...
+[9.425s] Compiling '/home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/lib/python3.12/site-packages/drive_base_msgs/msg/__init__.py'...
+[9.425s] Compiling '/home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/lib/python3.12/site-packages/drive_base_msgs/msg/_base_info.py'...
+[9.425s] Compiling '/home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/lib/python3.12/site-packages/drive_base_msgs/msg/_command_header.py'...
+[9.425s] Compiling '/home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/lib/python3.12/site-packages/drive_base_msgs/msg/_command_status.py'...
+[9.425s] Compiling '/home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/lib/python3.12/site-packages/drive_base_msgs/msg/_trv_command.py'...
+[9.431s] -- Installing: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/lib/libdrive_base_msgs__rosidl_generator_py.so
+[9.431s] -- Set non-toolchain portion of runtime path of "/home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/lib/libdrive_base_msgs__rosidl_generator_py.so" to ""
+[9.431s] -- Installing: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/share/drive_base_msgs/cmake/export_drive_base_msgs__rosidl_generator_cExport.cmake
+[9.431s] -- Installing: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/share/drive_base_msgs/cmake/export_drive_base_msgs__rosidl_generator_cExport-noconfig.cmake
+[9.431s] -- Installing: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/share/drive_base_msgs/cmake/export_drive_base_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[9.431s] -- Installing: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/share/drive_base_msgs/cmake/export_drive_base_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[9.432s] -- Installing: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/share/drive_base_msgs/cmake/export_drive_base_msgs__rosidl_generator_cppExport.cmake
+[9.432s] -- Installing: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/share/drive_base_msgs/cmake/export_drive_base_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[9.432s] -- Installing: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/share/drive_base_msgs/cmake/export_drive_base_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[9.432s] -- Installing: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/share/drive_base_msgs/cmake/drive_base_msgs__rosidl_typesupport_introspection_cExport.cmake
+[9.432s] -- Installing: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/share/drive_base_msgs/cmake/drive_base_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[9.432s] -- Installing: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/share/drive_base_msgs/cmake/drive_base_msgs__rosidl_typesupport_cExport.cmake
+[9.432s] -- Installing: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/share/drive_base_msgs/cmake/drive_base_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[9.432s] -- Installing: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/share/drive_base_msgs/cmake/drive_base_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[9.433s] -- Installing: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/share/drive_base_msgs/cmake/drive_base_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[9.433s] -- Installing: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/share/drive_base_msgs/cmake/drive_base_msgs__rosidl_typesupport_cppExport.cmake
+[9.433s] -- Installing: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/share/drive_base_msgs/cmake/drive_base_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[9.433s] -- Installing: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/share/drive_base_msgs/cmake/export_drive_base_msgs__rosidl_generator_pyExport.cmake
+[9.433s] -- Installing: /home/xtal/ROS2-omni-manipulator/install/drive_base_msgs/share/drive_base_msgs/cmake/export_drive_base_msgs__rosidl_generator_pyExport-noconfig.cmake
+[9.436s] Invoked command in '/home/xtal/ROS2-omni-manipulator/build/drive_base_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/xtal/ROS2-omni-manipulator/install/dm:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/xtal/ROS2-omni-manipulator/build/drive_base_msgs

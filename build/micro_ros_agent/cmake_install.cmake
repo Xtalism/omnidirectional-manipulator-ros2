@@ -1,4 +1,4 @@
-# Install script for directory: /home/xtal/ROS2-omni-manipulator/src/micro-ROS-Agent/micro_ros_agent
+# Install script for directory: /home/xtal/ROS2-omni-manipulator/src/uros/micro-ROS-Agent/micro_ros_agent
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

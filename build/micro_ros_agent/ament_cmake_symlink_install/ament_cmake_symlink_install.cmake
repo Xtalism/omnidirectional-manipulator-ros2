@@ -311,52 +311,52 @@ message(STATUS "Execute custom install script")
 # begin of custom install code
 
 # install(FILES "/home/xtal/ROS2-omni-manipulator/build/micro_ros_agent/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/micro_ros_agent" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
-ament_cmake_symlink_install_files("/home/xtal/ROS2-omni-manipulator/src/micro-ROS-Agent/micro_ros_agent" FILES "/home/xtal/ROS2-omni-manipulator/build/micro_ros_agent/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/micro_ros_agent" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+ament_cmake_symlink_install_files("/home/xtal/ROS2-omni-manipulator/src/uros/micro-ROS-Agent/micro_ros_agent" FILES "/home/xtal/ROS2-omni-manipulator/build/micro_ros_agent/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/micro_ros_agent" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 
 # install(FILES "/home/xtal/ROS2-omni-manipulator/build/micro_ros_agent/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/micro_ros_agent" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
-ament_cmake_symlink_install_files("/home/xtal/ROS2-omni-manipulator/src/micro-ROS-Agent/micro_ros_agent" FILES "/home/xtal/ROS2-omni-manipulator/build/micro_ros_agent/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/micro_ros_agent" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+ament_cmake_symlink_install_files("/home/xtal/ROS2-omni-manipulator/src/uros/micro-ROS-Agent/micro_ros_agent" FILES "/home/xtal/ROS2-omni-manipulator/build/micro_ros_agent/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/micro_ros_agent" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
 
 # install(FILES "/opt/ros/jazzy/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/micro_ros_agent/environment")
-ament_cmake_symlink_install_files("/home/xtal/ROS2-omni-manipulator/src/micro-ROS-Agent/micro_ros_agent" FILES "/opt/ros/jazzy/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/micro_ros_agent/environment")
+ament_cmake_symlink_install_files("/home/xtal/ROS2-omni-manipulator/src/uros/micro-ROS-Agent/micro_ros_agent" FILES "/opt/ros/jazzy/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/micro_ros_agent/environment")
 
 # install(FILES "/home/xtal/ROS2-omni-manipulator/build/micro_ros_agent/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/micro_ros_agent/environment")
-ament_cmake_symlink_install_files("/home/xtal/ROS2-omni-manipulator/src/micro-ROS-Agent/micro_ros_agent" FILES "/home/xtal/ROS2-omni-manipulator/build/micro_ros_agent/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/micro_ros_agent/environment")
+ament_cmake_symlink_install_files("/home/xtal/ROS2-omni-manipulator/src/uros/micro-ROS-Agent/micro_ros_agent" FILES "/home/xtal/ROS2-omni-manipulator/build/micro_ros_agent/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/micro_ros_agent/environment")
 
 # install(FILES "/opt/ros/jazzy/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/micro_ros_agent/environment")
-ament_cmake_symlink_install_files("/home/xtal/ROS2-omni-manipulator/src/micro-ROS-Agent/micro_ros_agent" FILES "/opt/ros/jazzy/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/micro_ros_agent/environment")
+ament_cmake_symlink_install_files("/home/xtal/ROS2-omni-manipulator/src/uros/micro-ROS-Agent/micro_ros_agent" FILES "/opt/ros/jazzy/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/micro_ros_agent/environment")
 
 # install(FILES "/home/xtal/ROS2-omni-manipulator/build/micro_ros_agent/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/micro_ros_agent/environment")
-ament_cmake_symlink_install_files("/home/xtal/ROS2-omni-manipulator/src/micro-ROS-Agent/micro_ros_agent" FILES "/home/xtal/ROS2-omni-manipulator/build/micro_ros_agent/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/micro_ros_agent/environment")
+ament_cmake_symlink_install_files("/home/xtal/ROS2-omni-manipulator/src/uros/micro-ROS-Agent/micro_ros_agent" FILES "/home/xtal/ROS2-omni-manipulator/build/micro_ros_agent/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/micro_ros_agent/environment")
 
 # install(FILES "/home/xtal/ROS2-omni-manipulator/build/micro_ros_agent/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/micro_ros_agent")
-ament_cmake_symlink_install_files("/home/xtal/ROS2-omni-manipulator/src/micro-ROS-Agent/micro_ros_agent" FILES "/home/xtal/ROS2-omni-manipulator/build/micro_ros_agent/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/micro_ros_agent")
+ament_cmake_symlink_install_files("/home/xtal/ROS2-omni-manipulator/src/uros/micro-ROS-Agent/micro_ros_agent" FILES "/home/xtal/ROS2-omni-manipulator/build/micro_ros_agent/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/micro_ros_agent")
 
 # install(FILES "/home/xtal/ROS2-omni-manipulator/build/micro_ros_agent/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/micro_ros_agent")
-ament_cmake_symlink_install_files("/home/xtal/ROS2-omni-manipulator/src/micro-ROS-Agent/micro_ros_agent" FILES "/home/xtal/ROS2-omni-manipulator/build/micro_ros_agent/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/micro_ros_agent")
+ament_cmake_symlink_install_files("/home/xtal/ROS2-omni-manipulator/src/uros/micro-ROS-Agent/micro_ros_agent" FILES "/home/xtal/ROS2-omni-manipulator/build/micro_ros_agent/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/micro_ros_agent")
 
 # install(FILES "/home/xtal/ROS2-omni-manipulator/build/micro_ros_agent/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/micro_ros_agent")
-ament_cmake_symlink_install_files("/home/xtal/ROS2-omni-manipulator/src/micro-ROS-Agent/micro_ros_agent" FILES "/home/xtal/ROS2-omni-manipulator/build/micro_ros_agent/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/micro_ros_agent")
+ament_cmake_symlink_install_files("/home/xtal/ROS2-omni-manipulator/src/uros/micro-ROS-Agent/micro_ros_agent" FILES "/home/xtal/ROS2-omni-manipulator/build/micro_ros_agent/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/micro_ros_agent")
 
 # install(FILES "/home/xtal/ROS2-omni-manipulator/build/micro_ros_agent/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/micro_ros_agent")
-ament_cmake_symlink_install_files("/home/xtal/ROS2-omni-manipulator/src/micro-ROS-Agent/micro_ros_agent" FILES "/home/xtal/ROS2-omni-manipulator/build/micro_ros_agent/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/micro_ros_agent")
+ament_cmake_symlink_install_files("/home/xtal/ROS2-omni-manipulator/src/uros/micro-ROS-Agent/micro_ros_agent" FILES "/home/xtal/ROS2-omni-manipulator/build/micro_ros_agent/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/micro_ros_agent")
 
 # install(FILES "/home/xtal/ROS2-omni-manipulator/build/micro_ros_agent/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/micro_ros_agent")
-ament_cmake_symlink_install_files("/home/xtal/ROS2-omni-manipulator/src/micro-ROS-Agent/micro_ros_agent" FILES "/home/xtal/ROS2-omni-manipulator/build/micro_ros_agent/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/micro_ros_agent")
+ament_cmake_symlink_install_files("/home/xtal/ROS2-omni-manipulator/src/uros/micro-ROS-Agent/micro_ros_agent" FILES "/home/xtal/ROS2-omni-manipulator/build/micro_ros_agent/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/micro_ros_agent")
 
 # install(FILES "/home/xtal/ROS2-omni-manipulator/build/micro_ros_agent/ament_cmake_index/share/ament_index/resource_index/packages/micro_ros_agent" "DESTINATION" "share/ament_index/resource_index/packages")
-ament_cmake_symlink_install_files("/home/xtal/ROS2-omni-manipulator/src/micro-ROS-Agent/micro_ros_agent" FILES "/home/xtal/ROS2-omni-manipulator/build/micro_ros_agent/ament_cmake_index/share/ament_index/resource_index/packages/micro_ros_agent" "DESTINATION" "share/ament_index/resource_index/packages")
+ament_cmake_symlink_install_files("/home/xtal/ROS2-omni-manipulator/src/uros/micro-ROS-Agent/micro_ros_agent" FILES "/home/xtal/ROS2-omni-manipulator/build/micro_ros_agent/ament_cmake_index/share/ament_index/resource_index/packages/micro_ros_agent" "DESTINATION" "share/ament_index/resource_index/packages")
 
 # install(FILES "/home/xtal/ROS2-omni-manipulator/build/micro_ros_agent/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake" "DESTINATION" "share/micro_ros_agent/cmake")
-ament_cmake_symlink_install_files("/home/xtal/ROS2-omni-manipulator/src/micro-ROS-Agent/micro_ros_agent" FILES "/home/xtal/ROS2-omni-manipulator/build/micro_ros_agent/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake" "DESTINATION" "share/micro_ros_agent/cmake")
+ament_cmake_symlink_install_files("/home/xtal/ROS2-omni-manipulator/src/uros/micro-ROS-Agent/micro_ros_agent" FILES "/home/xtal/ROS2-omni-manipulator/build/micro_ros_agent/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake" "DESTINATION" "share/micro_ros_agent/cmake")
 
 # install(FILES "/home/xtal/ROS2-omni-manipulator/build/micro_ros_agent/ament_cmake_core/micro_ros_agentConfig.cmake" "/home/xtal/ROS2-omni-manipulator/build/micro_ros_agent/ament_cmake_core/micro_ros_agentConfig-version.cmake" "DESTINATION" "share/micro_ros_agent/cmake")
-ament_cmake_symlink_install_files("/home/xtal/ROS2-omni-manipulator/src/micro-ROS-Agent/micro_ros_agent" FILES "/home/xtal/ROS2-omni-manipulator/build/micro_ros_agent/ament_cmake_core/micro_ros_agentConfig.cmake" "/home/xtal/ROS2-omni-manipulator/build/micro_ros_agent/ament_cmake_core/micro_ros_agentConfig-version.cmake" "DESTINATION" "share/micro_ros_agent/cmake")
+ament_cmake_symlink_install_files("/home/xtal/ROS2-omni-manipulator/src/uros/micro-ROS-Agent/micro_ros_agent" FILES "/home/xtal/ROS2-omni-manipulator/build/micro_ros_agent/ament_cmake_core/micro_ros_agentConfig.cmake" "/home/xtal/ROS2-omni-manipulator/build/micro_ros_agent/ament_cmake_core/micro_ros_agentConfig-version.cmake" "DESTINATION" "share/micro_ros_agent/cmake")
 
-# install(FILES "/home/xtal/ROS2-omni-manipulator/src/micro-ROS-Agent/micro_ros_agent/package.xml" "DESTINATION" "share/micro_ros_agent")
-ament_cmake_symlink_install_files("/home/xtal/ROS2-omni-manipulator/src/micro-ROS-Agent/micro_ros_agent" FILES "/home/xtal/ROS2-omni-manipulator/src/micro-ROS-Agent/micro_ros_agent/package.xml" "DESTINATION" "share/micro_ros_agent")
+# install(FILES "/home/xtal/ROS2-omni-manipulator/src/uros/micro-ROS-Agent/micro_ros_agent/package.xml" "DESTINATION" "share/micro_ros_agent")
+ament_cmake_symlink_install_files("/home/xtal/ROS2-omni-manipulator/src/uros/micro-ROS-Agent/micro_ros_agent" FILES "/home/xtal/ROS2-omni-manipulator/src/uros/micro-ROS-Agent/micro_ros_agent/package.xml" "DESTINATION" "share/micro_ros_agent")
 
 # install("TARGETS" "micro_ros_agent" "DESTINATION" "lib/micro_ros_agent")
 include("/home/xtal/ROS2-omni-manipulator/build/micro_ros_agent/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
 # install(DIRECTORY "launch" "DESTINATION" "share/micro_ros_agent")
-ament_cmake_symlink_install_directory("/home/xtal/ROS2-omni-manipulator/src/micro-ROS-Agent/micro_ros_agent" DIRECTORY "launch" "DESTINATION" "share/micro_ros_agent")
+ament_cmake_symlink_install_directory("/home/xtal/ROS2-omni-manipulator/src/uros/micro-ROS-Agent/micro_ros_agent" DIRECTORY "launch" "DESTINATION" "share/micro_ros_agent")
