@@ -1,0 +1,159 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:macro name="arm" params="prefix">
+  <!-- Link 1 -->
+  <link name="${prefix}Link_1">
+    <inertial>
+      <origin xyz="0.000506046615463357 0.00691496728629516 -0.0122755959836562" rpy="0 0 0"/>
+      <mass value="0.0382070631949755"/>
+      <inertia ixx="6.05895904112999E-06" ixy="-3.26790900435385E-10" ixz="1.70232643106716E-08"
+               iyy="1.06084491676467E-05" iyz="1.55715035338171E-07" izz="7.32724940736577E-06"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="file://$(find mec_mobile_description)/meshes/robot_omni_3d/Link_1.STL"/>
+      </geometry>
+      <material name="gray"/>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="file://$(find mec_mobile_description)/meshes/robot_omni_3d/Link_1.STL"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="${prefix}joint_1" type="revolute">
+    <origin xyz="0.0099965 -0.062847 0.12528" rpy="-1.5708 0 -1.5708"/>
+    <parent link="${prefix}base_link"/>
+    <child link="${prefix}Link_1"/>
+    <axis xyz="0 1 0"/>
+    <limit lower="-1.57" upper="0" effort="10" velocity="100"/>
+  </joint>
+
+  <!-- Link 2 -->
+  <link name="${prefix}Link_2">
+    <inertial>
+      <origin xyz="0.0519935153424735 9.31325867987998E-10 -0.0241591323242931" rpy="0 0 0"/>
+      <mass value="0.0170251169263654"/>
+      <inertia ixx="1.08907010787336E-05" ixy="3.11047077367638E-08" ixz="-5.74856746591523E-21"
+               iyy="1.68733569095532E-05" iyz="1.46608453476581E-21" izz="7.85969468178107E-06"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="file://$(find mec_mobile_description)/meshes/robot_omni_3d/Link_2.STL"/>
+      </geometry>
+      <material name="gray"/>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="file://$(find mec_mobile_description)/meshes/robot_omni_3d/Link_2.STL"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="${prefix}joint_2" type="revolute">
+    <origin xyz="0.010077 0.0057856 0.01" rpy="0 0 0"/>
+    <parent link="${prefix}Link_1"/>
+    <child link="${prefix}Link_2"/>
+    <axis xyz="0 0 1"/>
+    <limit lower="0" upper="0.45" effort="10" velocity="100"/>
+  </joint>
+
+  <!-- Link 3 -->
+  <link name="${prefix}Link_3">
+    <inertial>
+      <origin xyz="-0.00145033630413227 -0.00137973727908961 0.0156275288663969" rpy="0 0 0"/>
+      <mass value="0.0494773487894258"/>
+      <inertia ixx="1.18336660189981E-05" ixy="1.24373046667324E-07" ixz="-1.86477617019496E-08"
+               iyy="1.954406916305E-05" iyz="-1.55737377757555E-07" izz="1.17899796886126E-05"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="file://$(find mec_mobile_description)/meshes/robot_omni_3d/Link_3.STL"/>
+      </geometry>
+      <material name="gray"/>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="file://$(find mec_mobile_description)/meshes/robot_omni_3d/Link_3.STL"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="${prefix}joint_3" type="revolute">
+    <origin xyz="0.10399 0 -0.01" rpy="3.1416 0 3.1416"/>
+    <parent link="${prefix}Link_2"/>
+    <child link="${prefix}Link_3"/>
+    <axis xyz="0 0 1"/>
+    <limit lower="-1.57" upper="1.5708" effort="10" velocity="100"/>
+  </joint>
+
+  <!-- Link 4 -->
+  <link name="${prefix}Link_4">
+    <inertial>
+      <origin xyz="-0.0095710650310705 -0.00112932990654074 -0.0161449114265881" rpy="0 0 0"/>
+      <mass value="0.0382070631949756"/>
+      <inertia ixx="6.05895904112999E-06" ixy="3.26790900332788E-10" ixz="-1.70232643106688E-08"
+               iyy="1.06084491676467E-05" iyz="1.55715035338175E-07" izz="7.32724940736576E-06"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="file://$(find mec_mobile_description)/meshes/robot_omni_3d/Link_4.STL"/>
+      </geometry>
+      <material name="gray"/>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="file://$(find mec_mobile_description)/meshes/robot_omni_3d/Link_4.STL"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="${prefix}joint_4" type="revolute">
+    <origin xyz="-0.076947 0.0002706 0" rpy="-3.1416 0 1.5708"/>
+    <parent link="${prefix}Link_3"/>
+    <child link="${prefix}Link_4"/>
+    <axis xyz="0 0 1"/>
+    <limit lower="-1.5708" upper="1.57" effort="10" velocity="100"/>
+  </joint>
+
+  <!-- Link 5 -->
+  <link name="${prefix}Link_5">
+    <inertial>
+      <origin xyz="0.028833786920895 0.00413587714794112 -0.0028584998515091" rpy="0 0 0"/>
+      <mass value="0.0373359018111918"/>
+      <inertia ixx="6.03560504196294E-06" ixy="3.26790897789057E-10" ixz="-1.70232643103967E-08"
+               iyy="1.05850951684802E-05" iyz="1.55715035337853E-07" izz="7.28302147533164E-06"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="file://$(find mec_mobile_description)/meshes/robot_omni_3d/Link_5.STL"/>
+      </geometry>
+      <material name="gray"/>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="file://$(find mec_mobile_description)/meshes/robot_omni_3d/Link_5.STL"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="${prefix}joint_5" type="fixed">
+    <origin xyz="-0.0059012 -0.040229 -0.050049" rpy="1.5708 -1.5708 0"/>
+    <parent link="${prefix}Link_4"/>
+    <child link="${prefix}Link_5"/>
+  </joint>
+</xacro:macro>
+
+</robot>

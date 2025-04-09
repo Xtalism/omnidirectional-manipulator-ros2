@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:macro name="robot_base" params="prefix">
+  <link name="${prefix}base_link">
+    <inertial>
+      <origin xyz="0.000101168364989104 -0.00377722152863208 0.0460516576627933" rpy="0 0 0"/>
+      <mass value="0.577281083216241"/>
+      <inertia ixx="0.00162450670599958" ixy="-4.63440581983851E-07" ixz="-2.10706591377875E-08" 
+              iyy="0.000877404129357638" iyz="1.3538679556105E-07" izz="0.00178173129381051"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="file://$(find mec_mobile_description)/meshes/robot_omni_3d/base_link.STL"/>
+      </geometry>
+      <material name="gray">
+        <color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="file://$(find mec_mobile_description)/meshes/robot_omni_3d/base_link.STL"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <gazebo reference="${prefix}base_link">
+    <material>Gazebo/gray</material>
+  </gazebo>
+</xacro:macro>
+
+</robot>

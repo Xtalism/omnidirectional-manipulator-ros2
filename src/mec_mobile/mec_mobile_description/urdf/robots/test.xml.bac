@@ -35,7 +35,7 @@
         prefix="$(arg prefix)"
         side="front_right"
         xyz="-0.11788 -0.081566 -0.037705"
-        rpy="1.5708 0 1.5708"
+        rpy="1.5708 0 -1.5708"
         mesh="fr_wheel_link.STL"/>
 
     <!-- Rear Right Wheel -->
@@ -43,7 +43,7 @@
         prefix="$(arg prefix)"
         side="back_right"
         xyz="-0.11788 0.081609 -0.037681"
-        rpy="1.5708 0 1.5708"
+        rpy="-1.5708 0 1.5708"
         mesh="rr_wheel_link.STL"/>
 
     <!-- Arm -->

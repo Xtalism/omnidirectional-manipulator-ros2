@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:property name="wheel_mass" value="0.123795234111436" />
+<xacro:property name="wheel_inertia_xx" value="2.36708966689132E-05" />
+<xacro:property name="wheel_inertia_yy" value="2.36713215795414E-05" />
+<xacro:property name="wheel_inertia_zz" value="3.12049313661706E-05" />
+
+<xacro:macro name="wheel" params="prefix side xyz rpy mesh">
+  <link name="${prefix}${side}_wheel_link">
+    <inertial>
+      <origin xyz="4.52085493402032E-06 -4.88664378021919E-05 -0.0179706540332964" rpy="0 0 0"/>
+      <mass value="${wheel_mass}"/>
+      <inertia ixx="${wheel_inertia_xx}" ixy="-5.47275866691368E-11" ixz="-2.37723215757676E-12"
+               iyy="${wheel_inertia_yy}" iyz="-5.93576540349247E-13" izz="${wheel_inertia_zz}"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="file://$(find mec_mobile_description)/meshes/robot_omni_3d/${mesh}"/>
+      </geometry>
+      <material name="gray">
+        <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="file://$(find mec_mobile_description)/meshes/robot_omni_3d/${mesh}"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="${prefix}${side}_wheel_joint" type="continuous">
+    <origin xyz="${xyz}" rpy="${rpy}"/>
+    <parent link="${prefix}base_link"/>
+    <child link="${prefix}${side}_wheel_link"/>
+    <axis xyz="0 0 1"/>
+  </joint>
+
+  <gazebo reference="${prefix}${side}_wheel_link">
+    <material>Gazebo/Grey</material>
+    <mu1 value="1.0"/>
+    <mu2 value="1.0"/>
+    <kp value="10000000.0"/>
+    <kd value="1.0"/>
+  </gazebo>
+</xacro:macro>
+
+</robot>
