@@ -1,3 +1,13 @@
 {
-    "cmake.sourceDirectory": "/home/xtal/ROS2-omni-manipulator/src/dm/model/urdf_omnidirectional_manipulator"
+    "cmake.sourceDirectory": "/home/xtal/ROS2-omni-manipulator/src/dm/model/urdf_omnidirectional_manipulator",
+    "python.autoComplete.extraPaths": [
+        "/home/xtal/ROS2-omni-manipulator/build/dm",
+        "/home/xtal/ROS2-omni-manipulator/install/dm/lib/python3.12/site-packages",
+        "/opt/ros/jazzy/lib/python3.12/site-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/xtal/ROS2-omni-manipulator/build/dm",
+        "/home/xtal/ROS2-omni-manipulator/install/dm/lib/python3.12/site-packages",
+        "/opt/ros/jazzy/lib/python3.12/site-packages"
+    ]
 }

@@ -1,1 +1,0 @@
-/home/xtal/ROS2-omni-manipulator/build/dm/launch/d415.launch.py

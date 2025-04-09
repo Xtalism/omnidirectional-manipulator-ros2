@@ -1,1 +1,0 @@
-/home/xtal/ROS2-omni-manipulator/build/ldlidar_node/ament_cmake_core/ldlidar_nodeConfig.cmake

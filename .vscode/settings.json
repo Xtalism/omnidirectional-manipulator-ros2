@@ -1,3 +1,13 @@
 {
-    "cmake.sourceDirectory": "/home/xtal/ROS2-omni-manipulator/src/ldrobot-lidar-ros2/ldlidar"
+    "cmake.sourceDirectory": "/home/xtal/ROS2-omni-manipulator/src/ldrobot-lidar-ros2/ldlidar",
+    "python.autoComplete.extraPaths": [
+        "/home/xtal/ROS2-omni-manipulator/build/dm",
+        "/home/xtal/ROS2-omni-manipulator/install/dm/lib/python3.12/site-packages",
+        "/opt/ros/jazzy/lib/python3.12/site-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/xtal/ROS2-omni-manipulator/build/dm",
+        "/home/xtal/ROS2-omni-manipulator/install/dm/lib/python3.12/site-packages",
+        "/opt/ros/jazzy/lib/python3.12/site-packages"
+    ]
 }
