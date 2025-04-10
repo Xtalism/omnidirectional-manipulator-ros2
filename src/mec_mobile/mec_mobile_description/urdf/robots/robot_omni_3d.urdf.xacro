@@ -9,6 +9,7 @@
     <xacro:include filename="$(find mec_mobile_description)/urdf/robot_components/robot_base.urdf.xacro"/>
     <xacro:include filename="$(find mec_mobile_description)/urdf/robot_components/wheels.urdf.xacro"/>
     <xacro:include filename="$(find mec_mobile_description)/urdf/sensors/rgbd_camera.urdf.xacro"/>
+    <xacro:include filename="$(find mec_mobile_description)/urdf/sensors/lidar.urdf.xacro"/>
     <xacro:include filename="$(find mec_mobile_description)/urdf/robot_components/arm.urdf.xacro"/>
     <xacro:include filename="$(find mec_mobile_description)/urdf/robot_components/end_effector.urdf.xacro"/>
     <xacro:include filename="$(find mec_mobile_description)/urdf/control/mec_mobile.gazebo"/>
@@ -45,6 +46,17 @@
         xyz="-0.11788 0.081609 -0.037681"
         rpy="-1.5708 0 1.5708"
         mesh="rr_wheel_link.STL"/>
+
+    <!-- Lidar -->
+    <xacro:lidar_sensor 
+        prefix="$(arg prefix)"
+        parent="base_link"
+        frame_id="laser_frame"
+        xyz_offset="0 -0.0825 0.0001"
+        rpy_offset="0 0 3.14"
+        mesh_xyz_offset="0 0 0"
+        mesh_rpy_offset="${-M_PI/2} 0 0"
+        topic_name="scan"/>
 
     <gazebo reference='front_left_wheel_link'>
         <collision>

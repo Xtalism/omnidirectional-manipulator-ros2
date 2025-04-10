@@ -6,7 +6,7 @@
     prefix:=''
     parent:='base_link'
     frame_id:='laser_frame'
-    mesh_file:='file://$(find mec_mobile_description)/meshes/rplidar/rplidar_s2.stl'
+    mesh_file:='file://$(find mec_mobile_description)/meshes/rplidar/LD19.stl'
     xyz_offset:='0 0 0.0825'
     rpy_offset:='0 0 0'
     mesh_xyz_offset:='0 0 0'
