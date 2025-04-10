@@ -40,25 +40,25 @@ You can try to virtualize it but in my experience, networking and driver problem
 ## Installation
 We need to install [ROS Jazzy](https://wiki.ros.org/jazzy), you can follow the [documentation](https://docs.ros.org/en/jazzy/Installation/Ubuntu-Install-Debs.html) on how to install it or you can follow and run these few commands inside Ubuntu's terminal:
 
-```shell
+```bash
 sudo apt update && sudo apt install locales
 sudo locale-gen en_US en_US.UTF-8
 sudo update-locale LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8
 export LANG=en_US.UTF-8
 ```
 
-```shell
+```bash
 sudo apt install software-properties-common
 sudo add-apt-repository universe
 ```
 
-```shell
+```bash
 sudo apt update && sudo apt install curl -y
 sudo curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key -o /usr/share/keyrings/ros-archive-keyring.gpg
 echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] http://packages.ros.org/ros2/ubuntu $(. /etc/os-release && echo $UBUNTU_CODENAME) main" | sudo tee /etc/apt/sources.list.d/ros2.list > /dev/null
 ```
 
-```shell
+```bash
 sudo apt update && sudo apt install ros-dev-tools
 sudo apt update
 sudo apt upgrade
@@ -70,33 +70,33 @@ You can use any controller listed in the [documentation](http://wiki.ros.org/joy
 using an 8bitdo Ultimate C 2.4GHz. It is not a Xbox Controller per se but I managed to find some drivers to 
 trick Linux into thinking it is a generic Xbox Controller ([you can find the post here](https://gist.github.com/ammuench/0dcf14faf4e3b000020992612a2711e2)):
 
-```shell
+```bash
 touch /etc/udev/rules.d/99-8bitdo-xinput.rules
 sudo nano /etc/udev/rules.d/99-8bitdo-xinput.rules
 ```
 Inside 99-8bitdo-xinput.rules you type the following and save:
-```shell
+```bash
 ACTION=="add", ATTRS{idVendor}=="2dc8", ATTRS{idProduct}=="3106", RUN+="/sbin/modprobe xpad", RUN+="/bin/sh -c 'echo 2dc8 3106 > /sys/bus/usb/drivers/xpad/new_id'"
 ```
 
 Reload udevadm service
-```shell
+```bash
 sudo udevadm control --reload
 ```
 
 You also need to make your [joystick device accesible](http://wiki.ros.org/joy/Tutorials/ConfiguringALinuxJoystick):
 
-```shell
+```bash
 ls -l /dev/input/jsX
 ```
 
 You will see something similar to:
-```shell
+```bash
 crw-rw-XX- 1 root dialout 188, 0 2009-08-14 12:04 /dev/input/jsX
 ```
 
 We need to change XX to rw:
-```shell
+```bash
 sudo chmod a+rw /dev/input/jsX
 ```
 
@@ -104,22 +104,31 @@ sudo chmod a+rw /dev/input/jsX
 
 Clone this repository:
 
-```shell
+```bash
 git clone https://github.com/Xtalism/ROS2-Omni-Manipulator.git
 ```
 
-We need to source and compile our workspace just as follows:
+We need to source, install dependencies and compile our workspace just as follows:
 
-```shell
+Sourcing ROS2:
+```bash
 source /opt/ros/${ROS_DISTRO}/setup.bash
+```
+
+Sourcing the project:
+```bash
 cd ros2_ws/
 source install/setup.bash
+```
+Installing dependencies and compiling the project:
+```bash
+rosdep install --from-paths src --ignore-src -r -y
 colcon build --symlink-install
 ```
 
 To run any package or launch file"
 
-```shell
+```bash
 ros2 run <package_name> <program_name>
 ros2 launch <package_name> <launch_file>
 ```
