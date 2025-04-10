@@ -58,6 +58,12 @@
         mesh_rpy_offset="${-M_PI/2} 0 0"
         topic_name="scan"/>
 
+    <xacro:rgbd_camera
+      prefix="$(arg prefix)"
+      camera_name="cam_1"
+      xyz_offset="0 0.02 0.365"
+      rpy_offset="0 0 -1.5708"/>
+
     <gazebo reference='front_left_wheel_link'>
         <collision>
           <surface>

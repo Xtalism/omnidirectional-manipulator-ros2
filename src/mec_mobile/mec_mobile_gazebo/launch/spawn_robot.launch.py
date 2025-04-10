@@ -100,7 +100,9 @@ def generate_launch_description():
             "/tf@tf2_msgs/msg/TFMessage@gz.msgs.Pose_V",
             "/camera/image@sensor_msgs/msg/Image@gz.msgs.Image",
             "/camera/camera_info@sensor_msgs/msg/CameraInfo@gz.msgs.CameraInfo",
-            "/scan@sensor_msgs/msg/LaserScan@gz.msgs.LaserScan"
+            "/scan@sensor_msgs/msg/LaserScan@gz.msgs.LaserScan",
+            "/cam_1/depth_image@sensor_msgs/msg/Image@gz.msgs.Image",
+            "/cam_1/points@sensor_msgs/msg/PointCloud2@gz.msgs.PointCloudPacked",
         ],
         output="screen",
         parameters=[
@@ -108,10 +110,10 @@ def generate_launch_description():
         ]
     )
 
-    joint_state_publisher_gui_node = Node(
-        package='joint_state_publisher_gui',
-        executable='joint_state_publisher_gui',
-    )
+    # joint_state_publisher_gui_node = Node(
+    #     package='joint_state_publisher_gui',
+    #     executable='joint_state_publisher_gui',
+    # )
 
     launchDescriptionObject = LaunchDescription()
 
