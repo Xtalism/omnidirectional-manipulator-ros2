@@ -8,6 +8,7 @@
 
     <xacro:include filename="$(find mec_mobile_description)/urdf/robot_components/robot_base.urdf.xacro"/>
     <xacro:include filename="$(find mec_mobile_description)/urdf/robot_components/wheels.urdf.xacro"/>
+    <xacro:include filename="$(find mec_mobile_description)/urdf/sensors/rgbd_camera.urdf.xacro"/>
     <xacro:include filename="$(find mec_mobile_description)/urdf/robot_components/arm.urdf.xacro"/>
     <xacro:include filename="$(find mec_mobile_description)/urdf/robot_components/end_effector.urdf.xacro"/>
     <xacro:include filename="$(find mec_mobile_description)/urdf/control/mec_mobile.gazebo"/>
@@ -45,67 +46,114 @@
         rpy="-1.5708 0 1.5708"
         mesh="rr_wheel_link.STL"/>
 
- <gazebo reference='front_left_wheel_link'>
-    <collision>
-      <surface>
-        <friction>
-          <ode>
-            <mu>1.5</mu>
-            <mu2>0.0</mu2>
-            <fdir1 gz:expressed_in="base_footprint">1 -1 0</fdir1>
-          </ode>
-        </friction>
-      </surface>
-    </collision>
-  </gazebo>
+    <gazebo reference='front_left_wheel_link'>
+        <collision>
+          <surface>
+            <friction>
+              <ode>
+                <mu>1.5</mu>
+                <mu2>0.0</mu2>
+                <fdir1 gz:expressed_in="base_footprint">1 -1 0</fdir1>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+      </gazebo>
 
-  <gazebo reference='back_left_wheel_link'>
-    <collision>
-      <surface>
-        <friction>
-          <ode>
-            <mu>1.5</mu>
-            <mu2>0.0</mu2>
-            <fdir1 gz:expressed_in="base_footprint">1 1 0</fdir1>
-          </ode>
-        </friction>
-      </surface>
-    </collision>
-  </gazebo>
+      <gazebo reference='back_left_wheel_link'>
+        <collision>
+          <surface>
+            <friction>
+              <ode>
+                <mu>1.5</mu>
+                <mu2>0.0</mu2>
+                <fdir1 gz:expressed_in="base_footprint">1 1 0</fdir1>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+      </gazebo>
 
-  <gazebo reference='front_right_wheel_link'>
-    <collision>
-      <surface>
-        <friction>
-          <ode>
-            <mu>1.5</mu>
-            <mu2>0.0</mu2>
-            <fdir1 gz:expressed_in="base_footprint">1 1 0</fdir1>
-          </ode>
-        </friction>
-      </surface>
-    </collision>
-  </gazebo>
+      <gazebo reference='front_right_wheel_link'>
+        <collision>
+          <surface>
+            <friction>
+              <ode>
+                <mu>1.5</mu>
+                <mu2>0.0</mu2>
+                <fdir1 gz:expressed_in="base_footprint">1 1 0</fdir1>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+      </gazebo>
 
-  <gazebo reference='back_right_wheel_link'>
-    <collision>
-      <surface>
-        <friction>
-          <ode>
-            <mu>1.5</mu>
-            <mu2>0.0</mu2>
-            <fdir1 gz:expressed_in="base_footprint">1 -1 0</fdir1>
-          </ode>
-        </friction>
-      </surface>
-    </collision>
-  </gazebo>
+      <gazebo reference='back_right_wheel_link'>
+        <collision>
+          <surface>
+            <friction>
+              <ode>
+                <mu>1.5</mu>
+                <mu2>0.0</mu2>
+                <fdir1 gz:expressed_in="base_footprint">1 -1 0</fdir1>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+      </gazebo>
 
-  <gazebo reference="base_link">
-    <mu1>0.000002</mu1>
-    <mu2>0.000002</mu2>
-    <!-- <material>Gazebo/Red</material> -->
-  </gazebo>
+      <gazebo reference="base_link">
+        <mu1>0.000002</mu1>
+        <mu2>0.000002</mu2>
+        <!-- <material>Gazebo/Red</material> -->
+      </gazebo>
+
+    <joint type="fixed" name="camera_joint">
+      <origin xyz="0 0 0.36" rpy="0 0 -1.5708"/>
+      <child link="camera_link"/>
+      <parent link="base_link"/>
+      <axis xyz="0 1 0" />
+    </joint>
+
+    <link name='camera_link'>
+      <pose>0 0 0 0 0 0</pose>
+      <inertial>
+        <mass value="0.1"/>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <inertia
+            ixx="1e-6" ixy="0" ixz="0"
+            iyy="1e-6" iyz="0"
+            izz="1e-6" />
+      </inertial>
+
+      <collision name='collision'>
+        <origin xyz="0 0 0" rpy="0 0 0"/> 
+        <geometry>
+          <box size=".03 .03 .03"/>
+        </geometry>
+      </collision>
+
+      <visual name='camera_link_visual'>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <!-- <geometry>
+          <box size=".03 .03 .03"/>
+        </geometry> -->
+      </visual>
+
+    </link>
+
+    <gazebo reference="camera_link">
+      <material>Gazebo/Red</material>
+    </gazebo>
+
+    <joint type="fixed" name="camera_optical_joint">
+      <origin xyz="0 0 0" rpy="-1.5707 0 -1.5707"/>
+      <child link="camera_link_optical"/>
+      <parent link="camera_link"/>
+    </joint>
+
+    <link name="camera_link_optical">
+    </link>
 
     <!-- Arm -->
     <xacro:arm prefix="$(arg prefix)"/>
