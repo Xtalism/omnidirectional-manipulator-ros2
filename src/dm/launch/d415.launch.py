@@ -36,7 +36,7 @@ import rs_launch
 
 local_parameters = [{'name': 'camera_name',                  'default': 'camera', 'description': 'camera unique name'},
                     {'name': 'camera_namespace',             'default': 'camera', 'description': 'camera namespace'},
-                    {'name': 'device_type',                  'default': "d415", 'description': 'choose device by type'},
+                    {'name': 'device_type',                  'default': 'd415', 'description': 'choose device by type'},
                     {'name': 'enable_color',                 'default': 'true', 'description': 'enable color stream'},
                     {'name': 'enable_depth',                 'default': 'true', 'description': 'enable depth stream'},
                     {'name': 'pointcloud.enable',            'default': 'true', 'description': 'enable pointcloud'},
@@ -64,12 +64,13 @@ def generate_launch_description():
     params = rs_launch.configurable_parameters
     xacro_path = os.path.join(get_package_share_directory('realsense2_description'), 'urdf', 'test_d415_camera.urdf.xacro')
     urdf = to_urdf(xacro_path, {'use_nominal_extrinsics': 'true', 'add_plug': 'true'})
+
     return LaunchDescription(
         rs_launch.declare_configurable_parameters(local_parameters) +
         rs_launch.declare_configurable_parameters(params) + 
         [
         OpaqueFunction(function=rs_launch.launch_setup,
-                kwargs = {'params' : set_configurable_parameters(params)}
+                kwargs={'params': set_configurable_parameters(params)}
         ),
         launch_ros.actions.Node(
             package='rviz2',
@@ -87,5 +88,19 @@ def generate_launch_description():
             namespace='',
             output='screen',
             arguments=[urdf]
+        ),
+        # Add the depthcloud node
+        launch_ros.actions.Node(
+            package='depthimage_to_laserscan',
+            executable='depthcloud',
+            name='depthcloud_node',
+            namespace='',
+            output='screen',
+            parameters=[
+                {'use_sim_time': False},
+                {'depth_topic': '/camera/depth/image_rect_raw'},
+                {'camera_info_topic': '/camera/depth/camera_info'},
+                {'pointcloud_topic': '/camera/depth/points'}
+            ]
         )
     ])

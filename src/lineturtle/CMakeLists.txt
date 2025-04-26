@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.8)
-project(mec_mobile_description)
+project(lineturtle)
 
 if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic)
@@ -11,14 +11,14 @@ find_package(ament_cmake REQUIRED)
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
 
-find_package(ament_cmake REQUIRED)
-find_package(urdf_tutorial REQUIRED)
-  
-# Copy necessary files to designated locations in the project
-install (
-  DIRECTORY meshes urdf launch rviz config
-  DESTINATION share/${PROJECT_NAME}
-)
+add_executable(lineturtle_info src/lineturtle_info.cpp)
+target_include_directories(lineturtle_info PUBLIC
+  $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+  $<INSTALL_INTERFACE:include/${PROJECT_NAME}>)
+target_compile_features(lineturtle_info PUBLIC c_std_99 cxx_std_17)  # Require C99 and C++17
+
+install(TARGETS lineturtle_info
+  DESTINATION lib/${PROJECT_NAME})
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)

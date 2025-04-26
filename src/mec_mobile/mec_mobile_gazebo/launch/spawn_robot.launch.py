@@ -6,6 +6,7 @@ from launch.launch_description_sources import PythonLaunchDescriptionSource
 from launch.substitutions import LaunchConfiguration, PathJoinSubstitution, Command
 from launch_ros.actions import Node
 from ament_index_python.packages import get_package_share_directory
+from launch_ros.parameter_descriptions import ParameterFile
 
 def generate_launch_description():
 
@@ -26,8 +27,8 @@ def generate_launch_description():
     )
 
     model_arg = DeclareLaunchArgument(
-        # 'model', default_value='robot_3d.urdf.xacro',
-        'model', default_value='robot_omni_3d.urdf.xacro',
+        'model', default_value='robot_3d.urdf.xacro',
+        # 'model', default_value='robot_omni_3d.urdf.xacro',
         description='Name of the URDF description to load'
     )
 
@@ -109,7 +110,32 @@ def generate_launch_description():
             {'use_sim_time': True},
         ]
     )
-
+    
+    joy_node = Node(
+        package='joy',
+        executable='joy_node',
+        name='joy_node',
+        output='screen',
+    )
+    
+    teleop_twist_joy_node = Node(
+        package='teleop_twist_joy',
+        executable='teleop_node',
+        name='teleop_twist_joy',
+        parameters=[
+            ParameterFile(
+                PathJoinSubstitution([
+                    get_package_share_directory('mec_mobile_description'),
+                    'config',
+                    'teleop_twist_joy.yaml'
+                ]),
+                allow_substs=True
+            )
+        ],
+        remappings=[
+            ('/cmd_vel', '/cmd_vel'),
+        ],
+    )
     # joint_state_publisher_gui_node = Node(
     #     package='joint_state_publisher_gui',
     #     executable='joint_state_publisher_gui',
@@ -124,6 +150,8 @@ def generate_launch_description():
     launchDescriptionObject.add_action(rviz_node)
     launchDescriptionObject.add_action(spawn_urdf_node)
     launchDescriptionObject.add_action(robot_state_publisher_node)
+    launchDescriptionObject.add_action(joy_node)
+    launchDescriptionObject.add_action(teleop_twist_joy_node)
     # launchDescriptionObject.add_action(joint_state_publisher_gui_node)
     launchDescriptionObject.add_action(gz_bridge_node)
 
