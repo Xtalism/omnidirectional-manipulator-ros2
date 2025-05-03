@@ -12,9 +12,15 @@ def generate_launch_description():
 
     pkg_urdf_path = get_package_share_directory('mec_mobile_description')
     pkg_gazebo_path = get_package_share_directory('mec_mobile_gazebo')
+    pkg_mec_mobile_navigation = get_package_share_directory('mec_mobile_navigation')
 
     gazebo_models_path, ignore_last_dir = os.path.split(pkg_urdf_path)
     #os.environ["GZ_SIM_RESOURCE_PATH"] += os.pathsep + gazebo_models_path
+
+    gz_bridge_params_path = os.path.join(
+        get_package_share_directory('mec_mobile_navigation'),
+        'config', 'gz_bridge.yaml'
+    )
 
     rviz_launch_arg = DeclareLaunchArgument(
         'rviz', default_value='true',
@@ -95,19 +101,22 @@ def generate_launch_description():
         package="ros_gz_bridge",
         executable="parameter_bridge",
         arguments=[
-            "/clock@rosgraph_msgs/msg/Clock[gz.msgs.Clock",
-            "/cmd_vel@geometry_msgs/msg/Twist@gz.msgs.Twist",
-            "/odom@nav_msgs/msg/Odometry@gz.msgs.Odometry",
-            "/joint_states@sensor_msgs/msg/JointState@gz.msgs.Model",
-            "/tf@tf2_msgs/msg/TFMessage@gz.msgs.Pose_V",
-            "/camera/image@sensor_msgs/msg/Image@gz.msgs.Image",
-            "/camera/camera_info@sensor_msgs/msg/CameraInfo@gz.msgs.CameraInfo",
-            "/scan@sensor_msgs/msg/LaserScan@gz.msgs.LaserScan",
-            "/cam_1/depth_image@sensor_msgs/msg/Image@gz.msgs.Image",
-            "/cam_1/points@sensor_msgs/msg/PointCloud2@gz.msgs.PointCloudPacked",
+            '--ros-args', '-p',
+            f'config_file:={gz_bridge_params_path}',
         ],
         output="screen",
         parameters=[
+            {'use_sim_time': True},
+        ]
+    )
+
+    ekf_node = Node(
+        package='robot_localization',
+        executable='ekf_node',
+        name='ekf_filter_node',
+        output='screen',
+        parameters=[
+            os.path.join(pkg_mec_mobile_navigation, 'config', 'ekf.yaml'),
             {'use_sim_time': True},
         ]
     )
@@ -155,5 +164,6 @@ def generate_launch_description():
     launchDescriptionObject.add_action(teleop_twist_joy_node)
     # launchDescriptionObject.add_action(joint_state_publisher_gui_node)
     launchDescriptionObject.add_action(gz_bridge_node)
+    launchDescriptionObject.add_action(ekf_node)
 
     return launchDescriptionObject

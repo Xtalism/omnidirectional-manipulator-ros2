@@ -1,0 +1,117 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="tanque">
+
+  <!-- Define properties -->
+  <xacro:property name="wheel_separation" value="0.7" />
+  <xacro:property name="wheel_radius" value="0.025" />
+  <xacro:property name="color_rgba" value="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+  <xacro:property name="dark_color_rgba" value="0.180392156862745 0.180392156862745 0.180392156862745 1" />
+  <xacro:include filename="$(find mec_mobile_description)/urdf/control/tank_robot.gazebo"/>
+
+
+  <!-- Base link -->
+  <xacro:macro name="base_link" params="">
+    <link name="base_link">
+      <inertial>
+        <origin xyz="-0.0374465940598886 -0.0690310743778639 0.0558880866808287" rpy="0 0 0" />
+        <mass value="0.417099374990471" />
+        <inertia
+          ixx="0.000722351549815063" ixy="1.62332665545551E-06" ixz="3.11612693032546E-06"
+          iyy="0.000404208619519167" iyz="-2.03306255326123E-05" izz="0.000904108489026081" />
+      </inertial>
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="file://$(find mec_mobile_description)/meshes/robot_tank/base_link.STL" />
+        </geometry>
+        <material name="">
+          <color rgba="${color_rgba}" />
+        </material>
+      </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="file://$(find mec_mobile_description)/meshes/robot_tank/base_link.STL" />
+        </geometry>
+      </collision>
+    </link>
+  </xacro:macro>
+
+  <!-- Wheel -->
+  <xacro:macro name="wheel" params="name xyz rpy parent_link mesh_file">
+    <link name="${name}_Link">
+      <inertial>
+        <origin xyz="0 0 0.00608657321281263" rpy="0 0 0" />
+        <mass value="0.0148833367293959" />
+        <inertia
+          ixx="2.87985049038713E-06" ixy="1.33235120631602E-09" ixz="7.78715693348932E-10"
+          iyy="2.87526106782234E-06" iyz="-2.89204738153876E-09" izz="3.16386827888893E-06" />
+      </inertial>
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="${mesh_file}" />
+        </geometry>
+        <material name="">
+          <color rgba="${color_rgba}" />
+        </material>
+      </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="${mesh_file}" />
+        </geometry>
+      </collision>
+    </link>
+    <joint name="${name}_Joint" type="continuous">
+      <origin xyz="${xyz}" rpy="${rpy}" />
+      <parent link="${parent_link}" />
+      <child link="${name}_Link" />
+      <axis xyz="0 0 -1" />
+    </joint>
+  </xacro:macro>
+
+  <!-- Sensor -->
+  <xacro:macro name="sensor" params="name xyz rpy parent_link mesh_file color">
+    <link name="${name}_Link">
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <mass value="0.0411937029806142" />
+        <inertia
+          ixx="5.44781056499557E-06" ixy="5.35543585740574E-11" ixz="-9.43324892496492E-14"
+          iyy="9.17865415296578E-06" iyz="-8.25699468096667E-09" izz="5.52254044439159E-06" />
+      </inertial>
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="${mesh_file}" />
+        </geometry>
+        <material name="">
+          <color rgba="${color}" />
+        </material>
+      </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="${mesh_file}" />
+        </geometry>
+      </collision>
+    </link>
+    <joint name="${name}_Joint" type="fixed">
+      <origin xyz="${xyz}" rpy="${rpy}" />
+      <parent link="${parent_link}" />
+      <child link="${name}_Link" />
+    </joint>
+  </xacro:macro>
+
+  <!-- Base -->
+  <xacro:base_link />
+
+  <!-- Wheels -->
+  <xacro:wheel name="RuedaDerecha" xyz="-0.111525 -0.124899748748477 0.0152499987374296" rpy="1.5707963267949 0 1.5707963267949" parent_link="base_link" mesh_file="file://$(find mec_mobile_description)/meshes/robot_tank/RuedaDerecha_Link.STL" />
+  <xacro:wheel name="RuedaIzquierda" xyz="0.036525 -0.015100251251523 0.0152499987374295" rpy="-1.5707963267949 0 1.5707963267949" parent_link="base_link" mesh_file="file://$(find mec_mobile_description)/meshes/robot_tank/RuedaIzquierda_Link.STL" />
+
+  <!-- Lidar -->
+  <xacro:sensor name="Lidar" xyz="-0.0375 -0.0698739346599975 0.1406" rpy="1.5707963267949 0 0" parent_link="base_link" mesh_file="file://$(find mec_mobile_description)/meshes/robot_tank/Lidar_Link.STL" color="${dark_color_rgba}" />
+
+</robot>

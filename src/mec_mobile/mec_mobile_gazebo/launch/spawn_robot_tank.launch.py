@@ -27,8 +27,8 @@ def generate_launch_description():
     )
 
     model_arg = DeclareLaunchArgument(
-        # 'model', default_value='robot_tanque.urdf.xacro',
-        'model', default_value='robot_3d.urdf.xacro',
+        'model', default_value='robot_tanque.urdf.xacro',
+        # 'model', default_value='robot_3d.urdf.xacro',
         # 'model', default_value='robot_omni_3d.urdf.xacro',
         description='Name of the URDF description to load'
     )
