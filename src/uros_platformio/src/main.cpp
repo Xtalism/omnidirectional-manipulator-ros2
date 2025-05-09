@@ -131,7 +131,7 @@ void cmd_vel_callback(const void *msgin) {
 }
 
 void setMecanumMotorSpeeds(int speedFL, int speedFR, int speedRL, int speedRR) {
-  int max_pwm = 255;
+  int max_pwm = 250;
 
   int actualSpeedFL = limitToMaxValue(speedFL, max_pwm);
   if (actualSpeedFL > 0) {

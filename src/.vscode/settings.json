@@ -8,5 +8,6 @@
         "/home/xtal/ROS2-omni-manipulator/build/dm",
         "/home/xtal/ROS2-omni-manipulator/install/dm/lib/python3.12/site-packages",
         "/opt/ros/jazzy/lib/python3.12/site-packages"
-    ]
+    ],
+    "ros.distro": "jazzy"
 }
