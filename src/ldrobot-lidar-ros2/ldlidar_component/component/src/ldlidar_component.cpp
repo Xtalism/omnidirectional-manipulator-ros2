@@ -101,15 +101,11 @@ void LdLidarComponent::getCommParams()
   getParam(
     "comm.serial_port", _serialPort, _serialPort, "Communication serial port path", true,
     " * Serial port: ");
-  
-  getParam(
-    "comm.baudrate", _baudrate, _baudrate, "Serial baudrate", false,
-    " * Baudrate: ");
+
   getParam(
     "comm.timeout_msec", _readTimeOut_msec, _readTimeOut_msec, "Data reading timeout in msec",
     false, " * Timeout [msec]: ");
-  
-    // <---- Communication
+  // <---- Communication
 }
 
 void LdLidarComponent::getLidarParams()
