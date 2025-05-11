@@ -13,7 +13,7 @@ find_package(ros_gz_sim REQUIRED)
 # find_package(<dependency> REQUIRED)
 
 install(
-  DIRECTORY launch worlds
+  DIRECTORY launch worlds rviz
   DESTINATION share/${PROJECT_NAME}/
 )
 

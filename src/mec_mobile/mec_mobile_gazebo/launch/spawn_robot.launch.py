@@ -20,6 +20,11 @@ def generate_launch_description():
         'rviz', default_value='true',
         description='Open RViz.'
     )
+    
+    rviz_config_arg = DeclareLaunchArgument(
+        'rviz_config', default_value='visualization.rviz',
+        description='RViz config file'
+    )
 
     world_arg = DeclareLaunchArgument(
         'world', default_value='empty.sdf',
@@ -28,8 +33,8 @@ def generate_launch_description():
 
     model_arg = DeclareLaunchArgument(
         # 'model', default_value='robot_tanque.urdf.xacro',
-        'model', default_value='robot_3d.urdf.xacro',
-        # 'model', default_value='robot_omni_3d.urdf.xacro',
+        # 'model', default_value='robot_3d.urdf.xacro',
+        'model', default_value='robot_omni_3d.urdf.xacro',
         description='Name of the URDF description to load'
     )
 
@@ -53,7 +58,7 @@ def generate_launch_description():
     rviz_node = Node(
         package='rviz2',
         executable='rviz2',
-        arguments=['-d', os.path.join(pkg_urdf_path, 'rviz', 'rviz.rviz')],
+        arguments=['-d', PathJoinSubstitution([pkg_gazebo_path, 'rviz', LaunchConfiguration('rviz_config')])],
         condition=IfCondition(LaunchConfiguration('rviz')),
         parameters=[
             {'use_sim_time': True},
@@ -145,6 +150,7 @@ def generate_launch_description():
     launchDescriptionObject = LaunchDescription()
 
     launchDescriptionObject.add_action(rviz_launch_arg)
+    launchDescriptionObject.add_action(rviz_config_arg)
     launchDescriptionObject.add_action(world_arg)
     launchDescriptionObject.add_action(model_arg)
     launchDescriptionObject.add_action(world_launch)

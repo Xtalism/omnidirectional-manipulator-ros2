@@ -49,6 +49,12 @@
         <joint_name>front_right_wheel_joint</joint_name>
         <joint_name>back_left_wheel_joint</joint_name>
         <joint_name>back_right_wheel_joint</joint_name>
+        <joint_name>joint_1</joint_name>
+        <joint_name>joint_2</joint_name>
+        <joint_name>joint_3</joint_name>
+        <joint_name>joint_4</joint_name>
+        <!-- <joint_name>joint_5</joint_name> -->
+        <joint_name>end_effector_joint</joint_name>
     </plugin>
   </gazebo>
 

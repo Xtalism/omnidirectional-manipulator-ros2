@@ -18,7 +18,7 @@ def generate_launch_description():
     
     rviz_config_arg = DeclareLaunchArgument(
         'rviz_config', default_value='localization.rviz',
-        description='RVizz config file'
+        description='RViz config file'
     )
     
     sim_time_arg = DeclareLaunchArgument(
