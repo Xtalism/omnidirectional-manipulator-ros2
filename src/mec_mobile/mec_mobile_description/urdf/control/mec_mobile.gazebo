@@ -30,6 +30,71 @@
       <odom_publish_frequency>30</odom_publish_frequency>
     </plugin>
 
+    <plugin
+      filename="gz-sim-joint-controller-system"
+      name="gz::sim::systems::JointController">
+      <topic>cmd_man</topic>
+      <joint_name>joint_1</joint_name>
+      <use_actuator_msg>true</use_actuator_msg>
+      <actuator_number>0</actuator_number>
+      <control_mode>position</control_mode>
+      <p_gain>10.0</p_gain>
+      <i_gain>0.1</i_gain>
+      <d_gain>10.0</d_gain>
+    </plugin>
+    
+    <plugin
+      filename="gz-sim-joint-controller-system"
+      name="gz::sim::systems::JointController">
+      <topic>cmd_man</topic>
+      <joint_name>joint_2</joint_name>
+      <use_actuator_msg>true</use_actuator_msg>
+      <actuator_number>1</actuator_number>
+      <control_mode>position</control_mode>
+      <p_gain>10.0</p_gain>
+      <i_gain>0.1</i_gain>
+      <d_gain>10.0</d_gain>
+    </plugin>
+
+    <plugin
+      filename="gz-sim-joint-controller-system"
+      name="gz::sim::systems::JointController">
+      <topic>cmd_man</topic>
+      <joint_name>joint_3</joint_name>
+      <use_actuator_msg>true</use_actuator_msg>
+      <actuator_number>2</actuator_number>
+      <control_mode>position</control_mode>
+      <p_gain>10.0</p_gain>
+      <i_gain>0.1</i_gain>
+      <d_gain>10.0</d_gain>
+    </plugin>
+
+    <plugin
+      filename="gz-sim-joint-controller-system"
+      name="gz::sim::systems::JointController">
+      <topic>cmd_man</topic>
+      <joint_name>joint_4</joint_name>
+      <use_actuator_msg>true</use_actuator_msg>
+      <actuator_number>3</actuator_number>
+      <control_mode>position</control_mode>
+      <p_gain>10.0</p_gain>
+      <i_gain>0.1</i_gain>
+      <d_gain>10.0</d_gain>
+    </plugin>
+
+    <plugin
+      filename="gz-sim-joint-controller-system"
+      name="gz::sim::systems::JointController">
+      <topic>cmd_man</topic>
+      <joint_name>end_effector_joint</joint_name>
+      <use_actuator_msg>true</use_actuator_msg>
+      <actuator_number>4</actuator_number>
+      <control_mode>position</control_mode>
+      <p_gain>10.0</p_gain>
+      <i_gain>0.1</i_gain>
+      <d_gain>10.0</d_gain>
+    </plugin>
+
     <plugin name="gz::sim::systems::OdometryPublisher" filename="gz-sim-odometry-publisher-system">
       <odom_topic>odom</odom_topic>
       <odom_frame>odom</odom_frame>
