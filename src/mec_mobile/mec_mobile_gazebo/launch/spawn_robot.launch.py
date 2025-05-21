@@ -110,6 +110,7 @@ def generate_launch_description():
             "/scan@sensor_msgs/msg/LaserScan@gz.msgs.LaserScan",
             "/cam_1/depth_image@sensor_msgs/msg/Image@gz.msgs.Image",
             "/cam_1/points@sensor_msgs/msg/PointCloud2@gz.msgs.PointCloudPacked",
+            "/cmd_man@ros_gz_interfaces/msg/Actuators]gz.msgs.Actuators",
         ],
         output="screen",
         parameters=[

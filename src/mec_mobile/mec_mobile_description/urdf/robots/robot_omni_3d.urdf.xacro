@@ -7,24 +7,47 @@
     <xacro:arg name="use_gazebo" default="false"/>
 
     <xacro:include filename="$(find mec_mobile_description)/urdf/robot_components/robot_base.urdf.xacro"/>
-    <xacro:include filename="$(find mec_mobile_description)/urdf/robot_components/wheels.urdf.xacro"/>
+    <!-- <xacro:include filename="$(find mec_mobile_description)/urdf/robot_components/wheels.urdf.xacro"/> -->
     <xacro:include filename="$(find mec_mobile_description)/urdf/sensors/rgbd_camera.urdf.xacro"/>
     <xacro:include filename="$(find mec_mobile_description)/urdf/sensors/lidar.urdf.xacro"/>
     <xacro:include filename="$(find mec_mobile_description)/urdf/robot_components/arm.urdf.xacro"/>
     <xacro:include filename="$(find mec_mobile_description)/urdf/robot_components/end_effector.urdf.xacro"/>
     <xacro:include filename="$(find mec_mobile_description)/urdf/control/mec_mobile.gazebo"/>
+    <xacro:include filename="$(find mec_mobile_description)/urdf/mech/mecanum_wheel.urdf.xacro"/>
 
     <xacro:robot_base prefix="$(arg prefix)"/>
 
-    <!-- Front Left Wheel -->
-    <xacro:wheel 
+    <xacro:mecanum_wheel
+      prefix="$(arg prefix)"
+      side="front_left"
+      x_reflect="1"
+      y_reflect="1"/>
+
+    <xacro:mecanum_wheel
+      prefix="$(arg prefix)"
+      side="front_right"
+      x_reflect="1"
+      y_reflect="-1"/>
+
+    <xacro:mecanum_wheel
+      prefix="$(arg prefix)"
+      side="back_left"
+      x_reflect="-1"
+      y_reflect="1"/>
+
+    <xacro:mecanum_wheel
+      prefix="$(arg prefix)"
+      side="back_right"
+      x_reflect="-1"
+      y_reflect="-1"/>
+
+    <!-- <xacro:wheel 
         prefix="$(arg prefix)"
         side="front_left"
         xyz="0.11788 -0.081567 -0.037794"
         rpy="1.5708 0 1.5708"
         mesh="fl_wheel_link.STL"/>
 
-    <!-- Rear Left Wheel -->
     <xacro:wheel 
         prefix="$(arg prefix)"
         side="back_left"
@@ -32,20 +55,19 @@
         rpy="1.5708 0 1.5708"
         mesh="rl_wheel_link.STL"/>
 
-    <!-- Front Right Wheel -->
     <xacro:wheel 
         prefix="$(arg prefix)"
         side="front_right"
         xyz="-0.11788 -0.081566 -0.037705"
         rpy="1.5708 0 -1.5708" 
         mesh="fr_wheel_link.STL"/>
-    <!-- Rear Right Wheel -->
+
     <xacro:wheel 
         prefix="$(arg prefix)"
         side="back_right"
         xyz="-0.11788 0.081609 -0.037681"
         rpy="-1.5708 0 1.5708"
-        mesh="rr_wheel_link.STL"/>
+        mesh="rr_wheel_link.STL"/> -->
 
     <!-- Lidar -->
     <xacro:lidar_sensor 

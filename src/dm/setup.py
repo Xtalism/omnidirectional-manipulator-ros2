@@ -27,7 +27,8 @@ setup(
         'console_scripts': [
             'my_publisher = dm.my_publisher:main',
             'my_second_publisher = dm.my_second_publisher:main',
-            'my_subscriber = dm.my_subscriber:main'
+            'my_subscriber = dm.my_subscriber:main',
+            'manipulator = dm.manipulator:main',
         ],
     },
 )

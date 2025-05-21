@@ -22,7 +22,7 @@
 """Launch realsense2_camera node."""
 from launch import LaunchDescription
 import launch_ros.actions
-from launch.actions import OpaqueFunction
+from launch.actions import OpaqueFunction, DeclareLaunchArgument
 from launch.substitutions import LaunchConfiguration, ThisLaunchFileDir
 import os
 import sys
@@ -36,7 +36,7 @@ import rs_launch
 
 local_parameters = [{'name': 'camera_name',                  'default': 'camera', 'description': 'camera unique name'},
                     {'name': 'camera_namespace',             'default': 'camera', 'description': 'camera namespace'},
-                    {'name': 'device_type',                  'default': 'd415', 'description': 'choose device by type'},
+                    {'name': 'device_type',                  'default': "d415", 'description': 'choose device by type'},
                     {'name': 'enable_color',                 'default': 'true', 'description': 'enable color stream'},
                     {'name': 'enable_depth',                 'default': 'true', 'description': 'enable depth stream'},
                     {'name': 'pointcloud.enable',            'default': 'true', 'description': 'enable pointcloud'},
@@ -61,46 +61,51 @@ def set_configurable_parameters(local_params):
     return dict([(param['name'], LaunchConfiguration(param['name'])) for param in local_params])
 
 def generate_launch_description():
+    """Generates the launch description for the D415 camera, RViz, and robot_state_publisher."""
     params = rs_launch.configurable_parameters
     xacro_path = os.path.join(get_package_share_directory('realsense2_description'), 'urdf', 'test_d415_camera.urdf.xacro')
     urdf = to_urdf(xacro_path, {'use_nominal_extrinsics': 'true', 'add_plug': 'true'})
 
+    # Declare launch arguments
+    declare_rviz_config_file_cmd = DeclareLaunchArgument(
+        'rviz_config_file',
+        default_value=[ThisLaunchFileDir(), '/rviz/urdf_pointcloud.rviz'],
+        description='Full path to the RVIZ config file to use')
+
+    declare_use_sim_time_cmd = DeclareLaunchArgument(
+        'use_sim_time',
+        default_value='false',
+        description='Use simulation (Gazebo) clock if true')
+
+    # Get launch configurations
+    rviz_config_file = LaunchConfiguration('rviz_config_file')
+    use_sim_time = LaunchConfiguration('use_sim_time')
+
     return LaunchDescription(
         rs_launch.declare_configurable_parameters(local_parameters) +
-        rs_launch.declare_configurable_parameters(params) + 
+        rs_launch.declare_configurable_parameters(params) +
         [
-        OpaqueFunction(function=rs_launch.launch_setup,
-                kwargs={'params': set_configurable_parameters(params)}
-        ),
-        launch_ros.actions.Node(
-            package='rviz2',
-            namespace='',
-            executable='rviz2',
-            name='rviz2',
-            arguments=['-d', [ThisLaunchFileDir(), '/rviz/urdf_pointcloud.rviz']],
-            output='screen',
-            parameters=[{'use_sim_time': False}]
-        ),
-        launch_ros.actions.Node(
-            name='model_node',
-            package='robot_state_publisher',
-            executable='robot_state_publisher',
-            namespace='',
-            output='screen',
-            arguments=[urdf]
-        ),
-        # Add the depthcloud node
-        launch_ros.actions.Node(
-            package='depthimage_to_laserscan',
-            executable='depthcloud',
-            name='depthcloud_node',
-            namespace='',
-            output='screen',
-            parameters=[
-                {'use_sim_time': False},
-                {'depth_topic': '/camera/depth/image_rect_raw'},
-                {'camera_info_topic': '/camera/depth/camera_info'},
-                {'pointcloud_topic': '/camera/depth/points'}
-            ]
-        )
-    ])
+            declare_rviz_config_file_cmd,
+            declare_use_sim_time_cmd,
+            OpaqueFunction(function=rs_launch.launch_setup,
+                kwargs = {'params' : set_configurable_parameters(params)}
+            ),
+            launch_ros.actions.Node(
+                package='rviz2',
+                namespace='',
+                executable='rviz2',
+                name='rviz2',
+                arguments=['-d', rviz_config_file],
+                output='screen',
+                parameters=[{'use_sim_time': use_sim_time}]
+            ),
+            launch_ros.actions.Node(
+                name='model_node',
+                package='robot_state_publisher',
+                executable='robot_state_publisher',
+                namespace='',
+                output='screen',
+                arguments=[urdf]
+            )
+        ]
+    )
