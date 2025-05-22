@@ -26,6 +26,7 @@ from launch_ros.actions import Node, LifecycleNode
 def generate_launch_description():
     
     node_name = LaunchConfiguration('node_name')
+    pkg_slam_toolbox_path = get_package_share_directory('slam_toolbox')
 
     # Lifecycle manager configuration file
     lc_mgr_config_path = os.path.join(
@@ -68,7 +69,17 @@ def generate_launch_description():
               ('/scan', '/ldlidar_node/scan')
           ]          
     )
-
+    
+    slam_toolbox_launch = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource(
+            os.path.join(pkg_slam_toolbox_path, 'launch', 'online_async_launch.py')
+        ),
+        launch_arguments={
+            'use_sim_time': 'True',
+            'slam_params_file': slam_config_path
+        }.items()
+    )
+    
     # Include LDLidar launch
     ldlidar_launch = IncludeLaunchDescription(
         launch_description_source=PythonLaunchDescriptionSource([
@@ -121,6 +132,9 @@ def generate_launch_description():
     ld.add_action(ldlidar_launch)
 
     # Start RVIZ2
-    ld.add_action(rviz2_node)
+    # ld.add_action(rviz2_node)
+    
+    # Add the action to launch the second SLAM instance
+    ld.add_action(slam_toolbox_launch)
 
     return ld

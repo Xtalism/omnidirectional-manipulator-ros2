@@ -12,6 +12,8 @@ def generate_launch_description():
 
     pkg_urdf_path = get_package_share_directory('mec_mobile_description')
     pkg_gazebo_path = get_package_share_directory('mec_mobile_gazebo')
+    pkg_lidar_path = get_package_share_directory('ldlidar_node')
+    pkg_realsense_path = get_package_share_directory('dm')
 
     gazebo_models_path, ignore_last_dir = os.path.split(pkg_urdf_path)
     #os.environ["GZ_SIM_RESOURCE_PATH"] += os.pathsep + gazebo_models_path
@@ -19,6 +21,24 @@ def generate_launch_description():
     rviz_launch_arg = DeclareLaunchArgument(
         'rviz', default_value='true',
         description='Open RViz.'
+    )
+    
+    d415_launch = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource(
+            os.path.join(pkg_realsense_path, 'launch', 'd415.launch.py'),
+        ),
+        launch_arguments={
+            'use_sim_time': 'True',
+        }.items()
+    )
+    
+    lidar_launch = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource(
+            os.path.join(pkg_lidar_path, 'launch', 'ldlidar_slam.launch.py'),
+        ),
+        launch_arguments={
+            'use_sim_time': 'True',
+        }.items()
     )
     
     rviz_config_arg = DeclareLaunchArgument(
@@ -160,6 +180,8 @@ def generate_launch_description():
     launchDescriptionObject.add_action(robot_state_publisher_node)
     launchDescriptionObject.add_action(joy_node)
     launchDescriptionObject.add_action(teleop_twist_joy_node)
+    launchDescriptionObject.add_action(d415_launch)
+    # launchDescriptionObject.add_action(lidar_launch)
     # launchDescriptionObject.add_action(joint_state_publisher_gui_node)
     launchDescriptionObject.add_action(gz_bridge_node)
 

@@ -21,7 +21,7 @@
 
 """Launch realsense2_camera node."""
 from launch import LaunchDescription
-import launch_ros.actions
+# import launch_ros.actions
 from launch.actions import OpaqueFunction, DeclareLaunchArgument
 from launch.substitutions import LaunchConfiguration, ThisLaunchFileDir
 import os
@@ -78,8 +78,8 @@ def generate_launch_description():
         description='Use simulation (Gazebo) clock if true')
 
     # Get launch configurations
-    rviz_config_file = LaunchConfiguration('rviz_config_file')
-    use_sim_time = LaunchConfiguration('use_sim_time')
+    # rviz_config_file = LaunchConfiguration('rviz_config_file')
+    # use_sim_time = LaunchConfiguration('use_sim_time')
 
     return LaunchDescription(
         rs_launch.declare_configurable_parameters(local_parameters) +
@@ -90,22 +90,22 @@ def generate_launch_description():
             OpaqueFunction(function=rs_launch.launch_setup,
                 kwargs = {'params' : set_configurable_parameters(params)}
             ),
-            launch_ros.actions.Node(
-                package='rviz2',
-                namespace='',
-                executable='rviz2',
-                name='rviz2',
-                arguments=['-d', rviz_config_file],
-                output='screen',
-                parameters=[{'use_sim_time': use_sim_time}]
-            ),
-            launch_ros.actions.Node(
-                name='model_node',
-                package='robot_state_publisher',
-                executable='robot_state_publisher',
-                namespace='',
-                output='screen',
-                arguments=[urdf]
-            )
+            # launch_ros.actions.Node(
+            #     package='rviz2',
+            #     namespace='',
+            #     executable='rviz2',
+            #     name='rviz2',
+            #     arguments=['-d', rviz_config_file],
+            #     output='screen',
+            #     parameters=[{'use_sim_time': use_sim_time}]
+            # ),
+            # launch_ros.actions.Node(
+            #     name='model_node',
+            #     package='robot_state_publisher',
+            #     executable='robot_state_publisher',
+            #     namespace='',
+            #     output='screen',
+            #     arguments=[urdf]
+            # )
         ]
     )
