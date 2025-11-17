@@ -2,7 +2,7 @@
 
 Omnidirectional Manipulator Robot using ROS2 and MicroROS.
 
-![Omnidirectional Manipulator](robot_render.png)
+![Omnidirectional Manipulator](omni_render.png)
 
 ## Table of Contents
 - [Omnidirectional Manipulator Robot using ROS2](#omnidirectional-manipulator-robot-using-ros2)
